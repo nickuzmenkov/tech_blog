@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "ml-docs"
+version = "0.1.0"
+description = ""
+authors = ["Nikita Kuzmenkov <n.kuzmenkov@conundrum.ai>"]
+license = "MIT"
+readme = "README.md"
+packages = []
+
+[tool.poetry.dependencies]
+python = "^3.9"
+mkdocs = "^1.5.2"
+mkdocs-material = "^9.1.21"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

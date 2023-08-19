@@ -1,0 +1,73 @@
+site_name: ML Docs
+site_description: Machine Learning Docs
+site_url: https://nickuzmenkov.github.io/ml_docs/
+repo_name: ml_docs
+repo_url: https://github.com/nickuzmenkov/ml_docs
+edit_uri: ""
+nav:
+    - 'index.md'
+    - Basics:
+        - 'basics/data.md'
+        - 'basics/eda.md'
+        - 'basics/statistical_tests.md'
+        - 'basics/regression.md'
+        - 'basics/classification.md'
+        - 'basics/ensemble.md'
+    - Linear Models:
+        - 'linear_models/linear_regression.md'
+        - 'linear_models/linear_classification.md'
+        - 'linear_models/regularization.md'
+        - 'linear_models/lda.md'
+    - Trees:
+        - 'trees/decision_trees.md'
+        - 'trees/random_forest.md'
+        - 'trees/gradient_boosted_trees.md'
+    - Other Models:
+        - 'other_models/naive_bayes.md'
+        - 'other_models/svm.md'
+        - 'other_models/pca.md'
+        - 'other_models/knn.md'
+        - 'other_models/hierarchical_clustering.md'
+        - 'other_models/k_means.md'
+theme:
+  name: 'material'
+  palette:
+  - scheme: 'default'
+    media: '(prefers-color-scheme: light)'
+    primary: 'black'
+    toggle:
+      icon: 'material/lightbulb-outline'
+      name: "Switch to dark mode"
+  - scheme: 'slate'
+    media: '(prefers-color-scheme: dark)'
+    primary: 'black'
+    toggle:
+      icon: 'material/lightbulb'
+      name: 'Switch to light mode'
+  features:
+    - navigation.sections
+    - content.code.copy
+    - content.code.annotate
+    - content.code.select
+    - content.tooltips
+plugins:
+  - search
+markdown_extensions:
+  - admonition
+  - codehilite:
+      css_class: highlight
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.details
+  - attr_list
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+extra_javascript:
+  - js/katex.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
