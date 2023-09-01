@@ -10,20 +10,20 @@
       
       
       
-        <link rel="canonical" href="https://nickuzmenkov.github.io/ml_docs/linear_models/linear_classification/">
+        <link rel="canonical" href="https://nickuzmenkov.github.io/ml_docs/linear_models/lda/">
       
       
-        <link rel="prev" href="../linear_regression/">
+        <link rel="prev" href="../regularization/">
       
       
-        <link rel="next" href="../regularization/">
+        <link rel="next" href="../../trees/decision_trees/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.21">
     
     
       
-        <title>Linear Classification - ML Docs</title>
+        <title>Linear Discriminant Analysis - ML Docs</title>
       
     
     
@@ -77,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#linear-classification" class="md-skip">
+        <a href="#linear-discriminant-analysis" class="md-skip">
           Skip to content
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Linear Classification
+              Linear Discriminant Analysis
             
           </span>
         </div>
@@ -427,59 +427,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Linear Classification
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../linear_classification/" class="md-nav__link">
         Linear Classification
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#logistic-regression" class="md-nav__link">
-    Logistic Regression
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#softmax-regression" class="md-nav__link">
-    Softmax Regression
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -503,11 +455,65 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../lda/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Linear Discriminant Analysis
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Linear Discriminant Analysis
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#synthetic-data-example" class="md-nav__link">
+    Synthetic Data #example
+  </a>
+  
+    <nav class="md-nav" aria-label="Synthetic Data #example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#solution" class="md-nav__link">
+    Solution
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -746,16 +752,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#logistic-regression" class="md-nav__link">
-    Logistic Regression
+  <a href="#synthetic-data-example" class="md-nav__link">
+    Synthetic Data #example
+  </a>
+  
+    <nav class="md-nav" aria-label="Synthetic Data #example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#solution" class="md-nav__link">
+    Solution
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#softmax-regression" class="md-nav__link">
-    Softmax Regression
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -774,65 +786,78 @@
                   
 
 
-<h1 id="linear-classification">Linear Classification</h1>
-<h2 id="logistic-regression">Logistic Regression</h2>
-<p><strong>Logistic Regression</strong> is a direct extension of the <a href="../linear_regression/">Linear Regression</a> with its simplicity and high speed for classification tasks. Logistic Regression returns the logistic of the result</p>
-<p>$$
-\hat{p}=\sigma(\boldsymbol{\theta}^T\boldsymbol{x}),
-$$</p>
-<p>where $\sigma$ is a <strong>standard logistic function</strong> (or sigmoid)</p>
-<p>$$
-\sigma(t)=\frac{1}{1 + \exp{(-t)}}.
-$$</p>
-<p>Thus, the output is scaled to the $[0;1]$ range of the probability that a particular instance is positive ($y=1$).</p>
-<p>Output of the original regression equation can be expressed as a <strong>logit function</strong> (or logarithm of the odds, which is the inverse of the logistic function)</p>
-<p>$$
-\boldsymbol{\theta}^T\boldsymbol{x}=\sigma^{-1}(p)=\ln{(\text{odds}(\hat{p}))}=\ln{\left(\frac{p}{1-p}\right)}
-$$</p>
-<p>The cost function for classification tasks is known as <strong>cross entropy loss</strong> (or log loss). In the case of binary classification, it's called <strong>binary cross entropy</strong> and is given by</p>
-<p>$$
-J(\boldsymbol{\theta})=-\frac{1}{m}\sum_{i=1}^m{\left(y^{(i)}\log{\hat{p}^{(i)}}+\left(1-y^{(i)}\right)\log{\left(1-\hat{p}^{(i)}\right)}\right)}.
-$$</p>
-<div class="admonition example annotate">
-<p class="admonition-title">Extreme Values Example</p>
-<p>Imagine that the ground truth $y=1$, while the predicted value $\hat{p} \approx 0$. The penalty for this sample is then close to $-\log{0}$, which is $\infty$. The same is true for the opposite case, where the ground truth is equal to 0 and the predicted value is close to 1.</p>
-</div>
-<p>There is no known closed-form solution for computing the value of $\boldsymbol{\theta}$ that minimizes binary cross entropy. However, just like MSE, cross entropy is a convex function. Thus, Batch Gradient Descent is guaranteed to find the optimal solution within the specified tolerance.</p>
-<p>The cross entropy gradient $\nabla_{\boldsymbol{\theta}}{J(\boldsymbol{\theta})}$ is calculated in the same way as for <a href="../linear_regression/#closed-form-solution">MSE</a> and is given by:</p>
-<p>$$
-\nabla_{\boldsymbol{\theta}}{J(\boldsymbol{\theta})}= \frac{2}{m}\boldsymbol{X}^T\left(\sigma\left({\boldsymbol{X}\boldsymbol{\theta}}\right)-\boldsymbol{y}\right).
-$$</p>
-<div class="admonition note annotate">
-<p class="admonition-title">Scikit-Learn Implementation</p>
-<p>The <a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html"><code>LogisticRegression</code> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span></a>, the <code>scikit-learn</code> implementation of logistic regression, comes with the $\ell_2$ penalty turned on by default, allowing you to adjust the strength of the regularization. Read more about regularization in the <a href="../regularization/">Regularization</a> manual.</p>
-</div>
-<div class="admonition note annotate">
-<p class="admonition-title">Categorical Features</p>
-<p>As with <a href="../linear_regression/">Linear Regression</a>, all categorical variables must first be one-hot encoded, omitting one of the classes.</p>
-</div>
-<h2 id="softmax-regression">Softmax Regression</h2>
-<p>The logistic regression model can be generalized to support multiple classes directly, without the need to train one-versus-one (OvO) or one-versus-rest (OvR) classifiers. The resulting probability that an instance belongs to class $k$ is given by</p>
-<p>$$
-\hat{p}_k=\text{softmax}(\boldsymbol{s})_k=\frac{\exp{(\boldsymbol{s}_k)}}{\sum_i exp{(\boldsymbol{s}_i)}}
-$$</p>
-<p>where $\boldsymbol{s}$ is a vector containing the values of each class $k$ for the instance $\boldsymbol{x}$</p>
-<p>$$
-\boldsymbol{s}=\boldsymbol{\Theta}\boldsymbol{x}.
-$$</p>
-<p>All class-wise parameter vectors $\boldsymbol{\theta}^{(k)}$ together form a parameter matrix $\boldsymbol{\Theta}$.</p>
-<p>Similar to binary classification, the cost function used is cross-entropy, but in a generalized version known as <strong>categorical cross-entropy</strong></p>
-<p>$$
-J(\boldsymbol{\Theta})=-\frac{1}{m}\sum_{i=1}^m{\sum_{k=1}^l{y_k^{(i)}\log{\left(\hat{p}_k^{(i)}\right)}}}
-$$</p>
-<p>where $l$ is the number of classes.</p>
-<p>The gradient vector with respect to the $\boldsymbol{\theta}^{(k)}$ parameter vector $\nabla_{\boldsymbol{\theta}^{(k)}}{J(\boldsymbol{\theta})}$ is calculated similarly to the gradient of the <a href="../linear_regression/#closed-form-solution">MSE</a> and is given by</p>
-<p>$$
-\nabla_{\boldsymbol{\theta}^{(k)}}{J(\boldsymbol{\Theta})}= \frac{2}{m}\boldsymbol{X}^T\left(\text{softmax}\left({\boldsymbol{X}\boldsymbol{\theta}}\right)-\boldsymbol{y}\right).
-$$</p>
-<div class="admonition note annotate">
-<p class="admonition-title">Scikit-Learn Implementation</p>
-<p>The <a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html"><code>LogisticRegression</code> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span></a> implementation in <code>scikit-learn</code> uses One-versus-Rest wrapper for multiclass tasks instead.</p>
-</div>
+<h1 id="linear-discriminant-analysis">Linear Discriminant Analysis</h1>
+<blockquote>
+<p>💡 #story Discriminant analysis is the earliest statistical classifier; it was introduced by R. A. Fisher in 1936 in an article published in the <em>Annals of Eugenics</em> journal.</p>
+</blockquote>
+<p>While discriminant analysis encompasses several techniques, the most commonly used is <em>linear discriminant analysis</em> (LDA).</p>
+<p>LDA searches for optimal linear decision boundaries between the classes so that sum of squares <em>between</em> the groups is as high as possible while the sum of squares <em>within</em> the groups is as low as possible.</p>
+<p>Because of LDA decision boundaries can be used as new axes, LDA is also widely used for dimensionality reduction.</p>
+<blockquote>
+<p>💡 Despite LDA is designed for normally distributed numerical predictors, it can be used with slightly non-normal distributed and binary variables as well.</p>
+</blockquote>
+<h3 id="synthetic-data-example">Synthetic Data #example</h3>
+<p>Classify random samples of two normal distributions with mean 3 (y=0) and 5 (y=1):</p>
+<p>![[assets/img/Machine Learning/Linear Discriminant Analysis/01.png|600]]</p>
+<h4 id="solution">Solution</h4>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">sklearn.discriminant_analysis</span> <span class="kn">import</span> <span class="n">LinearDiscriminantAnalysis</span>
+<span class="kn">import</span> <span class="nn">plotly.graph_objects</span> <span class="k">as</span> <span class="nn">go</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">SIZE</span> <span class="o">=</span> <span class="mi">50</span>
+
+<span class="n">X1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="n">SIZE</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+<span class="n">X2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="n">SIZE</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+
+<span class="n">y1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">SIZE</span><span class="p">)</span>
+<span class="n">y2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="n">SIZE</span><span class="p">)</span>
+
+<span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">r_</span><span class="p">[</span><span class="n">X1</span><span class="p">,</span> <span class="n">X2</span><span class="p">]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">r_</span><span class="p">[</span><span class="n">y1</span><span class="p">,</span> <span class="n">y2</span><span class="p">]</span>
+
+<span class="n">model</span> <span class="o">=</span> <span class="n">LinearDiscriminantAnalysis</span><span class="p">()</span>
+<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="n">predict</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+
+<span class="n">center</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">means_</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">coef</span> <span class="o">=</span> <span class="o">-</span><span class="nb">float</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">scalings_</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">/</span> <span class="n">model</span><span class="o">.</span><span class="n">scalings_</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">intercept</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">center</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">center</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">coef</span><span class="p">)</span>
+
+<span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">(</span>
+    <span class="n">data</span><span class="o">=</span><span class="p">(</span>
+        <span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span>
+            <span class="n">x</span><span class="o">=</span><span class="n">X</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span>
+            <span class="n">y</span><span class="o">=</span><span class="n">X</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span>
+            <span class="n">mode</span><span class="o">=</span><span class="s2">&quot;markers&quot;</span><span class="p">,</span>
+            <span class="n">marker</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+                <span class="n">size</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+                <span class="n">color</span><span class="o">=</span><span class="n">predict</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span>
+                <span class="n">colorscale</span><span class="o">=</span><span class="s2">&quot;Tropic&quot;</span><span class="p">,</span>
+                <span class="n">colorbar</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;class probability&quot;</span><span class="p">),</span>
+                <span class="n">showscale</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+            <span class="p">),</span>
+        <span class="p">),</span>
+        <span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span>
+            <span class="n">x</span><span class="o">=</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]),</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">])],</span>
+            <span class="n">y</span><span class="o">=</span><span class="p">[</span>
+                <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">])</span> <span class="o">-</span> <span class="n">intercept</span><span class="p">)</span> <span class="o">/</span> <span class="n">coef</span><span class="p">,</span>
+                <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">])</span> <span class="o">-</span> <span class="n">intercept</span><span class="p">)</span> <span class="o">/</span> <span class="n">coef</span><span class="p">,</span>
+            <span class="p">],</span>
+            <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">),</span>
+            <span class="n">mode</span><span class="o">=</span><span class="s2">&quot;lines&quot;</span><span class="p">,</span>
+        <span class="p">),</span>
+    <span class="p">),</span>
+    <span class="n">layout</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+        <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span>
+        <span class="n">width</span><span class="o">=</span><span class="mi">700</span><span class="p">,</span>
+        <span class="n">title_text</span><span class="o">=</span><span class="s2">&quot;LDA Example&quot;</span><span class="p">,</span>
+        <span class="n">xaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">title_text</span><span class="o">=</span><span class="s2">&quot;x1&quot;</span><span class="p">),</span>
+        <span class="n">yaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">title_text</span><span class="o">=</span><span class="s2">&quot;x2&quot;</span><span class="p">),</span>
+        <span class="n">font</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">16</span><span class="p">),</span>
+        <span class="n">showlegend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="p">),</span>
+<span class="p">)</span><span class="o">.</span><span class="n">write_html</span><span class="p">(</span><span class="s2">&quot;1.html&quot;</span><span class="p">)</span>
+</code></pre></div>
 
 
 

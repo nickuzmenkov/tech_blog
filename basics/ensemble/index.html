@@ -10,20 +10,20 @@
       
       
       
-        <link rel="canonical" href="https://nickuzmenkov.github.io/ml_docs/linear_models/linear_classification/">
+        <link rel="canonical" href="https://nickuzmenkov.github.io/ml_docs/basics/ensemble/">
       
       
-        <link rel="prev" href="../linear_regression/">
+        <link rel="prev" href="../classification/">
       
       
-        <link rel="next" href="../regularization/">
+        <link rel="next" href="../../linear_models/linear_regression/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.21">
     
     
       
-        <title>Linear Classification - ML Docs</title>
+        <title>Ensemble - ML Docs</title>
       
     
     
@@ -77,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#linear-classification" class="md-skip">
+        <a href="#ensemble" class="md-skip">
           Skip to content
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Linear Classification
+              Ensemble
             
           </span>
         </div>
@@ -261,16 +261,18 @@
 
   
   
+    
+  
   
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
       
       
       
@@ -279,7 +281,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
           Basics
@@ -292,7 +294,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../basics/data/" class="md-nav__link">
+      <a href="../data/" class="md-nav__link">
         Data and Sampling
       </a>
     </li>
@@ -306,7 +308,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../basics/eda/" class="md-nav__link">
+      <a href="../eda/" class="md-nav__link">
         Exploratory Data Analysis
       </a>
     </li>
@@ -320,7 +322,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../basics/statistical_tests/" class="md-nav__link">
+      <a href="../statistical_tests/" class="md-nav__link">
         Statistical Tests
       </a>
     </li>
@@ -334,7 +336,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../basics/regression/" class="md-nav__link">
+      <a href="../regression/" class="md-nav__link">
         Regression
       </a>
     </li>
@@ -348,75 +350,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../basics/classification/" class="md-nav__link">
+      <a href="../classification/" class="md-nav__link">
         Classification
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../basics/ensemble/" class="md-nav__link">
-        Ensemble
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-    
-  
-  
-    
-      
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-      
-      
-      
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
-      
-      
-      
-        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-          Linear Models
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
-        <label class="md-nav__title" for="__nav_3">
-          <span class="md-nav__icon md-icon"></span>
-          Linear Models
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../linear_regression/" class="md-nav__link">
-        Linear Regression
       </a>
     </li>
   
@@ -439,12 +374,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Linear Classification
+          Ensemble
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Linear Classification
+        Ensemble
       </a>
       
         
@@ -463,16 +398,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#logistic-regression" class="md-nav__link">
-    Logistic Regression
+  <a href="#voting-classifiers" class="md-nav__link">
+    Voting Classifiers
+  </a>
+  
+    <nav class="md-nav" aria-label="Voting Classifiers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hard-voting-classifier" class="md-nav__link">
+    Hard Voting Classifier
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#softmax-regression" class="md-nav__link">
-    Softmax Regression
+        
+          <li class="md-nav__item">
+  <a href="#soft-voting-classifier" class="md-nav__link">
+    Soft Voting Classifier
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -485,13 +433,78 @@
 
             
           
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          Linear Models
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Linear Models
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
             
               
   
   
   
     <li class="md-nav__item">
-      <a href="../regularization/" class="md-nav__link">
+      <a href="../../linear_models/linear_regression/" class="md-nav__link">
+        Linear Regression
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linear_models/linear_classification/" class="md-nav__link">
+        Linear Classification
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linear_models/regularization/" class="md-nav__link">
         Regularization
       </a>
     </li>
@@ -505,7 +518,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lda/" class="md-nav__link">
+      <a href="../../linear_models/lda/" class="md-nav__link">
         Linear Discriminant Analysis
       </a>
     </li>
@@ -746,16 +759,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#logistic-regression" class="md-nav__link">
-    Logistic Regression
+  <a href="#voting-classifiers" class="md-nav__link">
+    Voting Classifiers
+  </a>
+  
+    <nav class="md-nav" aria-label="Voting Classifiers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hard-voting-classifier" class="md-nav__link">
+    Hard Voting Classifier
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#softmax-regression" class="md-nav__link">
-    Softmax Regression
+        
+          <li class="md-nav__item">
+  <a href="#soft-voting-classifier" class="md-nav__link">
+    Soft Voting Classifier
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -774,65 +800,73 @@
                   
 
 
-<h1 id="linear-classification">Linear Classification</h1>
-<h2 id="logistic-regression">Logistic Regression</h2>
-<p><strong>Logistic Regression</strong> is a direct extension of the <a href="../linear_regression/">Linear Regression</a> with its simplicity and high speed for classification tasks. Logistic Regression returns the logistic of the result</p>
-<p>$$
-\hat{p}=\sigma(\boldsymbol{\theta}^T\boldsymbol{x}),
-$$</p>
-<p>where $\sigma$ is a <strong>standard logistic function</strong> (or sigmoid)</p>
-<p>$$
-\sigma(t)=\frac{1}{1 + \exp{(-t)}}.
-$$</p>
-<p>Thus, the output is scaled to the $[0;1]$ range of the probability that a particular instance is positive ($y=1$).</p>
-<p>Output of the original regression equation can be expressed as a <strong>logit function</strong> (or logarithm of the odds, which is the inverse of the logistic function)</p>
-<p>$$
-\boldsymbol{\theta}^T\boldsymbol{x}=\sigma^{-1}(p)=\ln{(\text{odds}(\hat{p}))}=\ln{\left(\frac{p}{1-p}\right)}
-$$</p>
-<p>The cost function for classification tasks is known as <strong>cross entropy loss</strong> (or log loss). In the case of binary classification, it's called <strong>binary cross entropy</strong> and is given by</p>
-<p>$$
-J(\boldsymbol{\theta})=-\frac{1}{m}\sum_{i=1}^m{\left(y^{(i)}\log{\hat{p}^{(i)}}+\left(1-y^{(i)}\right)\log{\left(1-\hat{p}^{(i)}\right)}\right)}.
-$$</p>
-<div class="admonition example annotate">
-<p class="admonition-title">Extreme Values Example</p>
-<p>Imagine that the ground truth $y=1$, while the predicted value $\hat{p} \approx 0$. The penalty for this sample is then close to $-\log{0}$, which is $\infty$. The same is true for the opposite case, where the ground truth is equal to 0 and the predicted value is close to 1.</p>
-</div>
-<p>There is no known closed-form solution for computing the value of $\boldsymbol{\theta}$ that minimizes binary cross entropy. However, just like MSE, cross entropy is a convex function. Thus, Batch Gradient Descent is guaranteed to find the optimal solution within the specified tolerance.</p>
-<p>The cross entropy gradient $\nabla_{\boldsymbol{\theta}}{J(\boldsymbol{\theta})}$ is calculated in the same way as for <a href="../linear_regression/#closed-form-solution">MSE</a> and is given by:</p>
-<p>$$
-\nabla_{\boldsymbol{\theta}}{J(\boldsymbol{\theta})}= \frac{2}{m}\boldsymbol{X}^T\left(\sigma\left({\boldsymbol{X}\boldsymbol{\theta}}\right)-\boldsymbol{y}\right).
-$$</p>
-<div class="admonition note annotate">
-<p class="admonition-title">Scikit-Learn Implementation</p>
-<p>The <a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html"><code>LogisticRegression</code> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span></a>, the <code>scikit-learn</code> implementation of logistic regression, comes with the $\ell_2$ penalty turned on by default, allowing you to adjust the strength of the regularization. Read more about regularization in the <a href="../regularization/">Regularization</a> manual.</p>
-</div>
-<div class="admonition note annotate">
-<p class="admonition-title">Categorical Features</p>
-<p>As with <a href="../linear_regression/">Linear Regression</a>, all categorical variables must first be one-hot encoded, omitting one of the classes.</p>
-</div>
-<h2 id="softmax-regression">Softmax Regression</h2>
-<p>The logistic regression model can be generalized to support multiple classes directly, without the need to train one-versus-one (OvO) or one-versus-rest (OvR) classifiers. The resulting probability that an instance belongs to class $k$ is given by</p>
-<p>$$
-\hat{p}_k=\text{softmax}(\boldsymbol{s})_k=\frac{\exp{(\boldsymbol{s}_k)}}{\sum_i exp{(\boldsymbol{s}_i)}}
-$$</p>
-<p>where $\boldsymbol{s}$ is a vector containing the values of each class $k$ for the instance $\boldsymbol{x}$</p>
-<p>$$
-\boldsymbol{s}=\boldsymbol{\Theta}\boldsymbol{x}.
-$$</p>
-<p>All class-wise parameter vectors $\boldsymbol{\theta}^{(k)}$ together form a parameter matrix $\boldsymbol{\Theta}$.</p>
-<p>Similar to binary classification, the cost function used is cross-entropy, but in a generalized version known as <strong>categorical cross-entropy</strong></p>
-<p>$$
-J(\boldsymbol{\Theta})=-\frac{1}{m}\sum_{i=1}^m{\sum_{k=1}^l{y_k^{(i)}\log{\left(\hat{p}_k^{(i)}\right)}}}
-$$</p>
-<p>where $l$ is the number of classes.</p>
-<p>The gradient vector with respect to the $\boldsymbol{\theta}^{(k)}$ parameter vector $\nabla_{\boldsymbol{\theta}^{(k)}}{J(\boldsymbol{\theta})}$ is calculated similarly to the gradient of the <a href="../linear_regression/#closed-form-solution">MSE</a> and is given by</p>
-<p>$$
-\nabla_{\boldsymbol{\theta}^{(k)}}{J(\boldsymbol{\Theta})}= \frac{2}{m}\boldsymbol{X}^T\left(\text{softmax}\left({\boldsymbol{X}\boldsymbol{\theta}}\right)-\boldsymbol{y}\right).
-$$</p>
-<div class="admonition note annotate">
-<p class="admonition-title">Scikit-Learn Implementation</p>
-<p>The <a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html"><code>LogisticRegression</code> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span></a> implementation in <code>scikit-learn</code> uses One-versus-Rest wrapper for multiclass tasks instead.</p>
-</div>
+<h1 id="ensemble">Ensemble</h1>
+<h2 id="voting-classifiers">Voting Classifiers</h2>
+<p>It can be shown from the [[Data and Sampling#Binomial distribution|Binomial distribution]] that an ensemble of <em>weak learners</em> (i.e. only slightly better than random gessing) can yield overwhelmingly high accuracy in combination.</p>
+<blockquote>
+<p>💡 #warning This is only the case when all the models are independent, which is clearly not the case with models trained on the same data. On the contrary, they tend to make the <em>same mistakes</em> which can further reduce the model.</p>
+</blockquote>
+<p>So the major issue here is to get models as diverse as possible to avoid correlated errors.</p>
+<h3 id="hard-voting-classifier">Hard Voting Classifier</h3>
+<p><em>Hard voting classifier</em> simply takes the [[Exploratory Data Analysis#Mode|mode]] of individual models.</p>
+<h3 id="soft-voting-classifier">Soft Voting Classifier</h3>
+<p><em>Soft voting classifier</em> averages probability of each class and takes the highest probability, thus giving more weight to very confident votes.</p>
+<blockquote>
+<p>💡 #warning In general, soft voting classifiers are better, but they require all models to be able to predict probabilities.</p>
+</blockquote>
+<h1 id="code">code</h1>
+<ul>
+<li><code>sklearn.ensemble.VotingClassifier</code></li>
+<li><code>sklearn.ensemble.VotingRegressor</code></li>
+</ul>
+<h2 id="bagging-and-pasting">Bagging and Pasting</h2>
+<p>One way to achieve model diversity is to train each predictor on different random subsets of the training data.</p>
+<p>This generally leads to bot higher [[base/Statistics/Notation#Bias|bias]] and [[base/Statistics/Notation#Variance|variance]] for each predictor, but the ensemble often has roughly the same bias but lower variance than a single predictor trained on the entire original training set.</p>
+<h3 id="bagging">Bagging</h3>
+<p>Bagging is short for [[Data and Sampling#Bootstrap|Bootstrap]] Aggregating. It denotes forming random subsets from initial dataset <em>with replacement</em> (bootstrapping the data) and training each predictor on random subsamples.</p>
+<blockquote>
+<p>💡Drawing samples with replacement means that the same instance can occur multiple times not only across multiple predictors' dataset, but also across the same dataset.</p>
+</blockquote>
+<h1 id="code_1">code</h1>
+<ul>
+<li><code>sklearn.ensemble.BaggingClassifier(..., bootstrap=True)</code>.</li>
+<li><code>sklearn.ensemble.BaggingRegressor(..., bootstrap=True)</code>.</li>
+</ul>
+<h3 id="pasting">Pasting</h3>
+<p>Similarly, pasting denotes forming random subsets of initial data <em>without replacement</em>.</p>
+<h1 id="code_2">code</h1>
+<ul>
+<li><code>sklearn.ensemble.BaggingClassifier(..., bootstrap=False)</code></li>
+<li><code>sklearn.ensemble.BaggingRegressor(..., bootstrap=False)</code></li>
+</ul>
+<h3 id="out-of-bag-evaluation">Out-of-Bag Evaluation</h3>
+<p>Since each predictor has its own unseen part of the dataset, out-of-bag evaluation is a handy way to estimate the overall ensemble score.</p>
+<p>For [[#Pasting]] ensemble fraction (or number) of out-of-bag samples must be provided explicitly: #code <code>sklearn.ensemble.BaggingClassifier(..., max_samples=0.8)</code>.</p>
+<p>For [[#Bagging]] ensemble it can be shown that nearly 37% of the training data remains unseen due to replacements, hence no need for explicit data partitioning.</p>
+<blockquote>
+<p>💡 #warning Out-of-bag scores (property <code>oob_score_</code>) is switched off by default. To make it accessible one must provide <code>oob_score=True</code> flag when initializing the <code>BaggingClassifier</code> or <code>BaggingRegressor</code> instance.</p>
+</blockquote>
+<h2 id="random-patches-and-random-subspaces">Random Patches and Random Subspaces</h2>
+<p>The same logic of [[#Bagging and Pasting]] can be applied for predictor variables instead of (or along with) instances.</p>
+<p>Both these techniques generally lead to slightly higher [[base/Statistics/Notation#Bias|bias]] but lower [[base/Statistics/Notation#Variance|variance]].</p>
+<h3 id="random-patches">Random Patches</h3>
+<p>Sampling both features and instances is called <em>Random Patches</em>.</p>
+<h1 id="code_3">code</h1>
+<ul>
+<li><code>sklearn.ensemble.BaggingClassifier(..., max_samples=0.8, bootstrap=True/False, max_features=0.8, bootstrap_features=True)</code></li>
+<li><code>sklearn.ensemble.BaggingRegressor(..., max_samples=0.8, bootstrap=True/False, max_features=0.8, bootstrap_features=True)</code></li>
+</ul>
+<h3 id="random-subspaces">Random Subspaces</h3>
+<p>Sampling only features and drawing all instances without replacement is called <em>Random Subspaces</em>.</p>
+<h1 id="code_4">code</h1>
+<ul>
+<li><code>sklearn.ensemble.BaggingClassifier(..., max_samples=1.0, bootstrap=False, max_features=0.8, bootstrap_features=True/False)</code></li>
+<li><code>sklearn.ensemble.BaggingRegressor(..., max_samples=1.0, bootstrap=False, max_features=0.8, bootstrap_features=True/False)</code></li>
+</ul>
+<h2 id="boosting">Boosting</h2>
+<p>-</p>
+<h2 id="stacking">Stacking</h2>
+<p>-</p>
 
 
 

@@ -10,20 +10,20 @@
       
       
       
-        <link rel="canonical" href="https://nickuzmenkov.github.io/ml_docs/linear_models/linear_classification/">
+        <link rel="canonical" href="https://nickuzmenkov.github.io/ml_docs/basics/data/">
       
       
-        <link rel="prev" href="../linear_regression/">
+        <link rel="prev" href="../..">
       
       
-        <link rel="next" href="../regularization/">
+        <link rel="next" href="../eda/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.21">
     
     
       
-        <title>Linear Classification - ML Docs</title>
+        <title>Data and Sampling - ML Docs</title>
       
     
     
@@ -77,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#linear-classification" class="md-skip">
+        <a href="#data-and-sampling" class="md-skip">
           Skip to content
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Linear Classification
+              Data and Sampling
             
           </span>
         </div>
@@ -261,16 +261,18 @@
 
   
   
+    
+  
   
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
       
       
       
@@ -279,7 +281,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
           Basics
@@ -290,11 +292,161 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../basics/data/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Data and Sampling
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Data and Sampling
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#central-limit-theorem" class="md-nav__link">
+    Central Limit Theorem
+  </a>
+  
+    <nav class="md-nav" aria-label="Central Limit Theorem">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#standard-error" class="md-nav__link">
+    Standard error
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standard-error-on-difference" class="md-nav__link">
+    Standard error on difference
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commong-sampling-bias-types" class="md-nav__link">
+    Commong Sampling Bias Types
+  </a>
+  
+    <nav class="md-nav" aria-label="Commong Sampling Bias Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#selection-bias" class="md-nav__link">
+    Selection bias
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#publication-bias" class="md-nav__link">
+    Publication bias
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recall-bias" class="md-nav__link">
+    Recall bias
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#survivorship-bias" class="md-nav__link">
+    Survivorship bias
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#healthy-user-bias" class="md-nav__link">
+    Healthy user bias
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bootstrap" class="md-nav__link">
+    Bootstrap
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-distributions" class="md-nav__link">
+    Common Distributions
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Distributions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#normal-distribution" class="md-nav__link">
+    Normal Distribution
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#students-t-distribution" class="md-nav__link">
+    Student’s t-distribution
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#binomial-distribution" class="md-nav__link">
+    Binomial distribution
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -306,7 +458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../basics/eda/" class="md-nav__link">
+      <a href="../eda/" class="md-nav__link">
         Exploratory Data Analysis
       </a>
     </li>
@@ -320,7 +472,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../basics/statistical_tests/" class="md-nav__link">
+      <a href="../statistical_tests/" class="md-nav__link">
         Statistical Tests
       </a>
     </li>
@@ -334,7 +486,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../basics/regression/" class="md-nav__link">
+      <a href="../regression/" class="md-nav__link">
         Regression
       </a>
     </li>
@@ -348,7 +500,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../basics/classification/" class="md-nav__link">
+      <a href="../classification/" class="md-nav__link">
         Classification
       </a>
     </li>
@@ -362,7 +514,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../basics/ensemble/" class="md-nav__link">
+      <a href="../ensemble/" class="md-nav__link">
         Ensemble
       </a>
     </li>
@@ -382,18 +534,16 @@
 
   
   
-    
-  
   
     
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
       
       
       
@@ -402,7 +552,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
           Linear Models
@@ -415,7 +565,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../linear_regression/" class="md-nav__link">
+      <a href="../../linear_models/linear_regression/" class="md-nav__link">
         Linear Regression
       </a>
     </li>
@@ -427,59 +577,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Linear Classification
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../linear_models/linear_classification/" class="md-nav__link">
         Linear Classification
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#logistic-regression" class="md-nav__link">
-    Logistic Regression
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#softmax-regression" class="md-nav__link">
-    Softmax Regression
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -491,7 +593,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../regularization/" class="md-nav__link">
+      <a href="../../linear_models/regularization/" class="md-nav__link">
         Regularization
       </a>
     </li>
@@ -505,7 +607,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lda/" class="md-nav__link">
+      <a href="../../linear_models/lda/" class="md-nav__link">
         Linear Discriminant Analysis
       </a>
     </li>
@@ -746,16 +848,118 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#logistic-regression" class="md-nav__link">
-    Logistic Regression
+  <a href="#central-limit-theorem" class="md-nav__link">
+    Central Limit Theorem
+  </a>
+  
+    <nav class="md-nav" aria-label="Central Limit Theorem">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#standard-error" class="md-nav__link">
+    Standard error
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standard-error-on-difference" class="md-nav__link">
+    Standard error on difference
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commong-sampling-bias-types" class="md-nav__link">
+    Commong Sampling Bias Types
+  </a>
+  
+    <nav class="md-nav" aria-label="Commong Sampling Bias Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#selection-bias" class="md-nav__link">
+    Selection bias
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#publication-bias" class="md-nav__link">
+    Publication bias
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recall-bias" class="md-nav__link">
+    Recall bias
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#survivorship-bias" class="md-nav__link">
+    Survivorship bias
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#healthy-user-bias" class="md-nav__link">
+    Healthy user bias
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bootstrap" class="md-nav__link">
+    Bootstrap
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#softmax-regression" class="md-nav__link">
-    Softmax Regression
+  <a href="#common-distributions" class="md-nav__link">
+    Common Distributions
   </a>
+  
+    <nav class="md-nav" aria-label="Common Distributions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#normal-distribution" class="md-nav__link">
+    Normal Distribution
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#students-t-distribution" class="md-nav__link">
+    Student’s t-distribution
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#binomial-distribution" class="md-nav__link">
+    Binomial distribution
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -774,65 +978,109 @@
                   
 
 
-<h1 id="linear-classification">Linear Classification</h1>
-<h2 id="logistic-regression">Logistic Regression</h2>
-<p><strong>Logistic Regression</strong> is a direct extension of the <a href="../linear_regression/">Linear Regression</a> with its simplicity and high speed for classification tasks. Logistic Regression returns the logistic of the result</p>
+<h1 id="data-and-sampling">Data and Sampling</h1>
+<h2 id="central-limit-theorem">Central Limit Theorem</h2>
+<p>Means of samples drawn from a population will be normally distributed around the population mean, even if the population itself is not normally distributed. The sample standard deviation will be roughly the same as that of the population.</p>
+<h3 id="standard-error">Standard error</h3>
+<p><em>Standard error</em> is standard deviation of the normal distribution of sample means:</p>
 <p>$$
-\hat{p}=\sigma(\boldsymbol{\theta}^T\boldsymbol{x}),
+\text{SE} = \frac{\sigma}{\sqrt{n}}
 $$</p>
-<p>where $\sigma$ is a <strong>standard logistic function</strong> (or sigmoid)</p>
+<h3 id="standard-error-on-difference">Standard error on difference</h3>
+<p><em>Standard error on differrence</em> in means:</p>
 <p>$$
-\sigma(t)=\frac{1}{1 + \exp{(-t)}}.
+\text{SE (diff)}=\sqrt{\frac{\sigma_x^2}{n_x} + \frac{\sigma_y^2}{n_y}}
 $$</p>
-<p>Thus, the output is scaled to the $[0;1]$ range of the probability that a particular instance is positive ($y=1$).</p>
-<p>Output of the original regression equation can be expressed as a <strong>logit function</strong> (or logarithm of the odds, which is the inverse of the logistic function)</p>
+<p>It is greater than one for each sample but lower than their sum. This corresponds to larger uncertainty when drawing several samples from the population.</p>
+<h2 id="commong-sampling-bias-types">Commong Sampling Bias Types</h2>
+<h3 id="selection-bias">Selection bias</h3>
+<p>It’s usually hard to draw a proper random sample from a population. Assessment of non-random sample characteristics can lead to dramatically incorrect conclusions.</p>
+<blockquote>
+<p>💡 #story The <em>Literary Digest</em> magazine surveyed more than 10 million of its subscribers, as well as car and phone owners (those contacts were publicly available) all over the country to predict the winner of the presidential election in 1936. Results had proposed Landon’s win with 57% votes. Instead, Roosevelt won with 60% votes. The poll was biased towards wealthier people (those who have magazine subscriptions, cars, and phones), who hence were more likely to vote Republican.</p>
+</blockquote>
+<h3 id="publication-bias">Publication bias</h3>
+<p>Assuming there are a lot of repeated studies all over the world each having multiple predictor variables vast search effect, some may find statistically significant patterns just by chance. Those reporting positive findings and/or correlations are <em>more likely</em> to be published.</p>
+<h3 id="recall-bias">Recall bias</h3>
+<p>People tend to create false memories based on their thoughts in present. This is why longitudinal studies are preferred to do cross-sectional studies.</p>
+<h3 id="survivorship-bias">Survivorship bias</h3>
+<p>For instance, average class test scores typically rise from freshman to senior year, as the least scoring students are being consistently kicked off.</p>
+<h3 id="healthy-user-bias">Healthy user bias</h3>
+<p>For instance, people who take vitamins regularly are healthier at least because they tend to care about themselves.</p>
+<h2 id="bootstrap">Bootstrap</h2>
+<p><em>Bootstrap</em> is a process of replicating the original sample to form a hypothetical population to estimate standard errors and confidence intervals for the sample’s characteristics.</p>
+<p>The same can be done by sampling with replacement (#code <code>sklearn.resample</code>) instead of replicating.</p>
+<p>Confidence intervals can be assessed numerically by drawing the characteristic of interest from $R$ random resamples of the original sample and getting level $p$ and $(1-p)$ quantiles. </p>
+<p>Bootstrap is also widely used for training model ensembles, e.g. each model is trained with bootstrap samples, then predictions averaged for inference, producing <em>bagging</em> (bootstrap aggregating) or <em>pasting</em> ensemble.</p>
+<blockquote>
+<p>💡 #warning Bootstrap is not used to compensate for a small sample size, create new data, or impute the existing data. It merely gives the idea about samples' statistics drawn from population like the original sample</p>
+</blockquote>
+<h2 id="common-distributions">Common Distributions</h2>
+<h3 id="normal-distribution">Normal Distribution</h3>
+<blockquote>
+<p>💡 Assess how the sample is close to the normal distribution via #code <code>scipy.stats.probplot</code>.</p>
+</blockquote>
+<h3 id="students-t-distribution">Student’s t-distribution</h3>
+<p>A family of distributions resembling the normal distribution, but with thicker tails. It’s widely used for sample means, regression parameters, and the like.</p>
 <p>$$
-\boldsymbol{\theta}^T\boldsymbol{x}=\sigma^{-1}(p)=\ln{(\text{odds}(\hat{p}))}=\ln{\left(\frac{p}{1-p}\right)}
+\overline{x} \pm t_{n-1}(p) \cdot \frac{s}{\sqrt{n}}
 $$</p>
-<p>The cost function for classification tasks is known as <strong>cross entropy loss</strong> (or log loss). In the case of binary classification, it's called <strong>binary cross entropy</strong> and is given by</p>
+<h3 id="binomial-distribution">Binomial distribution</h3>
+<p>The frequency distribution of the number of successes ($x$) in a given number of trials ($n$) with specified probability of success in each trial ($p$).</p>
+<p>Distribution function</p>
 <p>$$
-J(\boldsymbol{\theta})=-\frac{1}{m}\sum_{i=1}^m{\left(y^{(i)}\log{\hat{p}^{(i)}}+\left(1-y^{(i)}\right)\log{\left(1-\hat{p}^{(i)}\right)}\right)}.
+f(x, n, p) = 
+\begin{pmatrix}
+    n \
+    x \
+\end{pmatrix}
+p^x (1 - p)^{n-x} = \frac{n!}{x!(n-x)!}p^x (1 - p)^{n-x}
 $$</p>
-<div class="admonition example annotate">
-<p class="admonition-title">Extreme Values Example</p>
-<p>Imagine that the ground truth $y=1$, while the predicted value $\hat{p} \approx 0$. The penalty for this sample is then close to $-\log{0}$, which is $\infty$. The same is true for the opposite case, where the ground truth is equal to 0 and the predicted value is close to 1.</p>
-</div>
-<p>There is no known closed-form solution for computing the value of $\boldsymbol{\theta}$ that minimizes binary cross entropy. However, just like MSE, cross entropy is a convex function. Thus, Batch Gradient Descent is guaranteed to find the optimal solution within the specified tolerance.</p>
-<p>The cross entropy gradient $\nabla_{\boldsymbol{\theta}}{J(\boldsymbol{\theta})}$ is calculated in the same way as for <a href="../linear_regression/#closed-form-solution">MSE</a> and is given by:</p>
+<p>Mean</p>
 <p>$$
-\nabla_{\boldsymbol{\theta}}{J(\boldsymbol{\theta})}= \frac{2}{m}\boldsymbol{X}^T\left(\sigma\left({\boldsymbol{X}\boldsymbol{\theta}}\right)-\boldsymbol{y}\right).
+\overline{x}=n \cdot p
 $$</p>
-<div class="admonition note annotate">
-<p class="admonition-title">Scikit-Learn Implementation</p>
-<p>The <a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html"><code>LogisticRegression</code> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span></a>, the <code>scikit-learn</code> implementation of logistic regression, comes with the $\ell_2$ penalty turned on by default, allowing you to adjust the strength of the regularization. Read more about regularization in the <a href="../regularization/">Regularization</a> manual.</p>
-</div>
-<div class="admonition note annotate">
-<p class="admonition-title">Categorical Features</p>
-<p>As with <a href="../linear_regression/">Linear Regression</a>, all categorical variables must first be one-hot encoded, omitting one of the classes.</p>
-</div>
-<h2 id="softmax-regression">Softmax Regression</h2>
-<p>The logistic regression model can be generalized to support multiple classes directly, without the need to train one-versus-one (OvO) or one-versus-rest (OvR) classifiers. The resulting probability that an instance belongs to class $k$ is given by</p>
+<p>Variance</p>
 <p>$$
-\hat{p}_k=\text{softmax}(\boldsymbol{s})_k=\frac{\exp{(\boldsymbol{s}_k)}}{\sum_i exp{(\boldsymbol{s}_i)}}
+\sigma^2=n\cdot p \cdot (1-p)
 $$</p>
-<p>where $\boldsymbol{s}$ is a vector containing the values of each class $k$ for the instance $\boldsymbol{x}$</p>
+<p>💡 For a large number of trials and $p$ close to 0.5 binomial distribution can be approximated by the normal distribution.</p>
+<h1 id="code">code</h1>
+<ul>
+<li>Probability of <em>exactly</em> $x$ successes in $n$ trials is given by <code>scipy.stats.binom.pmf(x=x, n=n, p=0.5)</code></li>
+<li>Probability of $x$ <em>or fewer</em> successes in $n$ trials <code>scipy.stats.binom.cdf(x=x, n=n, p=0.5)</code></li>
+</ul>
+<h3 id="chi-squared-distribution">Chi-squared distribution</h3>
+<h1 id="empty">empty</h1>
+<h3 id="f-distribution">F-distribution</h3>
+<h1 id="empty_1">empty</h1>
+<h3 id="poisson-distribution">Poisson Distribution</h3>
+<p>The frequency distribution of the number of events in sampled units of time or space.</p>
+<p>Distribution function</p>
 <p>$$
-\boldsymbol{s}=\boldsymbol{\Theta}\boldsymbol{x}.
+f(k)=\exp{(-\mu)} \frac{\mu^k}{k!}
 $$</p>
-<p>All class-wise parameter vectors $\boldsymbol{\theta}^{(k)}$ together form a parameter matrix $\boldsymbol{\Theta}$.</p>
-<p>Similar to binary classification, the cost function used is cross-entropy, but in a generalized version known as <strong>categorical cross-entropy</strong></p>
+<p>Mean</p>
 <p>$$
-J(\boldsymbol{\Theta})=-\frac{1}{m}\sum_{i=1}^m{\sum_{k=1}^l{y_k^{(i)}\log{\left(\hat{p}_k^{(i)}\right)}}}
+\overline{x} = \mu
 $$</p>
-<p>where $l$ is the number of classes.</p>
-<p>The gradient vector with respect to the $\boldsymbol{\theta}^{(k)}$ parameter vector $\nabla_{\boldsymbol{\theta}^{(k)}}{J(\boldsymbol{\theta})}$ is calculated similarly to the gradient of the <a href="../linear_regression/#closed-form-solution">MSE</a> and is given by</p>
+<p>Variance</p>
 <p>$$
-\nabla_{\boldsymbol{\theta}^{(k)}}{J(\boldsymbol{\Theta})}= \frac{2}{m}\boldsymbol{X}^T\left(\text{softmax}\left({\boldsymbol{X}\boldsymbol{\theta}}\right)-\boldsymbol{y}\right).
+\sigma^2 = \mu
 $$</p>
-<div class="admonition note annotate">
-<p class="admonition-title">Scikit-Learn Implementation</p>
-<p>The <a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html"><code>LogisticRegression</code> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span></a> implementation in <code>scikit-learn</code> uses One-versus-Rest wrapper for multiclass tasks instead.</p>
-</div>
+<h1 id="code-scipystatspoissonrvsmu2-size100">code <code>scipy.stats.poisson.rvs(mu=2, size=100)</code>.</h1>
+<h3 id="exponential-distribution">Exponential Distribution</h3>
+<p>The frequency distribution of the time or distance from one event to the next event.</p>
+<p>Distribution function</p>
+<p>$$
+f(x)=\exp{(-x)}=\lambda\cdot \exp{(-\lambda \cdot x)}
+$$</p>
+<blockquote>
+<p>💡 In Poisson and exponential distributions, lambda must stay the same, which is usually not the case in real life. However, if the period over which lambda changes is much longer than the typical interval between events, one can divide time or space into chunks where lambda is roughly constant. When this is not the case, one must switch to Weibull distribution.</p>
+</blockquote>
+<h1 id="code-scipystatsexponrvsscale02-size100">code <code>scipy.stats.expon.rvs(scale=0.2, size=100)</code>.</h1>
+<h3 id="weibull-distribution">Weibull Distribution</h3>
+<p>A generalized version of exponential distribution allows event rates to change over time.</p>
+<h1 id="code-scipystatsweibull_minrvsc15-scale5000-size100">code <code>scipy.stats.weibull_min.rvs(c=1.5, scale=5000, size=100)</code>.</h1>
 
 
 

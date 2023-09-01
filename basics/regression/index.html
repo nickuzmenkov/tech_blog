@@ -10,20 +10,20 @@
       
       
       
-        <link rel="canonical" href="https://nickuzmenkov.github.io/ml_docs/linear_models/linear_classification/">
+        <link rel="canonical" href="https://nickuzmenkov.github.io/ml_docs/basics/regression/">
       
       
-        <link rel="prev" href="../linear_regression/">
+        <link rel="prev" href="../statistical_tests/">
       
       
-        <link rel="next" href="../regularization/">
+        <link rel="next" href="../classification/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.21">
     
     
       
-        <title>Linear Classification - ML Docs</title>
+        <title>Regression - ML Docs</title>
       
     
     
@@ -77,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#linear-classification" class="md-skip">
+        <a href="#regression" class="md-skip">
           Skip to content
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Linear Classification
+              Regression
             
           </span>
         </div>
@@ -261,16 +261,18 @@
 
   
   
+    
+  
   
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
       
       
       
@@ -279,7 +281,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
           Basics
@@ -292,7 +294,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../basics/data/" class="md-nav__link">
+      <a href="../data/" class="md-nav__link">
         Data and Sampling
       </a>
     </li>
@@ -306,7 +308,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../basics/eda/" class="md-nav__link">
+      <a href="../eda/" class="md-nav__link">
         Exploratory Data Analysis
       </a>
     </li>
@@ -320,103 +322,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../basics/statistical_tests/" class="md-nav__link">
+      <a href="../statistical_tests/" class="md-nav__link">
         Statistical Tests
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../basics/regression/" class="md-nav__link">
-        Regression
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../basics/classification/" class="md-nav__link">
-        Classification
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../basics/ensemble/" class="md-nav__link">
-        Ensemble
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-    
-  
-  
-    
-      
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-      
-      
-      
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
-      
-      
-      
-        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-          Linear Models
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
-        <label class="md-nav__title" for="__nav_3">
-          <span class="md-nav__icon md-icon"></span>
-          Linear Models
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../linear_regression/" class="md-nav__link">
-        Linear Regression
       </a>
     </li>
   
@@ -439,12 +346,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Linear Classification
+          Regression
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Linear Classification
+        Regression
       </a>
       
         
@@ -463,16 +370,159 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#logistic-regression" class="md-nav__link">
-    Logistic Regression
+  <a href="#parameters-confidence-intervals" class="md-nav__link">
+    Parameters Confidence Intervals
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#softmax-regression" class="md-nav__link">
-    Softmax Regression
+  <a href="#stepwise-regression" class="md-nav__link">
+    Stepwise Regression
   </a>
+  
+    <nav class="md-nav" aria-label="Stepwise Regression">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vanilla-predictor-selection" class="md-nav__link">
+    Vanilla Predictor Selection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#all-subset-regression" class="md-nav__link">
+    All Subset Regression
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#forward-selection" class="md-nav__link">
+    Forward Selection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backward-selection" class="md-nav__link">
+    Backward Selection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#penalized-regression" class="md-nav__link">
+    Penalized Regression
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#categorical-variables-in-regression" class="md-nav__link">
+    Categorical Variables in Regression
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interpreting-the-regression-equation" class="md-nav__link">
+    Interpreting the Regression Equation
+  </a>
+  
+    <nav class="md-nav" aria-label="Interpreting the Regression Equation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#correlated-predictors" class="md-nav__link">
+    Correlated predictors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multicollinearity" class="md-nav__link">
+    Multicollinearity
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#confounding-variables" class="md-nav__link">
+    Confounding variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interactions" class="md-nav__link">
+    Interactions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regression-diagnostics" class="md-nav__link">
+    Regression Diagnostics
+  </a>
+  
+    <nav class="md-nav" aria-label="Regression Diagnostics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#outliers-in-residuals" class="md-nav__link">
+    Outliers in Residuals
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#influential-values" class="md-nav__link">
+    Influential values
+  </a>
+  
+    <nav class="md-nav" aria-label="Influential values">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hat-values" class="md-nav__link">
+    Hat Values
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cooks-distance" class="md-nav__link">
+    Cook's Distance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bubble-plot" class="md-nav__link">
+    Bubble Plot
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -491,7 +541,100 @@
   
   
     <li class="md-nav__item">
-      <a href="../regularization/" class="md-nav__link">
+      <a href="../classification/" class="md-nav__link">
+        Classification
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ensemble/" class="md-nav__link">
+        Ensemble
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          Linear Models
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Linear Models
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linear_models/linear_regression/" class="md-nav__link">
+        Linear Regression
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linear_models/linear_classification/" class="md-nav__link">
+        Linear Classification
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linear_models/regularization/" class="md-nav__link">
         Regularization
       </a>
     </li>
@@ -505,7 +648,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lda/" class="md-nav__link">
+      <a href="../../linear_models/lda/" class="md-nav__link">
         Linear Discriminant Analysis
       </a>
     </li>
@@ -746,16 +889,159 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#logistic-regression" class="md-nav__link">
-    Logistic Regression
+  <a href="#parameters-confidence-intervals" class="md-nav__link">
+    Parameters Confidence Intervals
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#softmax-regression" class="md-nav__link">
-    Softmax Regression
+  <a href="#stepwise-regression" class="md-nav__link">
+    Stepwise Regression
   </a>
+  
+    <nav class="md-nav" aria-label="Stepwise Regression">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vanilla-predictor-selection" class="md-nav__link">
+    Vanilla Predictor Selection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#all-subset-regression" class="md-nav__link">
+    All Subset Regression
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#forward-selection" class="md-nav__link">
+    Forward Selection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backward-selection" class="md-nav__link">
+    Backward Selection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#penalized-regression" class="md-nav__link">
+    Penalized Regression
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#categorical-variables-in-regression" class="md-nav__link">
+    Categorical Variables in Regression
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interpreting-the-regression-equation" class="md-nav__link">
+    Interpreting the Regression Equation
+  </a>
+  
+    <nav class="md-nav" aria-label="Interpreting the Regression Equation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#correlated-predictors" class="md-nav__link">
+    Correlated predictors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multicollinearity" class="md-nav__link">
+    Multicollinearity
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#confounding-variables" class="md-nav__link">
+    Confounding variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interactions" class="md-nav__link">
+    Interactions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regression-diagnostics" class="md-nav__link">
+    Regression Diagnostics
+  </a>
+  
+    <nav class="md-nav" aria-label="Regression Diagnostics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#outliers-in-residuals" class="md-nav__link">
+    Outliers in Residuals
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#influential-values" class="md-nav__link">
+    Influential values
+  </a>
+  
+    <nav class="md-nav" aria-label="Influential values">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hat-values" class="md-nav__link">
+    Hat Values
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cooks-distance" class="md-nav__link">
+    Cook's Distance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bubble-plot" class="md-nav__link">
+    Bubble Plot
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -774,65 +1060,142 @@
                   
 
 
-<h1 id="linear-classification">Linear Classification</h1>
-<h2 id="logistic-regression">Logistic Regression</h2>
-<p><strong>Logistic Regression</strong> is a direct extension of the <a href="../linear_regression/">Linear Regression</a> with its simplicity and high speed for classification tasks. Logistic Regression returns the logistic of the result</p>
+<h1 id="regression">Regression</h1>
+<h2 id="parameters-confidence-intervals">Parameters Confidence Intervals</h2>
+<p>Confidence intervals for regression coefficients:</p>
+<ol>
+<li>Draw $2n$ records from the original dataset (with replacement)</li>
+<li>Fit regression model and record the coefficients</li>
+<li>Repeat steps 1-2 $R$ times</li>
+<li>For $(1-2p)$ confidence interval, get $p$ and $(1-p)$ level quantiles.</li>
+</ol>
+<h2 id="stepwise-regression">Stepwise Regression</h2>
+<p><em>Stepwise regression</em> is the process of searching for the optimal set of predictor variables.</p>
+<blockquote>
+<p>💡 #story It’s common to use the principle of <em>Occam’s razor</em> when building a regression model: a simpler model (i.e. with fewer predictor variables) should be used in preference to a more complicated model, ceteris paribus.</p>
+</blockquote>
+<h3 id="vanilla-predictor-selection">Vanilla Predictor Selection</h3>
+<p>Adding and dropping predictor variables based on adjusted R-squared or AIC metrics and statistical significance as you go.</p>
+<h3 id="all-subset-regression">All Subset Regression</h3>
+<p><em>All subset regression</em>: searching through each possible combination of predictor variables. Computationally expensive and most prone to overfitting.</p>
+<h3 id="forward-selection">Forward Selection</h3>
+<p><em>Forward selection</em>: start with no predictors at all (constant model) and add them one by one <em>greedily</em> (i.e. those having the largest contribution to the metric). The process stops when the contribution is no longer statistically significant.</p>
+<h3 id="backward-selection">Backward Selection</h3>
+<p><em>Backward regression</em> (<em>backward elimination</em>): start with all available predictor variables (i.e. the full model) and take away those which aren’t statistically significant until all the predictor variables are statistically significant.</p>
+<h3 id="penalized-regression">Penalized Regression</h3>
+<p>An alternate approach to stepwise regression is penalized regression: instead of eliminating predictors, it applies the $\ell_1$ penalty (<em>lasso regression</em>) or $\ell_2$ penalty (<em>ridge regression</em>) thus reducing coefficients of insignificant or highly correlated predictors.</p>
+<h2 id="categorical-variables-in-regression">Categorical Variables in Regression</h2>
+<p>Categorical variables are also called <em>factor variables</em>. Binary variables are also called <em>indicator variables</em>.</p>
+<p>Factor variables are typically translated to <em>dummy variables</em> or <em>one-hot encoded</em> before fitting into the regression model. This is done via <code>pandas.get_dummies(series, drop_first=True)</code>.</p>
+<blockquote>
+<p>💡 One of the categories must be omitted to avoid multicollinearity, i.e. fitting a model with dependent variables. E.g. if factor variable $x$ can take ($p$) values $A$, $B$, or $C$, then if both $x_A$ and $x_B$ are false, $x_C$ must be true. Thus, only $x_A$ and $x_B$ (i.e. $p-1$, which is degrees of freedom) dummy variables should be kept.</p>
+</blockquote>
+<p>Factor variables with <em>too many</em> categories can be translated to numeric variables by mapping them to mean/median of the target (e.g. city id can be translated to median city house price) or residual from the target given by model ignoring this variable. Similarly, we can reduce the number of categories by grouping the obtained numeric values, producing new categories. This can be done via <code>pandas.qcut(series, q=4, labels=["s", "m", "l", "xl"])</code>.</p>
+<p>Ordinal variables (or <em>ordered factor variables</em>) can be treated as numeric variables (or assigned to those according to order) in most cases. This helps to preserve the order.</p>
+<h2 id="interpreting-the-regression-equation">Interpreting the Regression Equation</h2>
+<p>In statistics, regression is mainly a tool for explanatory modeling, not for prediction. This can be of value for Data Science applications too.</p>
+<h3 id="correlated-predictors">Correlated predictors</h3>
+<p><em>Correlated predictors</em> can skew the coefficients to nonsense (i.e. total space, number of living rooms, and number of bathrooms)</p>
+<h3 id="multicollinearity">Multicollinearity</h3>
+<p><em>Multicollinearity</em> is the extreme case for correlated variables. It is usually the case when the model is fitted with the same predictor added multiple times by mistake, $p$ instead of $(p-1)$ dummy variables, or nearly perfectly correlated predictors.</p>
+<h3 id="confounding-variables">Confounding variables</h3>
+<p><em>Confounding</em> variables are mistakenly omitted variables of high significance. Ignoring them introduces randomness in coefficients and leads to incorrect conclusions.</p>
+<h3 id="interactions">Interactions</h3>
+<p><em>Interactions</em> are combinations (usually products) of predictor variables (or <em>main effects</em>). Adding meaningful interactions (e.g. house total space and price region) to the model can significantly improve scores and explainability.</p>
+<blockquote>
+<p>💡 Searching for the proper interaction of predictors can be challenging. Interactions are selected either based on prior experience or via stepwise regression approaches. Another way to account for interactions is switching to a non-linear model, e.g. decision trees, random forests, or XGBoost. Those search for optimal interactions automatically.</p>
+</blockquote>
+<h2 id="regression-diagnostics">Regression Diagnostics</h2>
+<h3 id="outliers-in-residuals">Outliers in Residuals</h3>
+<p>A general approach to detect outliers is based on boxplot or z-score (i.e. residual divided by the standard error of all residuals). Outliers of residuals can help spot anomalies in data (e.g. units mismatch, misspellings, column swap, etc.), including fraud.</p>
+<h3 id="influential-values">Influential values</h3>
+<p>Influential values have high <em>leverage</em> on regression, i.e. excluding these records would significantly change regression coefficients.</p>
+<p>![[assets/img/Statistics/Regression/01.png|300]]</p>
+<p>There are a few metrics to determine the influence of a single record:</p>
+<h4 id="hat-values">Hat Values</h4>
+<p>Given that $\hat{Y}=HY$, where $H$ is the hat matrix, diagonal values (<em>hat-values</em>) larger than $2(p+1)/n$ indicate high leverage records.</p>
+<h4 id="cooks-distance">Cook's Distance</h4>
+<p><em>Cook’s distance</em> larger than $4/(n-p-1)$ indicates high leverage records.</p>
+<h4 id="bubble-plot">Bubble Plot</h4>
+<p>A <em>bubble plot</em> is a scatter plot of hat-values versus residual z-scores with dot size equal to Cook’s distance.</p>
+<p>![[assets/img/Statistics/Regression/02.png|300]]</p>
+<h1 id="sourcecode-regression-codebubble-plot">sourcecode [[Regression Code#Bubble Plot]].</h1>
+<h3 id="heteroskedasticity">Heteroskedasticity</h3>
+<p><em>Heteroskedasticity</em> is a difference in residual variance across the range of predicted values, i.e. variance of the residual depends on the predicted value. It can be assessed visually from a scatter plot of predictions versus residuals with spline smoothing</p>
+<p>![[assets/img/Statistics/Regression/03.png|400]]</p>
+<h1 id="sourcecode-regression-codeheteroskedacticity-plot">sourcecode [[Regression Code#Heteroskedacticity Plot]].</h1>
+<h3 id="residuals-distribution">Residuals Distribution</h3>
+<p>The distribution of residuals, which is a subject of interest for statisticians exclusively, can actually tell much about the model quality. That is, normally distributed residuals indicate that the model is complete, whereas the opposite is a clear sign that the model is missing something.</p>
+<h3 id="mean-squared-error-mse">Mean Squared Error (MSE)</h3>
+<p>MSE is given by</p>
 <p>$$
-\hat{p}=\sigma(\boldsymbol{\theta}^T\boldsymbol{x}),
+\text{MSE} = \frac{1}{m} \sum_{i=1}^m{
+    \left(
+        \boldsymbol{y}^{(i)}-\boldsymbol{\hat{y}}^{(i)}
+    \right)^2
+    }
 $$</p>
-<p>where $\sigma$ is a <strong>standard logistic function</strong> (or sigmoid)</p>
+<h3 id="root-mean-squared-error-rmse">Root Mean Squared Error (RMSE)</h3>
+<p>RMSE is given by</p>
 <p>$$
-\sigma(t)=\frac{1}{1 + \exp{(-t)}}.
+\text{RMSE} = \sqrt{
+    \frac{1}{m} \sum_{i=1}^m{
+        \left(
+            \boldsymbol{y}^{(i)}-\boldsymbol{\hat{y}}^{(i)}
+        \right)^2
+    }
+}
 $$</p>
-<p>Thus, the output is scaled to the $[0;1]$ range of the probability that a particular instance is positive ($y=1$).</p>
-<p>Output of the original regression equation can be expressed as a <strong>logit function</strong> (or logarithm of the odds, which is the inverse of the logistic function)</p>
+<h3 id="residual-standard-error-rse">Residual Standard Error (RSE)</h3>
+<p>RSE is given by</p>
 <p>$$
-\boldsymbol{\theta}^T\boldsymbol{x}=\sigma^{-1}(p)=\ln{(\text{odds}(\hat{p}))}=\ln{\left(\frac{p}{1-p}\right)}
+\text{RSE} = \sqrt{
+    \frac{1}{m - n - 1} \sum_{i=1}^m{
+        \left(
+            \boldsymbol{y}^{(i)}-\boldsymbol{\hat{y}}^{(i)}
+        \right)^2
+    }
+}
 $$</p>
-<p>The cost function for classification tasks is known as <strong>cross entropy loss</strong> (or log loss). In the case of binary classification, it's called <strong>binary cross entropy</strong> and is given by</p>
+<p>the only difference is that the denominator is the degrees of freedom (i.e. number of records minus number of predictor variables minus one) instead of number of records.</p>
+<h3 id="coefficient-of-determination-r-squared">Coefficient of determination (R-squared)</h3>
+<p>R-squared is given by</p>
+<p>$$ 
+R^2 = 1 - \frac{\sum_{i=1}^m{
+        \left(
+            \boldsymbol{y}^{(i)}-\boldsymbol{\hat{y}}^{(i)}
+        \right)^2
+        }
+    }
+    {\sum_{i=1}^m{
+        \left(
+            \boldsymbol{y}^{(i)}-\boldsymbol{\overline{y}}^{(i)}
+        \right)^2
+    }
+}
+$$</p>
+<p>The denominator is proportional to the target variance. Hence R-squared indicates the fraction of target variance accounted in the model.</p>
+<h3 id="adjusted-r-squared">Adjusted R-squared</h3>
+<p>Adjusted R-squared penalizes the model with too many predictor variables:</p>
 <p>$$
-J(\boldsymbol{\theta})=-\frac{1}{m}\sum_{i=1}^m{\left(y^{(i)}\log{\hat{p}^{(i)}}+\left(1-y^{(i)}\right)\log{\left(1-\hat{p}^{(i)}\right)}\right)}.
+R_{adj}^2 = 1 - \left( 1 - R^2 \right) \frac{m - 1}{m - n - 1}
 $$</p>
-<div class="admonition example annotate">
-<p class="admonition-title">Extreme Values Example</p>
-<p>Imagine that the ground truth $y=1$, while the predicted value $\hat{p} \approx 0$. The penalty for this sample is then close to $-\log{0}$, which is $\infty$. The same is true for the opposite case, where the ground truth is equal to 0 and the predicted value is close to 1.</p>
-</div>
-<p>There is no known closed-form solution for computing the value of $\boldsymbol{\theta}$ that minimizes binary cross entropy. However, just like MSE, cross entropy is a convex function. Thus, Batch Gradient Descent is guaranteed to find the optimal solution within the specified tolerance.</p>
-<p>The cross entropy gradient $\nabla_{\boldsymbol{\theta}}{J(\boldsymbol{\theta})}$ is calculated in the same way as for <a href="../linear_regression/#closed-form-solution">MSE</a> and is given by:</p>
+<h3 id="akaikes-information-criterion-aic">Akaike’s information criterion (AIC)</h3>
+<p>AIC takes into account model’s complexity</p>
 <p>$$
-\nabla_{\boldsymbol{\theta}}{J(\boldsymbol{\theta})}= \frac{2}{m}\boldsymbol{X}^T\left(\sigma\left({\boldsymbol{X}\boldsymbol{\theta}}\right)-\boldsymbol{y}\right).
+\text{AIC} = 2n + m \log{(\text{MSE})}
 $$</p>
-<div class="admonition note annotate">
-<p class="admonition-title">Scikit-Learn Implementation</p>
-<p>The <a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html"><code>LogisticRegression</code> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span></a>, the <code>scikit-learn</code> implementation of logistic regression, comes with the $\ell_2$ penalty turned on by default, allowing you to adjust the strength of the regularization. Read more about regularization in the <a href="../regularization/">Regularization</a> manual.</p>
-</div>
-<div class="admonition note annotate">
-<p class="admonition-title">Categorical Features</p>
-<p>As with <a href="../linear_regression/">Linear Regression</a>, all categorical variables must first be one-hot encoded, omitting one of the classes.</p>
-</div>
-<h2 id="softmax-regression">Softmax Regression</h2>
-<p>The logistic regression model can be generalized to support multiple classes directly, without the need to train one-versus-one (OvO) or one-versus-rest (OvR) classifiers. The resulting probability that an instance belongs to class $k$ is given by</p>
+<p>so that $n$ more predictor variables would be penalized by $2n$.</p>
+<h3 id="t-statistic">T-Statistic</h3>
+<p>The t-statistic is calculated for each model's parameter </p>
 <p>$$
-\hat{p}_k=\text{softmax}(\boldsymbol{s})_k=\frac{\exp{(\boldsymbol{s}_k)}}{\sum_i exp{(\boldsymbol{s}_i)}}
+t_b=\frac{
+        \boldsymbol{\theta}^{(i)}
+    }
+    {\text{SE}\left(\boldsymbol{\theta}^{(i)}\right)}
 $$</p>
-<p>where $\boldsymbol{s}$ is a vector containing the values of each class $k$ for the instance $\boldsymbol{x}$</p>
-<p>$$
-\boldsymbol{s}=\boldsymbol{\Theta}\boldsymbol{x}.
-$$</p>
-<p>All class-wise parameter vectors $\boldsymbol{\theta}^{(k)}$ together form a parameter matrix $\boldsymbol{\Theta}$.</p>
-<p>Similar to binary classification, the cost function used is cross-entropy, but in a generalized version known as <strong>categorical cross-entropy</strong></p>
-<p>$$
-J(\boldsymbol{\Theta})=-\frac{1}{m}\sum_{i=1}^m{\sum_{k=1}^l{y_k^{(i)}\log{\left(\hat{p}_k^{(i)}\right)}}}
-$$</p>
-<p>where $l$ is the number of classes.</p>
-<p>The gradient vector with respect to the $\boldsymbol{\theta}^{(k)}$ parameter vector $\nabla_{\boldsymbol{\theta}^{(k)}}{J(\boldsymbol{\theta})}$ is calculated similarly to the gradient of the <a href="../linear_regression/#closed-form-solution">MSE</a> and is given by</p>
-<p>$$
-\nabla_{\boldsymbol{\theta}^{(k)}}{J(\boldsymbol{\Theta})}= \frac{2}{m}\boldsymbol{X}^T\left(\text{softmax}\left({\boldsymbol{X}\boldsymbol{\theta}}\right)-\boldsymbol{y}\right).
-$$</p>
-<div class="admonition note annotate">
-<p class="admonition-title">Scikit-Learn Implementation</p>
-<p>The <a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html"><code>LogisticRegression</code> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span></a> implementation in <code>scikit-learn</code> uses One-versus-Rest wrapper for multiclass tasks instead.</p>
-</div>
+<p>where $\text{SE}$ is [[base/Statistics/Data and Sampling#Standard Error|Standard Error]] of parameter. It can be assessed similarly to [[base/Statistics/Regression#Parameters Confidence Intervals| parameters confidence intervals]] by [[Data and Sampling#Bootstrap|bootstrapping]] the data and refitting the model.</p>
+<p>Since t-statistic is the mirror image of the p-value, the higher the value of t-statistic, the more statistically significant the predictor variable is.</p>
 
 
 

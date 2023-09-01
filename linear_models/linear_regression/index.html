@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://nickuzmenkov.github.io/ml_docs/linear_models/linear_regression/">
       
       
-        <link rel="prev" href="../..">
+        <link rel="prev" href="../../basics/ensemble/">
       
       
         <link rel="next" href="../linear_classification/">
@@ -65,7 +65,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="indigo">
   
     
     
@@ -77,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#linear-models" class="md-skip">
+        <a href="#linear-regression" class="md-skip">
           Skip to content
         </a>
       
@@ -125,10 +125,10 @@
             
             
             
-            <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+            <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
             
               <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5Z"/></svg>
               </label>
             
           
@@ -138,7 +138,7 @@
             <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
             
               <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1Z"/></svg>
               </label>
             
           
@@ -261,6 +261,127 @@
 
   
   
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          Basics
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Basics
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basics/data/" class="md-nav__link">
+        Data and Sampling
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basics/eda/" class="md-nav__link">
+        Exploratory Data Analysis
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basics/statistical_tests/" class="md-nav__link">
+        Statistical Tests
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basics/regression/" class="md-nav__link">
+        Regression
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basics/classification/" class="md-nav__link">
+        Classification
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basics/ensemble/" class="md-nav__link">
+        Ensemble
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
     
   
   
@@ -272,17 +393,17 @@
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
       
       
       
-        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
           Linear Models
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
-        <label class="md-nav__title" for="__nav_2">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
           Linear Models
         </label>
@@ -328,63 +449,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#linear-regression" class="md-nav__link">
-    Linear Regression
-  </a>
-  
-    <nav class="md-nav" aria-label="Linear Regression">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#closed-form-solution" class="md-nav__link">
     Closed-Form Solution
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#gradient-descent" class="md-nav__link">
     Gradient Descent
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
-    Examples
-  </a>
-  
-    <nav class="md-nav" aria-label="Examples">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#closed-form-solution-with-numpy" class="md-nav__link">
-    Closed-Form Solution with NumPy
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#closed-form-solution-with-scikit-learn" class="md-nav__link">
-    Closed-Form Solution with scikit-learn
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#different-types-of-gradient-descent" class="md-nav__link">
-    Different Types of Gradient Descent
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -459,6 +533,220 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lda/" class="md-nav__link">
+        Linear Discriminant Analysis
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          Trees
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Trees
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trees/decision_trees/" class="md-nav__link">
+        Decision Trees
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trees/random_forest/" class="md-nav__link">
+        Random Forest
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trees/gradient_boosted_trees/" class="md-nav__link">
+        Gradient Boosted Trees
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          Other Models
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Other Models
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../other_models/naive_bayes/" class="md-nav__link">
+        Naive Bayes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../other_models/svm/" class="md-nav__link">
+        Support Vector Machines
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../other_models/pca/" class="md-nav__link">
+        Principal Component Analysis
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../other_models/knn/" class="md-nav__link">
+        K-Nearest Neighbors
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../other_models/hierarchical_clustering/" class="md-nav__link">
+        Hierarchical Clustering
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../other_models/k_means/" class="md-nav__link">
+        K-Means Clustering
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -492,63 +780,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#linear-regression" class="md-nav__link">
-    Linear Regression
-  </a>
-  
-    <nav class="md-nav" aria-label="Linear Regression">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#closed-form-solution" class="md-nav__link">
     Closed-Form Solution
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#gradient-descent" class="md-nav__link">
     Gradient Descent
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
-    Examples
-  </a>
-  
-    <nav class="md-nav" aria-label="Examples">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#closed-form-solution-with-numpy" class="md-nav__link">
-    Closed-Form Solution with NumPy
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#closed-form-solution-with-scikit-learn" class="md-nav__link">
-    Closed-Form Solution with scikit-learn
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#different-types-of-gradient-descent" class="md-nav__link">
-    Different Types of Gradient Descent
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -601,47 +842,51 @@
                   
 
 
-<h1 id="linear-models">Linear Models</h1>
-<h2 id="linear-regression">Linear Regression</h2>
+<h1 id="linear-regression">Linear Regression</h1>
 <p>Linear Regression is defined by</p>
 <p>$$
 \hat{y} = \boldsymbol{\theta}^T \boldsymbol{x},
 $$</p>
 <p>where $\hat{y}$ represents the predicted value, $\boldsymbol{\theta}$ is a $(n, 1)$ vector of model weights, $\boldsymbol{x}$ is a $(n, 1)$ vector of features, and $n$ is the number of features.</p>
-<p>The mean squared error $\text{MSE}(\boldsymbol{\theta})$ is commonly used as the cost function:</p>
+<p>The mean squared error $\text{MSE}(\boldsymbol{\theta})$ is commonly used as the cost function</p>
 <p>$$
-\text{MSE}(\boldsymbol{\theta}) = \frac{1}{m} \sum_{i=1}^m{(\boldsymbol{\theta}^T \boldsymbol{x}_i - y_i)^2} = \frac{1}{m}||\boldsymbol{X}\boldsymbol{\theta}-\boldsymbol{y}||_2^2,
+\text{MSE}(\boldsymbol{\theta})=\frac{1}{m} \sum_{i=1}^m{(\boldsymbol{\theta}^T \boldsymbol{x}^{(i)} - y^{(i)})^2} = \frac{1}{m}|\boldsymbol{X}\boldsymbol{\theta}-\boldsymbol{y}|_2^2,
 $$</p>
 <p>where $m$ represents the number of training samples, $\boldsymbol{X}$ is an $(m, n)$ matrix containing the training samples.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
+<div class="admonition note annotate">
+<p class="admonition-title">Euclidean Norm</p>
 <p>The $|| x ||_2$ notation represents the Euclidean (or L2) norm of the vector. Similarly, $|| x ||_2^2$ represents the squared Euclidean norm.</p>
 </div>
 <p>There are 2 main solution approaches:</p>
 <ul>
-<li><strong>Closed-form solution</strong>: This approach computes the optimal parameters directly.</li>
-<li><strong>Gradient descent</strong> (GD): GD iteratively finds nearly optimal parameters by fitting either the entire training set or its batches.</li>
+<li><a href="#closed-form-solution">Closed-form solution</a> computes the optimal parameters directly.</li>
+<li><a href="#gradient-descent">Gradient descent</a> iteratively finds near-optimal parameters by fitting either the entire training set or its batches.</li>
 </ul>
+<p>Both approaches are described in the following sections.</p>
+<div class="admonition note annotate">
+<p class="admonition-title">Categorical Features</p>
+<p>Regardless of the implementation you use, note that all categorical variables must first be one-hot encoded, omitting one of the classes.</p>
+</div>
 <h3 id="closed-form-solution">Closed-Form Solution</h3>
-<p>To minimize the cost function $\text{MSE}(\boldsymbol{\theta})$, we seek the point at which its gradient vanishes:</p>
+<p>To minimize the cost function $\text{MSE}(\boldsymbol{\theta})$, we seek the point at which its gradient vanishes</p>
 <p>$$
 \nabla_{\boldsymbol{\theta}}{\text{MSE}(\boldsymbol{\theta})}=0,
 $$</p>
 <p>$$
-\frac{1}{m}\nabla_{\boldsymbol{\theta}} |\boldsymbol{X}\boldsymbol{\theta}-\boldsymbol{y}|_2^2=0.
+\frac{1}{m}\nabla_{\boldsymbol{\theta}} ||\boldsymbol{X}\boldsymbol{\theta}-\boldsymbol{y}||_2^2=0.
 $$</p>
-<p>Considering that $|\boldsymbol{X}|_2^2=\boldsymbol{X}^T\boldsymbol{X}$, we have:</p>
+<p>Considering that $||\boldsymbol{X}||_2^2=\boldsymbol{X}^T\boldsymbol{X}$, we have</p>
 <p>$$
 \nabla_{\boldsymbol{\theta}}{(\boldsymbol{X}\boldsymbol{\theta}-\boldsymbol{y})^T(\boldsymbol{X}\boldsymbol{\theta}-\boldsymbol{y})}=0,
 $$</p>
 <p>$$
 \nabla_{\boldsymbol{\theta}}{(\boldsymbol{\theta}^T\boldsymbol{X}^T\boldsymbol{X}\boldsymbol{\theta}-\boldsymbol{\theta}^T\boldsymbol{X}^T\boldsymbol{y}-\boldsymbol{y}^T\boldsymbol{X}\boldsymbol{\theta}+\boldsymbol{y}^T\boldsymbol{y})}=0.
 $$</p>
-<p>Utilizing an unidentified scalar triple product property:</p>
+<p>Using scalar triple product property gives</p>
 <p>$$
 \nabla_{\boldsymbol{\theta}}{(\boldsymbol{\theta}^T\boldsymbol{X}^T\boldsymbol{X}\boldsymbol{\theta}-2\boldsymbol{\theta}^T\boldsymbol{X}^T\boldsymbol{y}+\boldsymbol{y}^T\boldsymbol{y})}=0.
 $$</p>
-<p>Applying the gradient:</p>
+<p>Finally, applying the gradient gives</p>
 <p>$$
 2\boldsymbol{X}^T\boldsymbol{X}\boldsymbol{\theta}-2\boldsymbol{X}^T\boldsymbol{y}=0,
 $$</p>
@@ -650,68 +895,86 @@ $$</p>
 $$</p>
 <p>The resultant equation is recognized as the <strong>normal equation</strong>.</p>
 <div class="admonition note annotate">
-<p class="admonition-title">Computational complexity</p>
-<p>Because of computational complexity and fitting the entire dataset in memory, closed-form solution can be unsuitable for large $m$ and $n$ (i.e. large number of instances and features, respectively).</p>
+<p class="admonition-title">Computational Complexity</p>
+<p>Due to the computational complexity, which is about $n^3$ for finding the inverse matrix alone, the closed-form solution may be unsuitable for large $m$ and $n$ (i.e., large number of instances and features, respectively)..</p>
 </div>
+<details class="example annotate">
+<summary>Example: Fit Noisy Linear Function</summary>
+<p>Fit the $y=3 \cdot x + 4$ equation given 100 noisy samples.</p>
+<p>The problem can be solved directly with <code>numpy</code> with a little trickery:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+<span class="n">size</span> <span class="o">=</span> <span class="mi">100</span>
+
+<span class="n">noise</span> <span class="o">=</span> <span class="mf">0.25</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="n">size</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">x1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="n">size</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">x2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones_like</span><span class="p">(</span><span class="n">x1</span><span class="p">)</span>  <span class="c1"># (1)</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">c_</span><span class="p">[</span><span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">*</span> <span class="n">x1</span> <span class="o">+</span> <span class="mi">4</span> <span class="o">+</span> <span class="n">noise</span>
+
+<span class="n">theta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">X</span><span class="p">)),</span> <span class="n">X</span><span class="o">.</span><span class="n">T</span><span class="p">),</span> <span class="n">y</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The equation is: y=</span><span class="si">{</span><span class="n">theta</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">]</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> * x + </span><span class="si">{</span><span class="n">theta</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">]</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+</code></pre></div>
+<ol>
+<li>Although there is only one argument to the function, we need to use 2 features (one being the argument and the other being all ones) to find the intercept.</li>
+</ol>
+<p>Or more traditionally, with <code>scikit-learn</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span>
+
+<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+<span class="n">size</span> <span class="o">=</span> <span class="mi">100</span>
+
+<span class="n">noise</span> <span class="o">=</span> <span class="mf">0.25</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="n">size</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="n">size</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">*</span> <span class="n">X</span> <span class="o">+</span> <span class="mi">4</span> <span class="o">+</span> <span class="n">noise</span>
+
+<span class="n">model</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">()</span>
+<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The equation is: y=</span><span class="si">{</span><span class="n">model</span><span class="o">.</span><span class="n">coef_</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">]</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> * x + </span><span class="si">{</span><span class="n">model</span><span class="o">.</span><span class="n">intercept_</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+</code></pre></div>
+</details>
 <h3 id="gradient-descent">Gradient Descent</h3>
 <p><strong>Gradient descent</strong> is a generic optimization algorithm capable of finding optimal solutions to a wide range of problems.</p>
-<div class="admonition warning annotate">
-<p class="admonition-title">Mind scaling</p>
-<p>Features must be put onto the same scale for good convergence.</p>
+<div class="admonition note annotate">
+<p class="admonition-title">Mind Scaling</p>
+<p>When using gradient descent, all inputs must be on the same scale for good convergence.</p>
 </div>
 <p>Gradient descent begins with random initialization of model parameters and tweaks the model’s parameter vector $\boldsymbol{\theta}$ opposite to the gradient of the cost function at each iteration</p>
 <p>$$ \boldsymbol{\theta} \leftarrow \boldsymbol{\theta} - \eta \nabla_{\boldsymbol{\theta}}{\text{MSE}(\boldsymbol{\theta})} $$</p>
-<p>where $\eta$ is the <em>learning rate</em>.</p>
+<p>where $\eta$ is the learning rate.</p>
 <p>The gradient vector $\nabla_{\boldsymbol{\theta}}{\text{MSE}(\boldsymbol{\theta})}$ is given by</p>
 <p>$$ \nabla_{\boldsymbol{\theta}}{\text{MSE}(\boldsymbol{\theta})}= \begin{pmatrix} \frac{\partial}{\partial \theta_0} \text{MSE}(\boldsymbol{\theta}) \ \vdots \ \frac{\partial}{\partial \theta_n} \text{MSE}(\boldsymbol{\theta}) \end{pmatrix} = \frac{2}{m}\boldsymbol{X}^T(\boldsymbol{X}\boldsymbol{\theta}-\boldsymbol{y}) $$</p>
 <p>(it was derived <a href="https://www.notion.so/Regression-366aa3c9e2dc4d3f91dad0034473a215">here</a>). Thus, partial derivatives are given by</p>
 <p>$$ \frac{\partial}{\partial \theta_j}\text{MSE}(\boldsymbol{\theta})=\frac{2}{m}\sum_{i=1}^m{\left(\boldsymbol{\theta}^T\boldsymbol{x}^{(i)}-y^{(i)}\right)x_j^{(i)}} $$</p>
-<p>The iterations continue until the norm of the gradient becomes less than the specified <em>tolerance</em> value $\epsilon$</p>
+<p>The iterations continue until the norm of the gradient becomes less than the specified tolerance value $\epsilon$</p>
 <p>$$ |\nabla_{\boldsymbol{\theta}}{\text{MSE}(\boldsymbol{\theta})}|&lt;\epsilon $$</p>
-<p>The cost function $\text{MSE}(\boldsymbol{\theta})$ is <em>convex</em>, meaning that gradient descent is guaranteed to find the global minimum within the specified tolerance.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>It can be shown that for a convex function and constant learning rate batch gradient descent time is $O(1/\epsilon)$.</p>
-</div>
-<p>There’s 3 types of Gradient Descent:</p>
+<p>The cost function $\text{MSE}(\boldsymbol{\theta})$ is convex, meaning that gradient descent is guaranteed to find the global minimum within the specified tolerance.</p>
+<p>There are 3 types of Gradient Descent:</p>
 <ul>
-<li><em>Batch gradient descent</em> (shown above): the entire training set is used to compute the gradient. Guaranteed to find optimal parameters for convex cost functions. Gets slow with large datasets and lots of features and does not support out-of-core computations.</li>
-<li><em>Mini-batch gradient descent</em>: a single <em>batch</em> is used to compute the gradient. Scale well to huge datasets and supports out-of-core computations.</li>
-<li><em>Stochastic gradient descent</em>: a single instance is used to compute the gradient. May require learning rate schedule for good convergence. Scale well to huge datasets and supports out-of-core computations.</li>
+<li><strong>Batch gradient descent</strong> (shown above): the entire training set is used to compute the gradient. Guaranteed to find optimal parameters for convex cost functions. Gets slow with large datasets and lots of features and does not support out-of-core computations.</li>
+<li><strong>Mini-batch gradient descent</strong>: a single batch is used to compute the gradient. Scale well to huge datasets and supports out-of-core computations.</li>
+<li><strong>Stochastic gradient descent</strong>: a single instance is used to compute the gradient. May require learning rate schedule for good convergence. Scale well to huge datasets and supports out-of-core computations.</li>
 </ul>
-<p>Complexity is $O(m\times n)$.</p>
-<h2 id="examples">Examples</h2>
-<h3 id="closed-form-solution-with-numpy">Closed-Form Solution with NumPy</h3>
-<p>Linear regression of a single feature synthetic dataset with noise.</p>
-<p>The input data is given by</p>
+<div class="admonition note annotate">
+<p class="admonition-title">Computational Complexity</p>
+<p>The complexity of gradient descent is $O(m \times n)$, which is drastically lower than that of a <a href="#closed-form-solution">closed-form solution</a>.</p>
+</div>
+<details class="example annotate">
+<summary>Example: Fit Noisy Linear Function</summary>
+<p>Fit the $y=3 \cdot x + 4$ equation given 100 noisy samples.</p>
+<p>Batch and mini-batch gradient descent implementations are not directly available in scikit-learn. However, it's easy to implement:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
+<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
 <span class="n">size</span> <span class="o">=</span> <span class="mi">100</span>
 
-<span class="n">noise</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="n">size</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-<span class="n">X</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="n">size</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-<span class="n">y</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">4</span> <span class="o">+</span> <span class="n">noise</span>
-</code></pre></div>
-
-<p>Solution</p>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-
-<span class="n">theta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">X</span><span class="p">)),</span> <span class="n">X</span><span class="o">.</span><span class="n">T</span><span class="p">),</span> <span class="n">y</span><span class="p">)</span>
-</code></pre></div>
-
-<h3 id="closed-form-solution-with-scikit-learn">Closed-Form Solution with scikit-learn</h3>
-<p>The problem statement is the same as Closed-Form Solution by Hand example.</p>
-<p>Solution</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span>
-
-<span class="n">model</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">()</span>
-<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
-<span class="n">model</span><span class="o">.</span><span class="n">intercept_</span><span class="p">,</span> <span class="n">model</span><span class="o">.</span><span class="n">coef_</span>
-</code></pre></div>
-
-<h3 id="different-types-of-gradient-descent">Different Types of Gradient Descent</h3>
-<p>Batch gradient descent is not available in scikit-learn. However, it’s easy to implement:</p>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="n">noise</span> <span class="o">=</span> <span class="mf">0.25</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="n">size</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">x1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="n">size</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">x2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones_like</span><span class="p">(</span><span class="n">x1</span><span class="p">)</span>  <span class="c1"># (1)</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">c_</span><span class="p">[</span><span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">*</span> <span class="n">x1</span> <span class="o">+</span> <span class="mi">4</span> <span class="o">+</span> <span class="n">noise</span>
 
 <span class="n">eta</span> <span class="o">=</span> <span class="mf">0.1</span>
 <span class="n">max_iter</span> <span class="o">=</span> <span class="mi">1000</span>
@@ -722,25 +985,41 @@ $$</p>
 <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">max_iter</span><span class="p">):</span>
     <span class="n">grad</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">/</span> <span class="n">m</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">theta</span><span class="p">)</span> <span class="o">-</span> <span class="n">y</span><span class="p">)</span>
     <span class="n">theta</span> <span class="o">-=</span> <span class="n">eta</span> <span class="o">*</span> <span class="n">grad</span>
-</code></pre></div>
 
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The equation is: y=</span><span class="si">{</span><span class="n">theta</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">]</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> * x + </span><span class="si">{</span><span class="n">theta</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">]</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+</code></pre></div>
 <p>Stochastic gradient descent is available directly:</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">SGDRegressor</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">SGDRegressor</span>
+
+<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+<span class="n">size</span> <span class="o">=</span> <span class="mi">100</span>
+
+<span class="n">noise</span> <span class="o">=</span> <span class="mf">0.25</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="n">size</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="n">size</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">*</span> <span class="n">X</span> <span class="o">+</span> <span class="mi">4</span> <span class="o">+</span> <span class="n">noise</span>
 
 <span class="n">model</span> <span class="o">=</span> <span class="n">SGDRegressor</span><span class="p">(</span><span class="n">max_iter</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">tol</span><span class="o">=</span><span class="mf">1e-3</span><span class="p">,</span> <span class="n">penalty</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">eta0</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span>
 <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
-
-<span class="n">model</span><span class="o">.</span><span class="n">intercept_</span><span class="p">,</span> <span class="n">model</span><span class="o">.</span><span class="n">coef_</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The equation is: y=</span><span class="si">{</span><span class="n">model</span><span class="o">.</span><span class="n">coef_</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> * x + </span><span class="si">{</span><span class="n">model</span><span class="o">.</span><span class="n">intercept_</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
 </code></pre></div>
-
+</details>
 <p>Mini-batch gradient descent is not available in scikit-learn.</p>
 <h2 id="other-types-of-regression">Other types of regression</h2>
 <h3 id="polynomial-regression">Polynomial Regression</h3>
-<p>Linear models, such as <code>LinearRegression</code> (<code>LogisticRegression</code>), <code>SGDClassifier</code> (<code>SGDRegressor</code>) can be extended to higher powers of input features with <code>PolynomialFeatures</code> from <code>sklearn.preprocessing</code>. It returns all possible permutations of a given degree, e.g. $x_1^2,x_1x_2,x_2^2$ for <code>degree=2</code> and two features $x_1,x_2$.</p>
+<p>Linear models, such as <a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html"><code>LinearRegression</code> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span></a> and <a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.SGDRegressor.html"><code>SGDRegressor</code> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span></a>, can be extended to higher powers of input features with <a href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.PolynomialFeatures.html"><code>PolynomialFeatures</code> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span></a>. It returns all possible permutations of a given degree, for example, $x_1^2$, $x_1 x_2$, and $x_2^2$ for two features $x_1$, $x_2$ and a degree of 2.</p>
 <h3 id="spline-regression">Spline Regression</h3>
-<p><em>Spline regression</em> can produce even more sophisticated relations by using a series of polynomial segments joining at specified knots. It is available with <code>SplineTransformer</code> from <code>sklearn.preprocessing</code>. The resulting segments can then be fit into regression model of one’s choice (<a href="https://scikit-learn.org/stable/auto_examples/linear_model/plot_polynomial_interpolation.html#sphx-glr-auto-examples-linear-model-plot-polynomial-interpolation-py">see more</a>).</p>
+<p>Spline regression can produce even more sophisticated relations by using a series of polynomial segments joined at specified knots. It is available with <a href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.SplineTransformer.html"><code>SplineTransformer</code> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span></a>. The resulting segments can then be fit into regression model of one’s choice</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>See the <a href="https://scikit-learn.org/stable/auto_examples/linear_model/plot_polynomial_interpolation.html#sphx-glr-auto-examples-linear-model-plot-polynomial-interpolation-py">example <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span></a> of using polynomial regression with spline interpolation in <code>scikit-learn</code> documentation.</p>
+</div>
 <h3 id="generalized-linear-models">Generalized Linear Models</h3>
-<p>The process of specifying knots in splines can be automated using <em>generalized additive models</em> (<em>GAM</em>) regression. GAMs are available in <code>pyGAM</code> package (<a href="https://pygam.readthedocs.io/en/latest/notebooks/quick_start.html#Fit-a-Model">see more</a>).</p>
+<p>The process of specifying knots in splines can be automated using <strong>Generalized Additive Models</strong> (GAM) regression. GAMs are available in the <a href="https://pygam.readthedocs.io/en/latest/"><code>pygam</code> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span></a> package.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>See the <a href="https://pygam.readthedocs.io/en/latest/notebooks/quick_start.html#Fit-a-Model">example <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span></a> of GAM regression in <code>pygam</code> documentation.</p>
+</div>
 
 
 
@@ -778,13 +1057,13 @@ $$</p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections", "content.code.copy", "content.code.annotate", "content.code.select"], "search": "../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections", "content.code.copy", "content.code.annotate", "content.code.select", "content.tooltips"], "search": "../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.220ee61c.min.js"></script>
       
         
-          <script src="../../javascripts/katex.js"></script>
+          <script src="../../js/katex.js"></script>
         
       
         

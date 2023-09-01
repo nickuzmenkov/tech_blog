@@ -10,20 +10,20 @@
       
       
       
-        <link rel="canonical" href="https://nickuzmenkov.github.io/ml_docs/linear_models/linear_classification/">
+        <link rel="canonical" href="https://nickuzmenkov.github.io/ml_docs/basics/classification/">
       
       
-        <link rel="prev" href="../linear_regression/">
+        <link rel="prev" href="../regression/">
       
       
-        <link rel="next" href="../regularization/">
+        <link rel="next" href="../ensemble/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.21">
     
     
       
-        <title>Linear Classification - ML Docs</title>
+        <title>Classification - ML Docs</title>
       
     
     
@@ -77,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#linear-classification" class="md-skip">
+        <a href="#classification" class="md-skip">
           Skip to content
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Linear Classification
+              Classification
             
           </span>
         </div>
@@ -261,16 +261,18 @@
 
   
   
+    
+  
   
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
       
       
       
@@ -279,7 +281,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
           Basics
@@ -292,7 +294,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../basics/data/" class="md-nav__link">
+      <a href="../data/" class="md-nav__link">
         Data and Sampling
       </a>
     </li>
@@ -306,7 +308,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../basics/eda/" class="md-nav__link">
+      <a href="../eda/" class="md-nav__link">
         Exploratory Data Analysis
       </a>
     </li>
@@ -320,7 +322,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../basics/statistical_tests/" class="md-nav__link">
+      <a href="../statistical_tests/" class="md-nav__link">
         Statistical Tests
       </a>
     </li>
@@ -334,89 +336,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../basics/regression/" class="md-nav__link">
+      <a href="../regression/" class="md-nav__link">
         Regression
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../basics/classification/" class="md-nav__link">
-        Classification
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../basics/ensemble/" class="md-nav__link">
-        Ensemble
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-    
-  
-  
-    
-      
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-      
-      
-      
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
-      
-      
-      
-        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-          Linear Models
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
-        <label class="md-nav__title" for="__nav_3">
-          <span class="md-nav__icon md-icon"></span>
-          Linear Models
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../linear_regression/" class="md-nav__link">
-        Linear Regression
       </a>
     </li>
   
@@ -439,12 +360,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Linear Classification
+          Classification
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Linear Classification
+        Classification
       </a>
       
         
@@ -463,15 +384,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#logistic-regression" class="md-nav__link">
-    Logistic Regression
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#softmax-regression" class="md-nav__link">
-    Softmax Regression
+  <a href="#binary-classification" class="md-nav__link">
+    Binary classification
   </a>
   
 </li>
@@ -491,7 +405,86 @@
   
   
     <li class="md-nav__item">
-      <a href="../regularization/" class="md-nav__link">
+      <a href="../ensemble/" class="md-nav__link">
+        Ensemble
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          Linear Models
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Linear Models
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linear_models/linear_regression/" class="md-nav__link">
+        Linear Regression
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linear_models/linear_classification/" class="md-nav__link">
+        Linear Classification
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linear_models/regularization/" class="md-nav__link">
         Regularization
       </a>
     </li>
@@ -505,7 +498,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lda/" class="md-nav__link">
+      <a href="../../linear_models/lda/" class="md-nav__link">
         Linear Discriminant Analysis
       </a>
     </li>
@@ -746,15 +739,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#logistic-regression" class="md-nav__link">
-    Logistic Regression
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#softmax-regression" class="md-nav__link">
-    Softmax Regression
+  <a href="#binary-classification" class="md-nav__link">
+    Binary classification
   </a>
   
 </li>
@@ -774,65 +760,158 @@
                   
 
 
-<h1 id="linear-classification">Linear Classification</h1>
-<h2 id="logistic-regression">Logistic Regression</h2>
-<p><strong>Logistic Regression</strong> is a direct extension of the <a href="../linear_regression/">Linear Regression</a> with its simplicity and high speed for classification tasks. Logistic Regression returns the logistic of the result</p>
+<h1 id="classification">Classification</h1>
+<h3 id="binary-classification">Binary classification</h3>
+<h1 id="empty">empty</h1>
+<h3 id="multiclass-classification">Multiclass classification</h3>
+<p>[[Naive Bayes|Naive Bayes]], [[Linear Models#Gradient Descent|SGD]], and [[Random Forest|Random Forest]] classifiers have native support for multiclass classification tasks.</p>
+<p>On the contrary, [[Linear Models#Logistic Regression|Logistic Regression]] and [[Support Vector Machines#Classification|SVC]] do not support it. However, these models can  be scaled to handle multiclass classification tasks as well using either <em>one-versus-the-rest</em> (<em>OvR</em>) or <em>one-versus-one</em> (<em>OvO</em>) approach.</p>
+<blockquote>
+<p>💡This is exactly what sklearn implicitly does for such models.</p>
+</blockquote>
+<h4 id="one-versus-the-rest-ovr">One-Versus-the-Rest (OvR)</h4>
+<p>Train class detectors for each class (e.g. class A, not class A). For inference choose the highest probability among all models. Requires $N$ models to be fitted with the eintire dataset.</p>
+<h1 id="code-sklearnmulticlassonevsrestclassifier">code  <code>sklearn.multiclass.OneVsRestClassifier</code>.</h1>
+<h4 id="one-versus-one-ovo">One-Versus-One (OvO)</h4>
+<p>Train models to distinguish between each pair of classes. For inference choose the class winning maximum number of duels. Requires $N(N-1)/2$ models to be fitted with $2/N$ fraction of the dataset.</p>
+<h1 id="code-sklearnmulticlassonevsoneclassifier">code   <code>sklearn.multiclass.OneVsOneClassifier</code>.</h1>
+<h3 id="multilabel-classification">Multilabel classification</h3>
+<h1 id="empty_1">empty</h1>
+<h3 id="multioutput-classification">Multioutput classification</h3>
+<p><em>Multioutput classification</em> is generalization of multilabel classification to more than one class for each label.</p>
+<h2 id="strategies-for-imbalanced-data">Strategies for Imbalanced Data</h2>
+<p>When one of the classes in the dataset is rare (e.g. fraud, churn, cancer, etc.) there’s a decent probability of observing similar records in the majority class just by chance. This is likely to disrupt the whole training process.</p>
+<p>In this case one should also concern about the correct choice of metrics, since monitoring wrong metrics (e.g. accuracy) can yield satisfying results even if the model only predicts the majority class all the time.</p>
+<blockquote>
+<p>💡 Stratified KFold is handy for multiclass classification problems (especially for those with imbalanced data) hence it makes sure each class is represented like in the original distribution.</p>
+</blockquote>
+<h3 id="undersampling">Undersampling</h3>
+<p><em>Undersampling</em> the majority class is usually applied when there’s a lot of data available.</p>
+<h3 id="oversampling">Oversampling</h3>
+<p><em>Oversampling</em> the minority class is applied when the opposite is true. Underrepresented class’ records can be bootstrapped forming a larger sample.</p>
+<h3 id="weighted-samples">Weighted Samples</h3>
+<p><em>Applying weights</em> is an option in both cases. Weights are selected so that the sum of weights of both classes are equal (e.g. if $p$ is the fraction of the minority class, then either the minority records can be weighted as $1/p$ or the majority records can be weighted as $p$).</p>
+<h2 id="examples">Examples</h2>
+<h3 id="multiclass-classification-example">Multiclass Classification #example</h3>
+<p>![[assets/img/Statistics/Classification/01.png|700]]</p>
+<h1 id="sourcecode-classification-codeiris-multiclass-classification">sourcecode [[Classification Code#Iris Multiclass Classification]].</h1>
+<h3 id="multiloutput-classification-example">Multiloutput Classification #example</h3>
+<p>![[assets/img/Statistics/Classification/02.png|700]]</p>
+<h1 id="sourcecode-classification-codemnist-denoising">sourcecode [[Classification Code#MNIST Denoising]]</h1>
+<h3 id="accuracy">Accuracy</h3>
+<p>Accuracy is simply a fraction of all correct predictions</p>
 <p>$$
-\hat{p}=\sigma(\boldsymbol{\theta}^T\boldsymbol{x}),
+\text{Accuracy}=\frac{\text{TP}+\text{TN}}{n}
 $$</p>
-<p>where $\sigma$ is a <strong>standard logistic function</strong> (or sigmoid)</p>
+<p>where $\text{TP}$ is the total number of true positives and $\text{TN}$ is the total number of true negatives.</p>
+<h1 id="code-sklearnmetricsaccuracy_scorey_true-y_pred">code <code>sklearn.metrics.accuracy_score(y_true, y_pred)</code>.</h1>
+<h3 id="confusion-matrix">Confusion Matrix</h3>
+<p>Confusion matrix is a way to present results in a form of table with rows of true values and columns of predicted values, giving all possible true/false rates. For #example:</p>
+<table>
+<thead>
+<tr>
+<th>True\Predicted</th>
+<th>A</th>
+<th>B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>13</td>
+<td>2</td>
+</tr>
+<tr>
+<td>B</td>
+<td>3</td>
+<td>12</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 #warning Confusion matrix is not necessarily symmetrical and thus cannot be cut along diagonal like the correlation matrix.</p>
+</blockquote>
+<h1 id="code-sklearnmetricsconfusion_matrixy_true-y_pred">code <code>sklearn.metrics.confusion_matrix(y_true, y_pred)</code>.</h1>
+<h3 id="precision">Precision</h3>
+<p>Precision is the accuracy of the positive predictions (i.e. the ratio of correctly predicted positives to all predicted positives):</p>
 <p>$$
-\sigma(t)=\frac{1}{1 + \exp{(-t)}}.
+\text{Precision}=\frac{\text{TP}}{\text{TP}+\text{FP}}
 $$</p>
-<p>Thus, the output is scaled to the $[0;1]$ range of the probability that a particular instance is positive ($y=1$).</p>
-<p>Output of the original regression equation can be expressed as a <strong>logit function</strong> (or logarithm of the odds, which is the inverse of the logistic function)</p>
+<p>A trivial perfect-precision-model is that one predicting a single positive making sure it’s correct (i.e. the one of the highest confidence score).</p>
+<p>Can be drawn from confusion matrix: true positives in the column divided by the sum of the column. For #example from the [[#Confusion Matrix|above Confusion Matrix]] </p>
 <p>$$
-\boldsymbol{\theta}^T\boldsymbol{x}=\sigma^{-1}(p)=\ln{(\text{odds}(\hat{p}))}=\ln{\left(\frac{p}{1-p}\right)}
+\text{Precision}=12/(12+2)=0.86
 $$</p>
-<p>The cost function for classification tasks is known as <strong>cross entropy loss</strong> (or log loss). In the case of binary classification, it's called <strong>binary cross entropy</strong> and is given by</p>
+<p>(i.e. when model predicts class B it is correct 86% of the time).</p>
+<h1 id="code-sklearnmetricsprecision_scorey_true-y_pred">code <code>sklearn.metrics.precision_score(y_true, y_pred)</code>.</h1>
+<h3 id="recall">Recall</h3>
+<p>Recall (or <em>true positive rate</em>) is the ratio of correctly predicted positives to actual positives:</p>
 <p>$$
-J(\boldsymbol{\theta})=-\frac{1}{m}\sum_{i=1}^m{\left(y^{(i)}\log{\hat{p}^{(i)}}+\left(1-y^{(i)}\right)\log{\left(1-\hat{p}^{(i)}\right)}\right)}.
+\text{Recall}=\frac{\text{TP}}{\text{TP}+\text{FN}}
 $$</p>
-<div class="admonition example annotate">
-<p class="admonition-title">Extreme Values Example</p>
-<p>Imagine that the ground truth $y=1$, while the predicted value $\hat{p} \approx 0$. The penalty for this sample is then close to $-\log{0}$, which is $\infty$. The same is true for the opposite case, where the ground truth is equal to 0 and the predicted value is close to 1.</p>
-</div>
-<p>There is no known closed-form solution for computing the value of $\boldsymbol{\theta}$ that minimizes binary cross entropy. However, just like MSE, cross entropy is a convex function. Thus, Batch Gradient Descent is guaranteed to find the optimal solution within the specified tolerance.</p>
-<p>The cross entropy gradient $\nabla_{\boldsymbol{\theta}}{J(\boldsymbol{\theta})}$ is calculated in the same way as for <a href="../linear_regression/#closed-form-solution">MSE</a> and is given by:</p>
+<p>A trivial perfect-recall-model is that one always predicting positives.</p>
+<p>Can be drawn from confusion matrix: true positives in the row divided by the sum of the row. E.g. from the [[#Confusion Matrix|above Confusion Matrix]]</p>
 <p>$$
-\nabla_{\boldsymbol{\theta}}{J(\boldsymbol{\theta})}= \frac{2}{m}\boldsymbol{X}^T\left(\sigma\left({\boldsymbol{X}\boldsymbol{\theta}}\right)-\boldsymbol{y}\right).
+\text{Recall}=12/(12+3)=0.80
 $$</p>
-<div class="admonition note annotate">
-<p class="admonition-title">Scikit-Learn Implementation</p>
-<p>The <a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html"><code>LogisticRegression</code> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span></a>, the <code>scikit-learn</code> implementation of logistic regression, comes with the $\ell_2$ penalty turned on by default, allowing you to adjust the strength of the regularization. Read more about regularization in the <a href="../regularization/">Regularization</a> manual.</p>
-</div>
-<div class="admonition note annotate">
-<p class="admonition-title">Categorical Features</p>
-<p>As with <a href="../linear_regression/">Linear Regression</a>, all categorical variables must first be one-hot encoded, omitting one of the classes.</p>
-</div>
-<h2 id="softmax-regression">Softmax Regression</h2>
-<p>The logistic regression model can be generalized to support multiple classes directly, without the need to train one-versus-one (OvO) or one-versus-rest (OvR) classifiers. The resulting probability that an instance belongs to class $k$ is given by</p>
+<p>(i.e. model detected 80% of class B instances).</p>
+<h1 id="code-sklearnmetricsrecall_scorey_true-y_pred">code <code>sklearn.metrics.recall_score(y_true, y_pred)</code>.</h1>
+<h3 id="specificity">Specificity</h3>
+<p>Similarly to recall, specificity (or <em>true negative rate</em>) is the ratio of correctly predicted negatives to actual negatives:</p>
 <p>$$
-\hat{p}_k=\text{softmax}(\boldsymbol{s})_k=\frac{\exp{(\boldsymbol{s}_k)}}{\sum_i exp{(\boldsymbol{s}_i)}}
+\text{Specificity}=\frac{\text{TN}}{\text{TN}+\text{FP}}
 $$</p>
-<p>where $\boldsymbol{s}$ is a vector containing the values of each class $k$ for the instance $\boldsymbol{x}$</p>
+<p>There’s no direct <code>sklearn</code> implementation for specificity. But the required values can be drawn from the [[#Confusion Matrix]]. </p>
+<h3 id="f1-score">F1-Score</h3>
+<p>F1-score is a way to measure precision-recall trade-off as a <em>harmonic mean</em> between them:</p>
 <p>$$
-\boldsymbol{s}=\boldsymbol{\Theta}\boldsymbol{x}.
+F_1=\frac{2}{\text{Precision}^{-1} + \text{Recall}^{-1}} = \frac{\text{TP}}{\text{TP} + 0.5(\text{FP} + \text{FN})}
 $$</p>
-<p>All class-wise parameter vectors $\boldsymbol{\theta}^{(k)}$ together form a parameter matrix $\boldsymbol{\Theta}$.</p>
-<p>Similar to binary classification, the cost function used is cross-entropy, but in a generalized version known as <strong>categorical cross-entropy</strong></p>
-<p>$$
-J(\boldsymbol{\Theta})=-\frac{1}{m}\sum_{i=1}^m{\sum_{k=1}^l{y_k^{(i)}\log{\left(\hat{p}_k^{(i)}\right)}}}
-$$</p>
-<p>where $l$ is the number of classes.</p>
-<p>The gradient vector with respect to the $\boldsymbol{\theta}^{(k)}$ parameter vector $\nabla_{\boldsymbol{\theta}^{(k)}}{J(\boldsymbol{\theta})}$ is calculated similarly to the gradient of the <a href="../linear_regression/#closed-form-solution">MSE</a> and is given by</p>
-<p>$$
-\nabla_{\boldsymbol{\theta}^{(k)}}{J(\boldsymbol{\Theta})}= \frac{2}{m}\boldsymbol{X}^T\left(\text{softmax}\left({\boldsymbol{X}\boldsymbol{\theta}}\right)-\boldsymbol{y}\right).
-$$</p>
-<div class="admonition note annotate">
-<p class="admonition-title">Scikit-Learn Implementation</p>
-<p>The <a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html"><code>LogisticRegression</code> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span></a> implementation in <code>scikit-learn</code> uses One-versus-Rest wrapper for multiclass tasks instead.</p>
-</div>
+<p>F1-score is computed as the harmonic mean (and not the regular mean) because it gives much more weight to low values. It thus can be high only if both precision and recall are high.</p>
+<p>F1-score, however, does not take into account true negative rate.</p>
+<blockquote>
+<p>💡 A more generic $F_\beta$ score applies additional weights, valuing one of precision or recall more than the other.</p>
+</blockquote>
+<h1 id="code-sklearnmetricsf1_scorey_true-y_pred">code <code>sklearn.metrics.f1_score(y_true, y_pred)</code>.</h1>
+<h2 id="precisionrecall-trade-off">Precision/Recall Trade-Off</h2>
+<p>Precision and recall are mirroring metrics. Think about this:</p>
+<p>![[assets/img/Statistics/Classification Metrics/01.png|600]]</p>
+<ul>
+<li>As we increase the threshold there are fewer positives of higher confidence (those are less likely to be false positives), hence higher precision.</li>
+<li>As we decrease the threshold, more positives are predicted, raising the chance to predict all actual positives (and false positives), hence higher recall.</li>
+</ul>
+<p>In most cases, either high precision or high recall is required most:</p>
+<ul>
+<li>Adult content filter (positive is <em>safe</em>): high precision is required, low recall is acceptable.</li>
+<li>Shoplifter identifier (positive is <em>suspect</em>): high recall is required, low precision is acceptable.</li>
+</ul>
+<p>There are 2 visual representations for precision/recall trade-off: precision-recall (PR) curve and receiver operating curve (ROC). Both can give insights and help to choose a proper threshold based on precision and recall relative importance.</p>
+<blockquote>
+<p>💡 It's generally advisable to choose PR curve when the positive class is rare or when you care more about false positives. Otherwise it is suggested to use ROC.</p>
+</blockquote>
+<h3 id="pr-precision-recall-curve">PR (Precision-Recall) Curve</h3>
+<p>There are two ways to plot the PR curve. One is precision and recall versus the probability (<code>predict_proba</code>) or decision function (<code>decision_function</code>) threshold:</p>
+<p>![[assets/img/Statistics/Classification Metrics/03.png|500]]
+The other way is to plot precision versus recall directly:
+![[assets/img/Statistics/Classification Metrics/02.png|700]]</p>
+<h1 id="code-sklearnmetricsprecision_recall_curve">code <code>sklearn.metrics.precision_recall_curve</code>.</h1>
+<h1 id="sourcecode-classification-metrics-codepr-curve">sourcecode [[Classification Metrics Code#PR Curve]].</h1>
+<h3 id="roc-receiver-operating-characteristics-curve">ROC (Receiver Operating Characteristics) Curve</h3>
+<p>ROC curve shows $1-\text{Specificity}$ (also <em>called false positive rate</em>) versus recall (t<em>rue positive rate</em>):</p>
+<p>![[04.png|500]]</p>
+<p>The analytic way to compute ROC is like this:</p>
+<ol>
+<li>Sort records descending by predicted probability.</li>
+<li>Compute cumulative specificity and recall on sorted records.</li>
+</ol>
+<h1 id="code-sklearnmetricsroc_curve">code <code>sklearn.metrics.roc_curve</code>.</h1>
+<h1 id="sourcecode-classification-metrics-coderoc-curve">sourcecode [[Classification Metrics Code#ROC Curve]].</h1>
+<h3 id="roc-auc-area-underneath-the-curve">ROC AUC (Area Underneath the Curve)</h3>
+<p>A quantitative metric associated with the ROC curve is the <em>area underneath the curve</em> (AUC or ROC AUC). AUC is equal to 1.0 for a perfect classifier and to 0.5 for a random classifier.</p>
+<blockquote>
+<p>💡 Thus ROC is drawn for all possible thresholds, ROC AUC is threshold independent.</p>
+</blockquote>
+<h1 id="code-sklearnmetricsroc_auc_score">code <code>sklearn.metrics.roc_auc_score</code>.</h1>
 
 
 

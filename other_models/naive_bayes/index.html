@@ -10,20 +10,20 @@
       
       
       
-        <link rel="canonical" href="https://nickuzmenkov.github.io/ml_docs/linear_models/linear_classification/">
+        <link rel="canonical" href="https://nickuzmenkov.github.io/ml_docs/other_models/naive_bayes/">
       
       
-        <link rel="prev" href="../linear_regression/">
+        <link rel="prev" href="../../trees/gradient_boosted_trees/">
       
       
-        <link rel="next" href="../regularization/">
+        <link rel="next" href="../svm/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.21">
     
     
       
-        <title>Linear Classification - ML Docs</title>
+        <title>Naive Bayes - ML Docs</title>
       
     
     
@@ -77,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#linear-classification" class="md-skip">
+        <a href="#naive-bayes" class="md-skip">
           Skip to content
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Linear Classification
+              Naive Bayes
             
           </span>
         </div>
@@ -382,18 +382,16 @@
 
   
   
-    
-  
   
     
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
       
       
       
@@ -402,7 +400,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
           Linear Models
@@ -415,7 +413,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../linear_regression/" class="md-nav__link">
+      <a href="../../linear_models/linear_regression/" class="md-nav__link">
         Linear Regression
       </a>
     </li>
@@ -427,59 +425,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Linear Classification
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../linear_models/linear_classification/" class="md-nav__link">
         Linear Classification
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#logistic-regression" class="md-nav__link">
-    Logistic Regression
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#softmax-regression" class="md-nav__link">
-    Softmax Regression
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -491,7 +441,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../regularization/" class="md-nav__link">
+      <a href="../../linear_models/regularization/" class="md-nav__link">
         Regularization
       </a>
     </li>
@@ -505,7 +455,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lda/" class="md-nav__link">
+      <a href="../../linear_models/lda/" class="md-nav__link">
         Linear Discriminant Analysis
       </a>
     </li>
@@ -604,16 +554,18 @@
 
   
   
+    
+  
   
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
       
       
       
@@ -622,7 +574,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
           Other Models
@@ -633,11 +585,21 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../other_models/naive_bayes/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Naive Bayes
       </a>
+      
     </li>
   
 
@@ -649,7 +611,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../other_models/svm/" class="md-nav__link">
+      <a href="../svm/" class="md-nav__link">
         Support Vector Machines
       </a>
     </li>
@@ -663,7 +625,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../other_models/pca/" class="md-nav__link">
+      <a href="../pca/" class="md-nav__link">
         Principal Component Analysis
       </a>
     </li>
@@ -677,7 +639,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../other_models/knn/" class="md-nav__link">
+      <a href="../knn/" class="md-nav__link">
         K-Nearest Neighbors
       </a>
     </li>
@@ -691,7 +653,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../other_models/hierarchical_clustering/" class="md-nav__link">
+      <a href="../hierarchical_clustering/" class="md-nav__link">
         Hierarchical Clustering
       </a>
     </li>
@@ -705,7 +667,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../other_models/k_means/" class="md-nav__link">
+      <a href="../k_means/" class="md-nav__link">
         K-Means Clustering
       </a>
     </li>
@@ -739,28 +701,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#logistic-regression" class="md-nav__link">
-    Logistic Regression
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#softmax-regression" class="md-nav__link">
-    Softmax Regression
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -774,65 +714,44 @@
                   
 
 
-<h1 id="linear-classification">Linear Classification</h1>
-<h2 id="logistic-regression">Logistic Regression</h2>
-<p><strong>Logistic Regression</strong> is a direct extension of the <a href="../linear_regression/">Linear Regression</a> with its simplicity and high speed for classification tasks. Logistic Regression returns the logistic of the result</p>
-<p>$$
-\hat{p}=\sigma(\boldsymbol{\theta}^T\boldsymbol{x}),
-$$</p>
-<p>where $\sigma$ is a <strong>standard logistic function</strong> (or sigmoid)</p>
-<p>$$
-\sigma(t)=\frac{1}{1 + \exp{(-t)}}.
-$$</p>
-<p>Thus, the output is scaled to the $[0;1]$ range of the probability that a particular instance is positive ($y=1$).</p>
-<p>Output of the original regression equation can be expressed as a <strong>logit function</strong> (or logarithm of the odds, which is the inverse of the logistic function)</p>
-<p>$$
-\boldsymbol{\theta}^T\boldsymbol{x}=\sigma^{-1}(p)=\ln{(\text{odds}(\hat{p}))}=\ln{\left(\frac{p}{1-p}\right)}
-$$</p>
-<p>The cost function for classification tasks is known as <strong>cross entropy loss</strong> (or log loss). In the case of binary classification, it's called <strong>binary cross entropy</strong> and is given by</p>
-<p>$$
-J(\boldsymbol{\theta})=-\frac{1}{m}\sum_{i=1}^m{\left(y^{(i)}\log{\hat{p}^{(i)}}+\left(1-y^{(i)}\right)\log{\left(1-\hat{p}^{(i)}\right)}\right)}.
-$$</p>
-<div class="admonition example annotate">
-<p class="admonition-title">Extreme Values Example</p>
-<p>Imagine that the ground truth $y=1$, while the predicted value $\hat{p} \approx 0$. The penalty for this sample is then close to $-\log{0}$, which is $\infty$. The same is true for the opposite case, where the ground truth is equal to 0 and the predicted value is close to 1.</p>
-</div>
-<p>There is no known closed-form solution for computing the value of $\boldsymbol{\theta}$ that minimizes binary cross entropy. However, just like MSE, cross entropy is a convex function. Thus, Batch Gradient Descent is guaranteed to find the optimal solution within the specified tolerance.</p>
-<p>The cross entropy gradient $\nabla_{\boldsymbol{\theta}}{J(\boldsymbol{\theta})}$ is calculated in the same way as for <a href="../linear_regression/#closed-form-solution">MSE</a> and is given by:</p>
-<p>$$
-\nabla_{\boldsymbol{\theta}}{J(\boldsymbol{\theta})}= \frac{2}{m}\boldsymbol{X}^T\left(\sigma\left({\boldsymbol{X}\boldsymbol{\theta}}\right)-\boldsymbol{y}\right).
-$$</p>
-<div class="admonition note annotate">
-<p class="admonition-title">Scikit-Learn Implementation</p>
-<p>The <a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html"><code>LogisticRegression</code> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span></a>, the <code>scikit-learn</code> implementation of logistic regression, comes with the $\ell_2$ penalty turned on by default, allowing you to adjust the strength of the regularization. Read more about regularization in the <a href="../regularization/">Regularization</a> manual.</p>
-</div>
-<div class="admonition note annotate">
-<p class="admonition-title">Categorical Features</p>
-<p>As with <a href="../linear_regression/">Linear Regression</a>, all categorical variables must first be one-hot encoded, omitting one of the classes.</p>
-</div>
-<h2 id="softmax-regression">Softmax Regression</h2>
-<p>The logistic regression model can be generalized to support multiple classes directly, without the need to train one-versus-one (OvO) or one-versus-rest (OvR) classifiers. The resulting probability that an instance belongs to class $k$ is given by</p>
-<p>$$
-\hat{p}_k=\text{softmax}(\boldsymbol{s})_k=\frac{\exp{(\boldsymbol{s}_k)}}{\sum_i exp{(\boldsymbol{s}_i)}}
-$$</p>
-<p>where $\boldsymbol{s}$ is a vector containing the values of each class $k$ for the instance $\boldsymbol{x}$</p>
-<p>$$
-\boldsymbol{s}=\boldsymbol{\Theta}\boldsymbol{x}.
-$$</p>
-<p>All class-wise parameter vectors $\boldsymbol{\theta}^{(k)}$ together form a parameter matrix $\boldsymbol{\Theta}$.</p>
-<p>Similar to binary classification, the cost function used is cross-entropy, but in a generalized version known as <strong>categorical cross-entropy</strong></p>
-<p>$$
-J(\boldsymbol{\Theta})=-\frac{1}{m}\sum_{i=1}^m{\sum_{k=1}^l{y_k^{(i)}\log{\left(\hat{p}_k^{(i)}\right)}}}
-$$</p>
-<p>where $l$ is the number of classes.</p>
-<p>The gradient vector with respect to the $\boldsymbol{\theta}^{(k)}$ parameter vector $\nabla_{\boldsymbol{\theta}^{(k)}}{J(\boldsymbol{\theta})}$ is calculated similarly to the gradient of the <a href="../linear_regression/#closed-form-solution">MSE</a> and is given by</p>
-<p>$$
-\nabla_{\boldsymbol{\theta}^{(k)}}{J(\boldsymbol{\Theta})}= \frac{2}{m}\boldsymbol{X}^T\left(\text{softmax}\left({\boldsymbol{X}\boldsymbol{\theta}}\right)-\boldsymbol{y}\right).
-$$</p>
-<div class="admonition note annotate">
-<p class="admonition-title">Scikit-Learn Implementation</p>
-<p>The <a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html"><code>LogisticRegression</code> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span></a> implementation in <code>scikit-learn</code> uses One-versus-Rest wrapper for multiclass tasks instead.</p>
-</div>
+<h1 id="naive-bayes">Naive Bayes</h1>
+<h1 id="code-sklearnnaive_bayesmultinomialnb">code <code>sklearn.naive_bayes.MultinomialNB</code>.</h1>
+<h2 id="bayes-theorem">Bayes’ Theorem</h2>
+<p>The theorem is stated mathematically as follows</p>
+<p>$$ P(A|B)=\frac{P(A)P(B|A)}{P(B)} $$</p>
+<p>where $P(A|B)$ is a <em>conditional probability</em>, i.e. probability of event $A$ given that event $B$ happened.</p>
+<h2 id="naive-bayes-algorithm">Naive Bayes Algorithm</h2>
+<p>Applying the Bayes’ theorem to a dataset, the value of interest is $P(Y=i|X_1...X_p)$, i.e. the probability of $Y$ being either 0 or 1 ($i$) given the set of predictor variables, can be calculated as follows:</p>
+<p>$$ P(Y=i|X_1...X_p)=\frac{P(Y=i)P(X_1...X_p|Y=i)}{P(Y=0)P(X_1...X_p|Y=0) + P(Y=1)P(X_1...X_p|Y=1)} $$</p>
+<blockquote>
+<p>💡 Given even a relatively small number of predictors—say, five—it would require an overwhelmingly large dataset to find at least a couple of records with the same state of predictors $X_1...X_p$ to get conditional probabilities $P(X_1...X_p|Y=i)$.</p>
+</blockquote>
+<p>Under the assumption of conditional independence among predictor variables (<em>naive assumption</em>) all the mutual probabilities can be factorized:</p>
+<p>$$ P(X_1...X_p|Y=i)=\prod_{j=1}^p{P(X_j|Y=i)} $$</p>
+<p>Changing the above equation into:</p>
+<p>$$ P(Y=i|X_1...X_p)=\frac{P(Y=i)\prod_{j=1}^p{P(X_j|Y=i)}}{P(Y=0)\prod_{j=1}^p{P(X_j|Y=0)} + P(Y=1)\prod_{j=1}^p{P(X_j|Y=1)}} $$</p>
+<h3 id="supported-predictors">Supported Predictors</h3>
+<p>The Bayesian classifier works only with categorical predictors. To apply naive Bayes to numerical predictors, one of two approaches must be taken:</p>
+<ul>
+<li>Bin and convert the numerical predictors to categorical predictors</li>
+<li>Use a probability model (e.g. normal distribution) for estimating the conditional probabilities $P(X_j|Y=i)$</li>
+</ul>
+<blockquote>
+<p>💡 #warning Categorical variables for naive Bayes must be one-hot encoded without omitting.</p>
+</blockquote>
+<h2 id="examples">Examples</h2>
+<h3 id="bayes-theorem-example">Bayes Theorem #example</h3>
+<p>There’s a rare subspecies of a beetle, 0.1% of the total population. 98% of rare subspecies have a special pattern on the back, compared to only 5% members of the common subspecies. How likely is the beetle having the pattern to be rare?</p>
+<h4 id="solution">Solution</h4>
+<p>Given that:</p>
+<p>$$ P(\text{Rare})=0.001 \ P(\text{Common})=0.999 \ P(\text{Pattern|Rare})=0.98 \ P(\text{Pattern|Common })=0.05 $$</p>
+<p>According to the Bayes’ theorem:</p>
+<p>$$ P(\text{Rare|Pattern}) = \frac{P(\text{Rare})P(\text{Pattern|Rare})}{P(\text{Pattern})} $$</p>
+<p>Expanding the $P(\text{Pattern})$:</p>
+<p>$$ P(\text{Rare|Pattern}) = \frac{P(\text{Rare})P(\text{Pattern|Rare})}{P(\text{Common})P(\text{Common|Pattern}) + P(\text{Rare})P(\text{Rare|Pattern})} $$</p>
+<p>Substitute the values:</p>
+<p>$$ P(\text{Rare|Pattern}) = \frac{0.001 \cdot 0.98}{0.999\cdot 0.05 + 0.001\cdot 0.98} = 0.019 $$</p>
+<p>That is, 1.9%.</p>
 
 
 

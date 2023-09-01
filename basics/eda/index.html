@@ -10,20 +10,20 @@
       
       
       
-        <link rel="canonical" href="https://nickuzmenkov.github.io/ml_docs/linear_models/linear_classification/">
+        <link rel="canonical" href="https://nickuzmenkov.github.io/ml_docs/basics/eda/">
       
       
-        <link rel="prev" href="../linear_regression/">
+        <link rel="prev" href="../data/">
       
       
-        <link rel="next" href="../regularization/">
+        <link rel="next" href="../statistical_tests/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.21">
     
     
       
-        <title>Linear Classification - ML Docs</title>
+        <title>Exploratory Data Analysis - ML Docs</title>
       
     
     
@@ -77,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#linear-classification" class="md-skip">
+        <a href="#exploratory-data-analysis" class="md-skip">
           Skip to content
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Linear Classification
+              Exploratory Data Analysis
             
           </span>
         </div>
@@ -261,16 +261,18 @@
 
   
   
+    
+  
   
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
       
       
       
@@ -279,7 +281,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
           Basics
@@ -292,131 +294,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../basics/data/" class="md-nav__link">
+      <a href="../data/" class="md-nav__link">
         Data and Sampling
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../basics/eda/" class="md-nav__link">
-        Exploratory Data Analysis
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../basics/statistical_tests/" class="md-nav__link">
-        Statistical Tests
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../basics/regression/" class="md-nav__link">
-        Regression
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../basics/classification/" class="md-nav__link">
-        Classification
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../basics/ensemble/" class="md-nav__link">
-        Ensemble
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-    
-  
-  
-    
-      
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-      
-      
-      
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
-      
-      
-      
-        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-          Linear Models
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
-        <label class="md-nav__title" for="__nav_3">
-          <span class="md-nav__icon md-icon"></span>
-          Linear Models
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../linear_regression/" class="md-nav__link">
-        Linear Regression
       </a>
     </li>
   
@@ -438,47 +317,9 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Linear Classification
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
-        Linear Classification
+        Exploratory Data Analysis
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#logistic-regression" class="md-nav__link">
-    Logistic Regression
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#softmax-regression" class="md-nav__link">
-    Softmax Regression
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -491,7 +332,128 @@
   
   
     <li class="md-nav__item">
-      <a href="../regularization/" class="md-nav__link">
+      <a href="../statistical_tests/" class="md-nav__link">
+        Statistical Tests
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regression/" class="md-nav__link">
+        Regression
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../classification/" class="md-nav__link">
+        Classification
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ensemble/" class="md-nav__link">
+        Ensemble
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          Linear Models
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Linear Models
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linear_models/linear_regression/" class="md-nav__link">
+        Linear Regression
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linear_models/linear_classification/" class="md-nav__link">
+        Linear Classification
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linear_models/regularization/" class="md-nav__link">
         Regularization
       </a>
     </li>
@@ -505,7 +467,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lda/" class="md-nav__link">
+      <a href="../../linear_models/lda/" class="md-nav__link">
         Linear Discriminant Analysis
       </a>
     </li>
@@ -739,28 +701,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#logistic-regression" class="md-nav__link">
-    Logistic Regression
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#softmax-regression" class="md-nav__link">
-    Softmax Regression
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -774,65 +714,92 @@
                   
 
 
-<h1 id="linear-classification">Linear Classification</h1>
-<h2 id="logistic-regression">Logistic Regression</h2>
-<p><strong>Logistic Regression</strong> is a direct extension of the <a href="../linear_regression/">Linear Regression</a> with its simplicity and high speed for classification tasks. Logistic Regression returns the logistic of the result</p>
+<h1 id="exploratory-data-analysis">Exploratory Data Analysis</h1>
+<blockquote>
+<p>💡 #story John W. Tukey first introduced EDA as a mandatory step before statistical inference in his paper “The future of Data Analysis” in 1962.</p>
+</blockquote>
+<h1 id="code-for-advanced-plots">code for advanced plots</h1>
+<ul>
+<li>Hexagonal binning <code>pandas.DataFrame.plot.hexbin</code></li>
+<li>Contour plot <code>seaborn.kdeplot</code></li>
+<li>Violin plot <code>seaborn.violinplot</code></li>
+</ul>
+<h3 id="data-types">Data Types</h3>
+<ul>
+<li>Numeric<ul>
+<li>Continuous</li>
+<li>Discrete</li>
+</ul>
+</li>
+<li>Categorical<ul>
+<li>Binary (literally true/false)</li>
+<li>Ordinal (e.g. sizes: S, M, L, XL, etc.)</li>
+</ul>
+</li>
+</ul>
+<h2 id="central-tendency-estimation">Central Tendency Estimation</h2>
+<h3 id="mean">Mean</h3>
+<h3 id="weighted-mean">Weighted mean</h3>
+<p><em>Weighted mean</em> is given by</p>
 <p>$$
-\hat{p}=\sigma(\boldsymbol{\theta}^T\boldsymbol{x}),
+\overline{x}<em i="1">w=\frac{\sum</em>^n w_i x_i}{\sum_{i=1}^n w_i}
 $$</p>
-<p>where $\sigma$ is a <strong>standard logistic function</strong> (or sigmoid)</p>
+<h3 id="trimmed-mean">Trimmed mean</h3>
+<p>Trimmed mean is mean of a population with $p$ largest and $p$ smallest values omitted</p>
 <p>$$
-\sigma(t)=\frac{1}{1 + \exp{(-t)}}.
+\overline{x}=\frac{\sum_{i=p+1}^{n-p}x_{(i)}}{n - 2p}
 $$</p>
-<p>Thus, the output is scaled to the $[0;1]$ range of the probability that a particular instance is positive ($y=1$).</p>
-<p>Output of the original regression equation can be expressed as a <strong>logit function</strong> (or logarithm of the odds, which is the inverse of the logistic function)</p>
+<h3 id="median">Median</h3>
+<p>Median is given by</p>
+<h1 id="empty">empty</h1>
 <p>$$
-\boldsymbol{\theta}^T\boldsymbol{x}=\sigma^{-1}(p)=\ln{(\text{odds}(\hat{p}))}=\ln{\left(\frac{p}{1-p}\right)}
 $$</p>
-<p>The cost function for classification tasks is known as <strong>cross entropy loss</strong> (or log loss). In the case of binary classification, it's called <strong>binary cross entropy</strong> and is given by</p>
+<h3 id="weighted-median">Weighted median</h3>
+<p>Weighted median is given by</p>
+<h1 id="empty_1">empty</h1>
 <p>$$
-J(\boldsymbol{\theta})=-\frac{1}{m}\sum_{i=1}^m{\left(y^{(i)}\log{\hat{p}^{(i)}}+\left(1-y^{(i)}\right)\log{\left(1-\hat{p}^{(i)}\right)}\right)}.
 $$</p>
-<div class="admonition example annotate">
-<p class="admonition-title">Extreme Values Example</p>
-<p>Imagine that the ground truth $y=1$, while the predicted value $\hat{p} \approx 0$. The penalty for this sample is then close to $-\log{0}$, which is $\infty$. The same is true for the opposite case, where the ground truth is equal to 0 and the predicted value is close to 1.</p>
-</div>
-<p>There is no known closed-form solution for computing the value of $\boldsymbol{\theta}$ that minimizes binary cross entropy. However, just like MSE, cross entropy is a convex function. Thus, Batch Gradient Descent is guaranteed to find the optimal solution within the specified tolerance.</p>
-<p>The cross entropy gradient $\nabla_{\boldsymbol{\theta}}{J(\boldsymbol{\theta})}$ is calculated in the same way as for <a href="../linear_regression/#closed-form-solution">MSE</a> and is given by:</p>
+<h3 id="mode">Mode</h3>
+<p>Mode is simply most frequent value. Only applicable for categorical data.</p>
+<h2 id="variability-metrics">Variability Metrics</h2>
+<h3 id="mean-absolute-deviation">Mean Absolute Deviation</h3>
+<p>$$ \text{Mean absolute deviation}=\frac{\sum_{i=1}^n |x_i-\overline{x}|}{n} $$</p>
+<h3 id="variance">Variance</h3>
+<p><em>Variance</em> is given by</p>
 <p>$$
-\nabla_{\boldsymbol{\theta}}{J(\boldsymbol{\theta})}= \frac{2}{m}\boldsymbol{X}^T\left(\sigma\left({\boldsymbol{X}\boldsymbol{\theta}}\right)-\boldsymbol{y}\right).
+\sigma^2=\frac{\sum_{i=1}^n (x_i -\overline{x})^2}{n-1}
 $$</p>
-<div class="admonition note annotate">
-<p class="admonition-title">Scikit-Learn Implementation</p>
-<p>The <a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html"><code>LogisticRegression</code> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span></a>, the <code>scikit-learn</code> implementation of logistic regression, comes with the $\ell_2$ penalty turned on by default, allowing you to adjust the strength of the regularization. Read more about regularization in the <a href="../regularization/">Regularization</a> manual.</p>
-</div>
-<div class="admonition note annotate">
-<p class="admonition-title">Categorical Features</p>
-<p>As with <a href="../linear_regression/">Linear Regression</a>, all categorical variables must first be one-hot encoded, omitting one of the classes.</p>
-</div>
-<h2 id="softmax-regression">Softmax Regression</h2>
-<p>The logistic regression model can be generalized to support multiple classes directly, without the need to train one-versus-one (OvO) or one-versus-rest (OvR) classifiers. The resulting probability that an instance belongs to class $k$ is given by</p>
+<h3 id="standard-deviation">Standard Deviation</h3>
+<p><em>Standard deviation</em> is given by</p>
 <p>$$
-\hat{p}_k=\text{softmax}(\boldsymbol{s})_k=\frac{\exp{(\boldsymbol{s}_k)}}{\sum_i exp{(\boldsymbol{s}_i)}}
+\sigma=\sqrt{\frac{\sum_{i=1}^n (x-\overline{x})^2}{n-1}}
 $$</p>
-<p>where $\boldsymbol{s}$ is a vector containing the values of each class $k$ for the instance $\boldsymbol{x}$</p>
+<h3 id="median-absolute-deviation-from-the-median">Median Absolute Deviation from the Median</h3>
+<p><em>Median Absolute Deviation from the Median</em> is given by</p>
+<h1 id="empty_2">empty</h1>
 <p>$$
-\boldsymbol{s}=\boldsymbol{\Theta}\boldsymbol{x}.
 $$</p>
-<p>All class-wise parameter vectors $\boldsymbol{\theta}^{(k)}$ together form a parameter matrix $\boldsymbol{\Theta}$.</p>
-<p>Similar to binary classification, the cost function used is cross-entropy, but in a generalized version known as <strong>categorical cross-entropy</strong></p>
+<blockquote>
+<p>💡 The median absolute deviation from the median is prone to outliers (like the [[#Median|Median]] itself), unlike [[#Mean Absolute Deviation|Mean Absolute Deviation]], [[#Variance|Variance]], and [[#Standard Deviation|Standard Deviation]].</p>
+</blockquote>
+<h3 id="interquartile-range">Interquartile Range</h3>
+<p><em>Interquartile Range</em> (<em>IQR</em>) is a difference between the 25th and the 75th percentiles.</p>
+<h2 id="exploring-data-distribution">Exploring Data Distribution</h2>
+<h3 id="histogram">Histogram</h3>
+<p>Histograms and percentiles are used for the same purpose, roughly speaking. The core distinction is that histograms have an uneven number of samples but even bin width and vice versa.</p>
+<h3 id="density-plot">Density Plot</h3>
+<p>A density plot can be treated as either a smoothed version of a histogram or an approximation of the distribution function.</p>
+<h1 id="code-pandasdataframeplotdensity">code <code>pandas.DataFrame.plot.density</code>.</h1>
+<h3 id="correlation">Correlation</h3>
+<p>Most widespread correlation metric is the Pearson’s correlation coefficient:</p>
 <p>$$
-J(\boldsymbol{\Theta})=-\frac{1}{m}\sum_{i=1}^m{\sum_{k=1}^l{y_k^{(i)}\log{\left(\hat{p}_k^{(i)}\right)}}}
+r=\frac{\sum_{i=1}^n(x-\overline{x})(y-\overline{y})}{(n-1)s_xs_y}
 $$</p>
-<p>where $l$ is the number of classes.</p>
-<p>The gradient vector with respect to the $\boldsymbol{\theta}^{(k)}$ parameter vector $\nabla_{\boldsymbol{\theta}^{(k)}}{J(\boldsymbol{\theta})}$ is calculated similarly to the gradient of the <a href="../linear_regression/#closed-form-solution">MSE</a> and is given by</p>
-<p>$$
-\nabla_{\boldsymbol{\theta}^{(k)}}{J(\boldsymbol{\Theta})}= \frac{2}{m}\boldsymbol{X}^T\left(\text{softmax}\left({\boldsymbol{X}\boldsymbol{\theta}}\right)-\boldsymbol{y}\right).
-$$</p>
-<div class="admonition note annotate">
-<p class="admonition-title">Scikit-Learn Implementation</p>
-<p>The <a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html"><code>LogisticRegression</code> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span></a> implementation in <code>scikit-learn</code> uses One-versus-Rest wrapper for multiclass tasks instead.</p>
-</div>
+<p>It’s highly prone to outliers and uncovers only linear correlations.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="correlation-matrix-example">Correlation Matrix #example</h3>
+<p>![[assets/img/Statistics/Exploratory Data Analysis/01.png|500]]</p>
+<h1 id="sourcecode-exploratory-data-analysis-codecorrelation-matrix">sourcecode [[Exploratory Data Analysis Code#Correlation Matrix]].</h1>
 
 
 
