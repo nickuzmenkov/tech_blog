@@ -549,8 +549,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#recursive-partitioning" class="md-nav__link">
-    Recursive Partitioning
+  <a href="#algorithm" class="md-nav__link">
+    Algorithm
   </a>
   
 </li>
@@ -559,33 +559,6 @@
   <a href="#impurity-measures" class="md-nav__link">
     Impurity Measures
   </a>
-  
-    <nav class="md-nav" aria-label="Impurity Measures">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#gini-impurity" class="md-nav__link">
-    Gini Impurity
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#entropy" class="md-nav__link">
-    Entropy
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#mean-squared-error" class="md-nav__link">
-    Mean Squared Error
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -597,56 +570,16 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#classification" class="md-nav__link">
-    Classification
+  <a href="#computational-complexity" class="md-nav__link">
+    Computational Complexity
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#regression" class="md-nav__link">
-    Regression
+  <a href="#example" class="md-nav__link">
+    Example
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#complexity" class="md-nav__link">
-    #complexity
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
-    Examples
-  </a>
-  
-    <nav class="md-nav" aria-label="Examples">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#iris-classification-example" class="md-nav__link">
-    Iris Classification #example
-  </a>
-  
-    <nav class="md-nav" aria-label="Iris Classification #example">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#solution" class="md-nav__link">
-    Solution
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -848,8 +781,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#recursive-partitioning" class="md-nav__link">
-    Recursive Partitioning
+  <a href="#algorithm" class="md-nav__link">
+    Algorithm
   </a>
   
 </li>
@@ -858,33 +791,6 @@
   <a href="#impurity-measures" class="md-nav__link">
     Impurity Measures
   </a>
-  
-    <nav class="md-nav" aria-label="Impurity Measures">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#gini-impurity" class="md-nav__link">
-    Gini Impurity
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#entropy" class="md-nav__link">
-    Entropy
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#mean-squared-error" class="md-nav__link">
-    Mean Squared Error
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -896,56 +802,16 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#classification" class="md-nav__link">
-    Classification
+  <a href="#computational-complexity" class="md-nav__link">
+    Computational Complexity
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#regression" class="md-nav__link">
-    Regression
+  <a href="#example" class="md-nav__link">
+    Example
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#complexity" class="md-nav__link">
-    #complexity
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
-    Examples
-  </a>
-  
-    <nav class="md-nav" aria-label="Examples">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#iris-classification-example" class="md-nav__link">
-    Iris Classification #example
-  </a>
-  
-    <nav class="md-nav" aria-label="Iris Classification #example">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#solution" class="md-nav__link">
-    Solution
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -965,19 +831,13 @@
 
 
 <h1 id="decision-trees">Decision Trees</h1>
-<ul>
-<li><code>sklearn.tree.DecisionTreeClassifier</code></li>
-<li><code>sklearn.tree.DecisionTreeRegressor</code></li>
-</ul>
+<p>Tree models, trees, decision trees, or classification and regression trees (CART) were initially developed by Leo Breiman et al. in 1984.</p>
 <h2 id="introduction">Introduction</h2>
-<blockquote>
-<p>💡 #story Tree models, trees, decision trees, or classification and regression trees (CART) were initially developed by Leo Breiman et al. in 1984.</p>
-</blockquote>
-<p>Trees are most commonly used in more powerful ensemble models: bagging ensembles (see [[base/Machine Learning/Random Forest|Random Forest]]) and boosted ensembles (see [[Gradient Boosted Trees]]) and almost never standalone.</p>
-<p>Tree is basically a set of if-else rules (<em>branches</em>) splitting data per one feature at a time to minimize data impurity in both splits (<em>leaves</em>). Trees can thus discover nonlinear patterns in data and spot important variables and [[Regression#Interactions|interactions]].</p>
-<p>Like regression models, a single decision tree is a [[base/Statistics/Notation#White Box Model|White Box]] model compared to tree-based ensembles which are [[base/Statistics/Notation#Black Box Model|Black Box]] models.</p>
-<h2 id="recursive-partitioning">Recursive Partitioning</h2>
-<p>Decision trees available in scikit-learn are CART trees. The training algorithm used in CART is called <em>recursive partitioning</em>:</p>
+<p>Trees are most commonly used in more powerful ensemble models: bagging ensembles <a href="../random_forest/">Random Forest</a> and boosted ensembles (<a href="../gradient_boosted_trees/">Gradient Boosted Trees</a>), and almost never standalone.</p>
+<p>Tree is basically a set of if-else rules (or branches) splitting data per one feature at a time to minimize data impurity in both splits (or leaves). Trees can thus discover nonlinear patterns in data and spot important variables and interactions.</p>
+<p>Like regression models, a single decision tree is a white box model compared to tree-based ensembles which are black box models.</p>
+<h2 id="algorithm">Algorithm</h2>
+<p>Decision trees available in <code>scikit-learn</code> are CART trees. The training algorithm used in CART is called <strong>recursive partitioning</strong> and goes as follows</p>
 <ol>
 <li>For each predictor variable $X_j$:<ol>
 <li>Split the dataset into two partitions for each value of $X_{i,j}$.</li>
@@ -986,48 +846,57 @@
 </ol>
 </li>
 <li>Select the best split among all best splits of each variable.</li>
-<li>Repeat 1-2 for each of the resulting splits.</li>
+<li>Repeat steps 1-2 for each of the resulting splits.</li>
 </ol>
-<p>The cost function is based on one of [[#Impurity Measures]] and given by</p>
-<p>$$ J(k, t_k) = \frac{m_1}{m}I_1 + \frac{m_2}{m}I_2 $$</p>
-<p>for a selected threshold $t_k$ of a particular predictor variable $k$. Here $m_i/m$ are sample fractions and $I_i$ are [[#Impurity Measures|impurity scores]].</p>
-<blockquote>
-<p>💡 #warning Recursive partitioning is produces only binary trees. Other algorithms (e.g. ID3, C4.5; Quinlan, 1993) can make more than 2 splits at a time.</p>
-</blockquote>
+<p>The cost function is based on one of impurity measures and given by</p>
+<p>$$ J(k, t_k) = \frac{m_1}{m}I_1 + \frac{m_2}{m}I_2. $$</p>
+<p>For a selected threshold $t_k$ of a particular predictor variable $k$. Here $m_i/m$ are sample fractions and $I_i$ are impurity scores.</p>
+<div class="admonition note annotate">
+<p class="admonition-title">Only one split at a time</p>
+<p>Recursive partitioning is produces only binary trees. Other algorithms (e.g. ID3, C4.5; Quinlan, 1993) can make more than 2 splits at a time.</p>
+</div>
+<p>For a trained classification tree, the predicted class is simply the mode class of the leaf node. Class probability is calculated as the ratio of the number predicted class instances to all instances of the leaf node. For a regression tree, the predicted value is simply the average value of all the instances of the leaf node.</p>
 <h2 id="impurity-measures">Impurity Measures</h2>
-<h3 id="gini-impurity">Gini Impurity</h3>
-<p><em>Gini Impurity</em> is given by</p>
-<p>$$ G_i=1 - \sum_{k=1}^n{p_{i,k}} $$</p>
-<h3 id="entropy">Entropy</h3>
-<p><em>Entropy is given by</em></p>
-<p>$$ H_i=-\sum_{k=1}^n{p_{i,k}\log_2{p_{i,k}}} $$</p>
-<h3 id="mean-squared-error">Mean Squared Error</h3>
-<p>[[Regression Metrics#Mean Squared Error MSE|MSE]] is used as impurity measure for numeric target variables.</p>
+<p>Here are the most common impurity measures</p>
+<ul>
+<li>
+<p>Gini</p>
+<p>$$ G_i=1 - \sum_{k=1}^n{p_{i,k}^2}. $$</p>
+<p>where $n$ is the number of classes, $p_{i,k}$ is the proportion of items labeled with class $k$.</p>
+</li>
+<li>
+<p>Entropy</p>
+<p>$$ H_i=-\sum_{k=1}^n{p_{i,k}\log_2{p_{i,k}}}. $$</p>
+</li>
+<li>
+<p>MSE (for regression trees)</p>
+</li>
+</ul>
 <h2 id="regularization-hyperparameters">Regularization Hyperparameters</h2>
-<p>The [[#Recursive Partitioning]] algorithm goes on until it meets one of the stop conditions listed below. These stop conditions act like regularization hyperparameters preventing the tree from overfitting
--   Number of samples at leaf is less than <code>min_samples_leaf</code>.
--   The fraction of sum of weights at leaf is less than <code>min_weight_fraction_leaf</code> (for weighted samples; otherwise just fraction of number of samples).
--   Number of samples at branch is less than <code>min_samples_split</code>.
--   Depth of the tree (i.e. the number of steps between the root and the farthest leaf) is more than <code>max_depth</code>.
--   Number of leaves is more than <code>max_leaf_nodes</code>.
--   Decrease of impurity of the split is less than <code>min_impurity_decrease</code>.</p>
-<h2 id="classification">Classification</h2>
-<p>Predicted class $\hat{y}$ is simply the mode class of the leaf node.</p>
-<p>Class probability $\hat{p}$ is calculated as the ratio of the number predicted class instances to all instances of the leaf node.</p>
-<h2 id="regression">Regression</h2>
-<p>Predicted value $\hat{y}$ is simply the average value of all the instances of the leaf node.</p>
-<h2 id="complexity">#complexity</h2>
-<p>Making a prediction (i.e. <em>traversing</em> the tree): given that decision trees are generally balanced, is $O(\log_2{m})$ and independent of the number of features.</p>
-<p>Training requires comparison among all features and all samples at each node $O(n\times m\log_2{m})$.</p>
-<h2 id="examples">Examples</h2>
-<h3 id="iris-classification-example">Iris Classification #example</h3>
-<p>Based on a set of 150 records with four variables (petal length, petal width, sepal length, and sepal width), predict one of three types of iris—<em>Setosa</em>, <em>Virginica</em>, or <em>Versicolour</em>.</p>
-<h4 id="solution">Solution</h4>
-<p>![[assets/img/Machine Learning/Decision Trees/01.png|500]]</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeClassifier</span><span class="p">,</span> <span class="n">plot_tree</span>
+<p>The recursive partitioning algorithm goes on until it meets one of the stop conditions listed below. These stop conditions act like regularization hyperparameters preventing the tree from overfitting (names of the corresponding parameters in <code>scikit-learn</code> are given in the brackets)</p>
+<ul>
+<li>Number of samples at leaf is less than (<code>min_samples_leaf</code>).</li>
+<li>The fraction of sum of weights at leaf is less than (<code>min_weight_fraction_leaf</code>) - for weighted samples - otherwise just fraction of number of samples.</li>
+<li>Number of samples at branch is less than (<code>min_samples_split</code>).</li>
+<li>Depth of the tree (i.e. the number of steps between the root and the farthest leaf) is more than (<code>max_depth</code>).</li>
+<li>Number of leaves is more than (<code>max_leaf_nodes</code>).</li>
+<li>Decrease of impurity of the split is less than (<code>min_impurity_decrease</code>).</li>
+</ul>
+<h2 id="computational-complexity">Computational Complexity</h2>
+<ul>
+<li>Making a prediction with a balanced tree (which is usually true) that has $m$ branches, is $O(\log_2{m})$ and independent of the number of features.</li>
+<li>Training requires comparison among all $n$ features and all $m$ samples at each node $O(n \times m\log_2{m})$.</li>
+</ul>
+<h2 id="example">Example</h2>
+<p>Iris classification: based on a set of 150 records with four variables (petal length, petal width, sepal length, and sepal width), predict one of three types of iris - Setosa, Virginica, or Versicolour.</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="p">(</span>
+    <span class="n">DecisionTreeClassifier</span><span class="p">,</span>
+    <span class="n">plot_tree</span><span class="p">,</span>
+    <span class="n">export_text</span><span class="p">,</span>
+<span class="p">)</span>
 <span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
 <span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">load_iris</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
 <span class="n">iris</span> <span class="o">=</span> <span class="n">load_iris</span><span class="p">()</span>
 <span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">iris</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">iris</span><span class="o">.</span><span class="n">target</span>
@@ -1039,24 +908,17 @@
 <span class="n">feature_names</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Sepal Length&quot;</span><span class="p">,</span> <span class="s2">&quot;Sepal Width&quot;</span><span class="p">,</span> <span class="s2">&quot;Petal Length&quot;</span><span class="p">,</span> <span class="s2">&quot;Petal Width&quot;</span><span class="p">]</span>
 <span class="n">class_names</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Setosa&quot;</span><span class="p">,</span> <span class="s2">&quot;Versicolour&quot;</span><span class="p">,</span> <span class="s2">&quot;Virginica&quot;</span><span class="p">]</span>
 
-<span class="n">plot_tree</span><span class="p">(</span>
+<span class="n">export_text</span><span class="p">(</span>  <span class="c1"># text representation</span>
+    <span class="n">model</span><span class="p">,</span>
+    <span class="n">feature_names</span><span class="o">=</span><span class="n">feature_names</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">plot_tree</span><span class="p">(</span>  <span class="c1"># graph representation</span>
     <span class="n">model</span><span class="p">,</span>
     <span class="n">feature_names</span><span class="o">=</span><span class="n">feature_names</span><span class="p">,</span>
     <span class="n">class_names</span><span class="o">=</span><span class="n">class_names</span><span class="p">,</span>
     <span class="n">node_ids</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
 <span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</code></pre></div>
-<p>Text representation is also available:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">export_text</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">export_text</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">feature_names</span><span class="o">=</span><span class="n">feature_names</span><span class="p">)</span>
-<span class="o">|---</span> <span class="n">Petal</span> <span class="n">Width</span> <span class="o">&lt;=</span> <span class="mf">0.80</span>
-<span class="o">|</span>   <span class="o">|---</span> <span class="n">class</span><span class="p">:</span> <span class="mi">0</span>
-<span class="o">|---</span> <span class="n">Petal</span> <span class="n">Width</span> <span class="o">&gt;</span>  <span class="mf">0.80</span>
-<span class="o">|</span>   <span class="o">|---</span> <span class="n">Petal</span> <span class="n">Length</span> <span class="o">&lt;=</span> <span class="mf">4.95</span>
-<span class="o">|</span>   <span class="o">|</span>   <span class="o">|---</span> <span class="n">class</span><span class="p">:</span> <span class="mi">1</span>
-<span class="o">|</span>   <span class="o">|---</span> <span class="n">Petal</span> <span class="n">Length</span> <span class="o">&gt;</span>  <span class="mf">4.95</span>
-<span class="o">|</span>   <span class="o">|</span>   <span class="o">|---</span> <span class="n">class</span><span class="p">:</span> <span class="mi">2</span>
 </code></pre></div>
 
 
