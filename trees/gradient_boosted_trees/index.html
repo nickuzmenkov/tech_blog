@@ -762,10 +762,11 @@
 
 <h1 id="gradient-boosted-trees">Gradient Boosted Trees</h1>
 <p>The general idea of boosting is to combine a collection of weak learners so that each one corrects its predecessor.</p>
-<p>The most common boosting algorithms are [[#AdaBoost]], [[#Gradient Boosting]], and [[#Stochastic Gradient Boosting]].</p>
-<blockquote>
-<p>💡 #warning An important drawback of boosting algorithms is that training cannot be parallelized: hence the linear increase of the training time with the number of predictors.</p>
-</blockquote>
+<p>The most common boosting algorithms are AdaBoost, Gradient Boosting, and Stochastic Gradient Boosting.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>An important drawback of boosting algorithms is that training cannot be parallelized: hence the linear increase of the training time with the number of predictors.</p>
+</div>
 <h2 id="adaboost">AdaBoost</h2>
 <blockquote>
 <p>💡 #warning The algorithm below is given only for a classification task.</p>

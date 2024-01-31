@@ -531,9 +531,47 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Random Forest
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Random Forest
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#algorithm" class="md-nav__link">
+    Algorithm
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-variations" class="md-nav__link">
+    Other variations
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -701,6 +739,28 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#algorithm" class="md-nav__link">
+    Algorithm
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-variations" class="md-nav__link">
+    Other variations
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -715,34 +775,16 @@
 
 
 <h1 id="random-forest">Random Forest</h1>
-<p><em>Random Forest</em> is an [[Ensemble Learning|ensemble]] of [[Decision Trees|Decision Trees]], generally trained via [[Ensemble Learning#Bagging|bagging]] (or sometimes [[Ensemble Learning#Pasting|pasting]]).</p>
-<p>Decision Trees in Random Forest are trained in the same way ([[Decision Trees#Recursive Partitioning|Recursive Partitioning]]) except for at each partition step only random subset of predictors (usually $\sqrt{n}$) are considered.</p>
-<p>Random Forest has rougly all [[Decision Trees#Regularization Hyperparameters|Decision Tree]] hyperparameters plus all [[Ensemble Learning#Bagging|Bagging Ensemble]] hyperparameters.</p>
-<blockquote>
-<p>💡 #warning Despite being built of a series of [[base/Statistics/Notation#White Box Model|White Box]] models random forest is a [[base/Statistics/Notation#Black Box Model|Black Box]] model.</p>
-<p>💡 Random forest also provides variable importance scores, which can be accessed via <code>feature_importances_</code> property of a fitted model. It returns predictor-wise mean decrease in the [[Decision Trees#Gini Impurity|Gini Impurity]] score.</p>
-</blockquote>
-<h1 id="code">code</h1>
-<ul>
-<li><code>sklearn.ensemble.RandomForestClassifier</code></li>
-<li><code>sklearn.ensemble.RandomForestRegressor</code></li>
-</ul>
-<h2 id="extra-trees">Extra-Trees</h2>
-<p><em>Extra-Trees</em> (or <em>Extremely Randomized Trees</em>) takes the [[#Random Forest]] training constraints one step further by assigning random thresholds during [[Decision Trees#Recursive Partitioning|Recursive Partitioning]] instead of searching for a threshold minimizing the [[Decision Trees#Impurity Measures|cost function]].</p>
-<p>This results in even higher [[base/Statistics/Notation#Bias|bias]] and lower [[base/Statistics/Notation#Variance|variance]].</p>
-<blockquote>
-<p>💡The API of Extra-Trees models in scikit-learn is identical to [[base/Machine Learning/Random Forest]].</p>
-</blockquote>
-<h1 id="code_1">code</h1>
-<ul>
-<li><code>sklearn.ensemble.ExtraTreesClassifier</code></li>
-<li><code>sklearn.ensemble.ExtraTreesRegressor</code></li>
-</ul>
-<h2 id="examples">Examples</h2>
-<h3 id="assessing-feature-importance-example">Assessing Feature Importance #example</h3>
-<p>Feature importance of individual pixels of MNIST dataset</p>
-<p>![[assets/img/Machine Learning/Random Forest/01.png|500]]</p>
-<h1 id="sourcecode-random-forest-codefeature-importance">sourcecode [[Random Forest Code#Feature Importance]].</h1>
+<p>Random Forest is an <a href="../../basics/ensemble/">ensemble</a> of <a href="../decision_trees/">decision trees</a>, generally trained via bagging or pasting methods.</p>
+<h2 id="algorithm">Algorithm</h2>
+<p>Decision Trees in a random forest are trained in the same way, except for at each partition step only random subset of predictors (usually $\sqrt{n}$) are considered. Random Forest has roughly all decision tree hyperparameters plus all bagging ensemble hyperparameters. Despite being built of a series of white box models random forest is a black box model.</p>
+<div class="admonition note annotate">
+<p class="admonition-title">Feature importance bonus</p>
+<p>Random forest also provides feature importance scores, which can be accessed via <code>feature_importances_</code> property of a trained model. It returns predictor-wise mean decrease in the impurity score.</p>
+</div>
+<h2 id="other-variations">Other variations</h2>
+<p>Extra trees (or Extremely Randomized Trees) takes the random forest training constraints one step further by assigning random thresholds during training instead of searching for a threshold minimizing the impurity score. This results in even higher bias and lower variance.</p>
+<p>The API of extra trees models in <code>scikit-learn</code> is identical to that one of a random forest.</p>
 
 
 
