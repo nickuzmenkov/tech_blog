@@ -1,122 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://nickuzmenkov.github.io/ml_docs/</loc>
+         <loc>https://nickuzmenkov.github.io/tech_blog/</loc>
          <lastmod>2024-02-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nickuzmenkov.github.io/ml_docs/machine_learning/glossary/</loc>
+         <loc>https://nickuzmenkov.github.io/tech_blog/machine_learning/glossary/</loc>
          <lastmod>2024-02-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nickuzmenkov.github.io/ml_docs/machine_learning/basics/classification/</loc>
+         <loc>https://nickuzmenkov.github.io/tech_blog/machine_learning/basics/classification/</loc>
          <lastmod>2024-02-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nickuzmenkov.github.io/ml_docs/machine_learning/basics/data/</loc>
+         <loc>https://nickuzmenkov.github.io/tech_blog/machine_learning/basics/data/</loc>
          <lastmod>2024-02-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nickuzmenkov.github.io/ml_docs/machine_learning/basics/eda/</loc>
+         <loc>https://nickuzmenkov.github.io/tech_blog/machine_learning/basics/eda/</loc>
          <lastmod>2024-02-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nickuzmenkov.github.io/ml_docs/machine_learning/basics/ensemble/</loc>
+         <loc>https://nickuzmenkov.github.io/tech_blog/machine_learning/basics/ensemble/</loc>
          <lastmod>2024-02-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nickuzmenkov.github.io/ml_docs/machine_learning/basics/regression/</loc>
+         <loc>https://nickuzmenkov.github.io/tech_blog/machine_learning/basics/regression/</loc>
          <lastmod>2024-02-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nickuzmenkov.github.io/ml_docs/machine_learning/basics/statistical_tests/</loc>
+         <loc>https://nickuzmenkov.github.io/tech_blog/machine_learning/basics/statistical_tests/</loc>
          <lastmod>2024-02-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nickuzmenkov.github.io/ml_docs/machine_learning/linear_models/lda/</loc>
+         <loc>https://nickuzmenkov.github.io/tech_blog/machine_learning/linear_models/lda/</loc>
          <lastmod>2024-02-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nickuzmenkov.github.io/ml_docs/machine_learning/linear_models/linear_classification/</loc>
+         <loc>https://nickuzmenkov.github.io/tech_blog/machine_learning/linear_models/linear_classification/</loc>
          <lastmod>2024-02-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nickuzmenkov.github.io/ml_docs/machine_learning/linear_models/linear_regression/</loc>
+         <loc>https://nickuzmenkov.github.io/tech_blog/machine_learning/linear_models/linear_regression/</loc>
          <lastmod>2024-02-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nickuzmenkov.github.io/ml_docs/machine_learning/linear_models/regularization/</loc>
+         <loc>https://nickuzmenkov.github.io/tech_blog/machine_learning/linear_models/regularization/</loc>
          <lastmod>2024-02-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nickuzmenkov.github.io/ml_docs/machine_learning/other_models/hierarchical_clustering/</loc>
+         <loc>https://nickuzmenkov.github.io/tech_blog/machine_learning/other_models/hierarchical_clustering/</loc>
          <lastmod>2024-02-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nickuzmenkov.github.io/ml_docs/machine_learning/other_models/k_means/</loc>
+         <loc>https://nickuzmenkov.github.io/tech_blog/machine_learning/other_models/k_means/</loc>
          <lastmod>2024-02-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nickuzmenkov.github.io/ml_docs/machine_learning/other_models/knn/</loc>
+         <loc>https://nickuzmenkov.github.io/tech_blog/machine_learning/other_models/knn/</loc>
          <lastmod>2024-02-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nickuzmenkov.github.io/ml_docs/machine_learning/other_models/naive_bayes/</loc>
+         <loc>https://nickuzmenkov.github.io/tech_blog/machine_learning/other_models/naive_bayes/</loc>
          <lastmod>2024-02-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nickuzmenkov.github.io/ml_docs/machine_learning/other_models/pca/</loc>
+         <loc>https://nickuzmenkov.github.io/tech_blog/machine_learning/other_models/pca/</loc>
          <lastmod>2024-02-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nickuzmenkov.github.io/ml_docs/machine_learning/other_models/svm/</loc>
+         <loc>https://nickuzmenkov.github.io/tech_blog/machine_learning/other_models/svm/</loc>
          <lastmod>2024-02-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nickuzmenkov.github.io/ml_docs/machine_learning/trees/decision_trees/</loc>
+         <loc>https://nickuzmenkov.github.io/tech_blog/machine_learning/trees/decision_trees/</loc>
          <lastmod>2024-02-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nickuzmenkov.github.io/ml_docs/machine_learning/trees/gradient_boosted_trees/</loc>
+         <loc>https://nickuzmenkov.github.io/tech_blog/machine_learning/trees/gradient_boosted_trees/</loc>
          <lastmod>2024-02-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nickuzmenkov.github.io/ml_docs/machine_learning/trees/random_forest/</loc>
+         <loc>https://nickuzmenkov.github.io/tech_blog/machine_learning/trees/random_forest/</loc>
          <lastmod>2024-02-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nickuzmenkov.github.io/ml_docs/python/classes/</loc>
+         <loc>https://nickuzmenkov.github.io/tech_blog/python/classes/</loc>
          <lastmod>2024-02-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nickuzmenkov.github.io/ml_docs/python/exceptions/</loc>
+         <loc>https://nickuzmenkov.github.io/tech_blog/python/exceptions/</loc>
          <lastmod>2024-02-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nickuzmenkov.github.io/ml_docs/python/functions/</loc>
+         <loc>https://nickuzmenkov.github.io/tech_blog/python/functions/</loc>
          <lastmod>2024-02-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
