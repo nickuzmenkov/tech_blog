@@ -10,21 +10,27 @@
       
       
       
+        <link rel="canonical" href="https://nickuzmenkov.github.io/ml_docs/machine_learning/basics/data/">
       
       
-      <link rel="icon" href="/ml_docs/assets/images/favicon.png">
+        <link rel="prev" href="../../../python/exceptions/">
+      
+      
+        <link rel="next" href="../eda/">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.21">
     
     
       
-        <title>ML Docs</title>
+        <title>Data and Sampling - ML Docs</title>
       
     
     
-      <link rel="stylesheet" href="/ml_docs/assets/stylesheets/main.eebd395e.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.eebd395e.min.css">
       
         
-        <link rel="stylesheet" href="/ml_docs/assets/stylesheets/palette.ecc896b0.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ecc896b0.min.css">
       
       
 
@@ -42,7 +48,7 @@
     
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
     
-    <script>__md_scope=new URL("/ml_docs/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -70,6 +76,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#data-and-sampling" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -80,7 +91,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/ml_docs/." title="ML Docs" class="md-header__button md-logo" aria-label="ML Docs" data-md-component="logo">
+    <a href="../../.." title="ML Docs" class="md-header__button md-logo" aria-label="ML Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -99,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Data and Sampling
             
           </span>
         </div>
@@ -200,7 +211,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="/ml_docs/." class="md-tabs__link">
+    <a href="../../.." class="md-tabs__link">
       Home
     </a>
   </li>
@@ -215,7 +226,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/ml_docs/python/functions/" class="md-tabs__link">
+      <a href="../../../python/functions/" class="md-tabs__link">
         Python
       </a>
     </li>
@@ -224,6 +235,8 @@
       
         
   
+  
+    
   
 
 
@@ -236,7 +249,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/ml_docs/machine_learning/basics/data/" class="md-tabs__link">
+      <a href="./" class="md-tabs__link md-tabs__link--active">
         Machine Learning
       </a>
     </li>
@@ -266,7 +279,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/ml_docs/." title="ML Docs" class="md-nav__button md-logo" aria-label="ML Docs" data-md-component="logo">
+    <a href="../../.." title="ML Docs" class="md-nav__button md-logo" aria-label="ML Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -297,7 +310,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         Home
       </a>
     </li>
@@ -339,7 +352,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/python/functions/" class="md-nav__link">
+      <a href="../../../python/functions/" class="md-nav__link">
         Functions
       </a>
     </li>
@@ -353,7 +366,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/python/classes/" class="md-nav__link">
+      <a href="../../../python/classes/" class="md-nav__link">
         Classes
       </a>
     </li>
@@ -367,7 +380,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/python/exceptions/" class="md-nav__link">
+      <a href="../../../python/exceptions/" class="md-nav__link">
         Exceptions
       </a>
     </li>
@@ -387,14 +400,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
       
       
       
@@ -403,7 +418,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
           Machine Learning
@@ -414,14 +429,16 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
       
       
       
@@ -430,7 +447,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_3_1">
           <span class="md-nav__icon md-icon"></span>
           Basics
@@ -441,11 +458,161 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/basics/data/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Data and Sampling
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Data and Sampling
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#central-limit-theorem" class="md-nav__link">
+    Central Limit Theorem
+  </a>
+  
+    <nav class="md-nav" aria-label="Central Limit Theorem">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#standard-error" class="md-nav__link">
+    Standard error
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standard-error-on-difference" class="md-nav__link">
+    Standard error on difference
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commong-sampling-bias-types" class="md-nav__link">
+    Commong Sampling Bias Types
+  </a>
+  
+    <nav class="md-nav" aria-label="Commong Sampling Bias Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#selection-bias" class="md-nav__link">
+    Selection bias
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#publication-bias" class="md-nav__link">
+    Publication bias
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recall-bias" class="md-nav__link">
+    Recall bias
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#survivorship-bias" class="md-nav__link">
+    Survivorship bias
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#healthy-user-bias" class="md-nav__link">
+    Healthy user bias
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bootstrap" class="md-nav__link">
+    Bootstrap
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-distributions" class="md-nav__link">
+    Common Distributions
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Distributions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#normal-distribution" class="md-nav__link">
+    Normal Distribution
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#students-t-distribution" class="md-nav__link">
+    Student’s t-distribution
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#binomial-distribution" class="md-nav__link">
+    Binomial distribution
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -457,7 +624,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/basics/eda/" class="md-nav__link">
+      <a href="../eda/" class="md-nav__link">
         Exploratory Data Analysis
       </a>
     </li>
@@ -471,7 +638,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/basics/statistical_tests/" class="md-nav__link">
+      <a href="../statistical_tests/" class="md-nav__link">
         Statistical Tests
       </a>
     </li>
@@ -485,7 +652,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/basics/regression/" class="md-nav__link">
+      <a href="../regression/" class="md-nav__link">
         Regression
       </a>
     </li>
@@ -499,7 +666,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/basics/classification/" class="md-nav__link">
+      <a href="../classification/" class="md-nav__link">
         Classification
       </a>
     </li>
@@ -513,7 +680,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/basics/ensemble/" class="md-nav__link">
+      <a href="../ensemble/" class="md-nav__link">
         Ensemble
       </a>
     </li>
@@ -561,7 +728,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/linear_models/linear_regression/" class="md-nav__link">
+      <a href="../../linear_models/linear_regression/" class="md-nav__link">
         Linear Regression
       </a>
     </li>
@@ -575,7 +742,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/linear_models/linear_classification/" class="md-nav__link">
+      <a href="../../linear_models/linear_classification/" class="md-nav__link">
         Linear Classification
       </a>
     </li>
@@ -589,7 +756,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/linear_models/regularization/" class="md-nav__link">
+      <a href="../../linear_models/regularization/" class="md-nav__link">
         Regularization
       </a>
     </li>
@@ -603,7 +770,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/linear_models/lda/" class="md-nav__link">
+      <a href="../../linear_models/lda/" class="md-nav__link">
         Linear Discriminant Analysis
       </a>
     </li>
@@ -651,7 +818,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/trees/decision_trees/" class="md-nav__link">
+      <a href="../../trees/decision_trees/" class="md-nav__link">
         Decision Trees
       </a>
     </li>
@@ -665,7 +832,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/trees/random_forest/" class="md-nav__link">
+      <a href="../../trees/random_forest/" class="md-nav__link">
         Random Forest
       </a>
     </li>
@@ -679,7 +846,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/trees/gradient_boosted_trees/" class="md-nav__link">
+      <a href="../../trees/gradient_boosted_trees/" class="md-nav__link">
         Gradient Boosted Trees
       </a>
     </li>
@@ -727,7 +894,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/other_models/naive_bayes/" class="md-nav__link">
+      <a href="../../other_models/naive_bayes/" class="md-nav__link">
         Naive Bayes
       </a>
     </li>
@@ -741,7 +908,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/other_models/svm/" class="md-nav__link">
+      <a href="../../other_models/svm/" class="md-nav__link">
         Support Vector Machines
       </a>
     </li>
@@ -755,7 +922,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/other_models/pca/" class="md-nav__link">
+      <a href="../../other_models/pca/" class="md-nav__link">
         Principal Component Analysis
       </a>
     </li>
@@ -769,7 +936,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/other_models/knn/" class="md-nav__link">
+      <a href="../../other_models/knn/" class="md-nav__link">
         K-Nearest Neighbors
       </a>
     </li>
@@ -783,7 +950,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/other_models/hierarchical_clustering/" class="md-nav__link">
+      <a href="../../other_models/hierarchical_clustering/" class="md-nav__link">
         Hierarchical Clustering
       </a>
     </li>
@@ -797,7 +964,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/other_models/k_means/" class="md-nav__link">
+      <a href="../../other_models/k_means/" class="md-nav__link">
         K-Means Clustering
       </a>
     </li>
@@ -835,6 +1002,132 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#central-limit-theorem" class="md-nav__link">
+    Central Limit Theorem
+  </a>
+  
+    <nav class="md-nav" aria-label="Central Limit Theorem">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#standard-error" class="md-nav__link">
+    Standard error
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standard-error-on-difference" class="md-nav__link">
+    Standard error on difference
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commong-sampling-bias-types" class="md-nav__link">
+    Commong Sampling Bias Types
+  </a>
+  
+    <nav class="md-nav" aria-label="Commong Sampling Bias Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#selection-bias" class="md-nav__link">
+    Selection bias
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#publication-bias" class="md-nav__link">
+    Publication bias
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recall-bias" class="md-nav__link">
+    Recall bias
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#survivorship-bias" class="md-nav__link">
+    Survivorship bias
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#healthy-user-bias" class="md-nav__link">
+    Healthy user bias
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bootstrap" class="md-nav__link">
+    Bootstrap
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-distributions" class="md-nav__link">
+    Common Distributions
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Distributions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#normal-distribution" class="md-nav__link">
+    Normal Distribution
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#students-t-distribution" class="md-nav__link">
+    Student’s t-distribution
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#binomial-distribution" class="md-nav__link">
+    Binomial distribution
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -846,8 +1139,118 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+<h1 id="data-and-sampling">Data and Sampling</h1>
+<h2 id="central-limit-theorem">Central Limit Theorem</h2>
+<p>Means of samples drawn from a population will be normally distributed around the population mean, even if the population itself is not normally distributed. The sample standard deviation will be roughly the same as that of the population.</p>
+<h3 id="standard-error">Standard error</h3>
+<p><em>Standard error</em> is standard deviation of the normal distribution of sample means:</p>
+<p>$$
+\text{SE} = \frac{\sigma}{\sqrt{n}}
+$$</p>
+<h3 id="standard-error-on-difference">Standard error on difference</h3>
+<p><em>Standard error on differrence</em> in means:</p>
+<p>$$
+\text{SE (diff)}=\sqrt{\frac{\sigma_x^2}{n_x} + \frac{\sigma_y^2}{n_y}}
+$$</p>
+<p>It is greater than one for each sample but lower than their sum. This corresponds to larger uncertainty when drawing several samples from the population.</p>
+<h2 id="commong-sampling-bias-types">Commong Sampling Bias Types</h2>
+<h3 id="selection-bias">Selection bias</h3>
+<p>It’s usually hard to draw a proper random sample from a population. Assessment of non-random sample characteristics can lead to dramatically incorrect conclusions.</p>
+<blockquote>
+<p>💡 #story The <em>Literary Digest</em> magazine surveyed more than 10 million of its subscribers, as well as car and phone owners (those contacts were publicly available) all over the country to predict the winner of the presidential election in 1936. Results had proposed Landon’s win with 57% votes. Instead, Roosevelt won with 60% votes. The poll was biased towards wealthier people (those who have magazine subscriptions, cars, and phones), who hence were more likely to vote Republican.</p>
+</blockquote>
+<h3 id="publication-bias">Publication bias</h3>
+<p>Assuming there are a lot of repeated studies all over the world each having multiple predictor variables vast search effect, some may find statistically significant patterns just by chance. Those reporting positive findings and/or correlations are <em>more likely</em> to be published.</p>
+<h3 id="recall-bias">Recall bias</h3>
+<p>People tend to create false memories based on their thoughts in present. This is why longitudinal studies are preferred to do cross-sectional studies.</p>
+<h3 id="survivorship-bias">Survivorship bias</h3>
+<p>For instance, average class test scores typically rise from freshman to senior year, as the least scoring students are being consistently kicked off.</p>
+<h3 id="healthy-user-bias">Healthy user bias</h3>
+<p>For instance, people who take vitamins regularly are healthier at least because they tend to care about themselves.</p>
+<h2 id="bootstrap">Bootstrap</h2>
+<p><em>Bootstrap</em> is a process of replicating the original sample to form a hypothetical population to estimate standard errors and confidence intervals for the sample’s characteristics.</p>
+<p>The same can be done by sampling with replacement (#code <code>sklearn.resample</code>) instead of replicating.</p>
+<p>Confidence intervals can be assessed numerically by drawing the characteristic of interest from $R$ random resamples of the original sample and getting level $p$ and $(1-p)$ quantiles. </p>
+<p>Bootstrap is also widely used for training model ensembles, e.g. each model is trained with bootstrap samples, then predictions averaged for inference, producing <em>bagging</em> (bootstrap aggregating) or <em>pasting</em> ensemble.</p>
+<blockquote>
+<p>💡 #warning Bootstrap is not used to compensate for a small sample size, create new data, or impute the existing data. It merely gives the idea about samples' statistics drawn from population like the original sample</p>
+</blockquote>
+<h2 id="common-distributions">Common Distributions</h2>
+<h3 id="normal-distribution">Normal Distribution</h3>
+<blockquote>
+<p>💡 Assess how the sample is close to the normal distribution via #code <code>scipy.stats.probplot</code>.</p>
+</blockquote>
+<h3 id="students-t-distribution">Student’s t-distribution</h3>
+<p>A family of distributions resembling the normal distribution, but with thicker tails. It’s widely used for sample means, regression parameters, and the like.</p>
+<p>$$
+\overline{x} \pm t_{n-1}(p) \cdot \frac{s}{\sqrt{n}}
+$$</p>
+<h3 id="binomial-distribution">Binomial distribution</h3>
+<p>The frequency distribution of the number of successes ($x$) in a given number of trials ($n$) with specified probability of success in each trial ($p$).</p>
+<p>Distribution function</p>
+<p>$$
+f(x, n, p) = 
+\begin{pmatrix}
+    n \
+    x \
+\end{pmatrix}
+p^x (1 - p)^{n-x} = \frac{n!}{x!(n-x)!}p^x (1 - p)^{n-x}
+$$</p>
+<p>Mean</p>
+<p>$$
+\overline{x}=n \cdot p
+$$</p>
+<p>Variance</p>
+<p>$$
+\sigma^2=n\cdot p \cdot (1-p)
+$$</p>
+<p>💡 For a large number of trials and $p$ close to 0.5 binomial distribution can be approximated by the normal distribution.</p>
+<h1 id="code">code</h1>
+<ul>
+<li>Probability of <em>exactly</em> $x$ successes in $n$ trials is given by <code>scipy.stats.binom.pmf(x=x, n=n, p=0.5)</code></li>
+<li>Probability of $x$ <em>or fewer</em> successes in $n$ trials <code>scipy.stats.binom.cdf(x=x, n=n, p=0.5)</code></li>
+</ul>
+<h3 id="chi-squared-distribution">Chi-squared distribution</h3>
+<h1 id="empty">empty</h1>
+<h3 id="f-distribution">F-distribution</h3>
+<h1 id="empty_1">empty</h1>
+<h3 id="poisson-distribution">Poisson Distribution</h3>
+<p>The frequency distribution of the number of events in sampled units of time or space.</p>
+<p>Distribution function</p>
+<p>$$
+f(k)=\exp{(-\mu)} \frac{\mu^k}{k!}
+$$</p>
+<p>Mean</p>
+<p>$$
+\overline{x} = \mu
+$$</p>
+<p>Variance</p>
+<p>$$
+\sigma^2 = \mu
+$$</p>
+<h1 id="code-scipystatspoissonrvsmu2-size100">code <code>scipy.stats.poisson.rvs(mu=2, size=100)</code>.</h1>
+<h3 id="exponential-distribution">Exponential Distribution</h3>
+<p>The frequency distribution of the time or distance from one event to the next event.</p>
+<p>Distribution function</p>
+<p>$$
+f(x)=\exp{(-x)}=\lambda\cdot \exp{(-\lambda \cdot x)}
+$$</p>
+<blockquote>
+<p>💡 In Poisson and exponential distributions, lambda must stay the same, which is usually not the case in real life. However, if the period over which lambda changes is much longer than the typical interval between events, one can divide time or space into chunks where lambda is roughly constant. When this is not the case, one must switch to Weibull distribution.</p>
+</blockquote>
+<h1 id="code-scipystatsexponrvsscale02-size100">code <code>scipy.stats.expon.rvs(scale=0.2, size=100)</code>.</h1>
+<h3 id="weibull-distribution">Weibull Distribution</h3>
+<p>A generalized version of exponential distribution allows event rates to change over time.</p>
+<h1 id="code-scipystatsweibull_minrvsc15-scale5000-size100">code <code>scipy.stats.weibull_min.rvs(c=1.5, scale=5000, size=100)</code>.</h1>
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -879,13 +1282,13 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "/ml_docs/", "features": ["navigation.tabs", "content.code.copy", "content.code.annotate", "content.code.select", "content.tooltips"], "search": "/ml_docs/assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "content.code.copy", "content.code.annotate", "content.code.select", "content.tooltips"], "search": "../../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="/ml_docs/assets/javascripts/bundle.220ee61c.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.220ee61c.min.js"></script>
       
         
-          <script src="/ml_docs/js/katex.js"></script>
+          <script src="../../../js/katex.js"></script>
         
       
         

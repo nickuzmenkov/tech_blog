@@ -10,21 +10,27 @@
       
       
       
+        <link rel="canonical" href="https://nickuzmenkov.github.io/ml_docs/machine_learning/basics/classification/">
       
       
-      <link rel="icon" href="/ml_docs/assets/images/favicon.png">
+        <link rel="prev" href="../regression/">
+      
+      
+        <link rel="next" href="../ensemble/">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.21">
     
     
       
-        <title>ML Docs</title>
+        <title>Classification - ML Docs</title>
       
     
     
-      <link rel="stylesheet" href="/ml_docs/assets/stylesheets/main.eebd395e.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.eebd395e.min.css">
       
         
-        <link rel="stylesheet" href="/ml_docs/assets/stylesheets/palette.ecc896b0.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ecc896b0.min.css">
       
       
 
@@ -42,7 +48,7 @@
     
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
     
-    <script>__md_scope=new URL("/ml_docs/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -70,6 +76,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#classification" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -80,7 +91,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/ml_docs/." title="ML Docs" class="md-header__button md-logo" aria-label="ML Docs" data-md-component="logo">
+    <a href="../../.." title="ML Docs" class="md-header__button md-logo" aria-label="ML Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -99,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Classification
             
           </span>
         </div>
@@ -200,7 +211,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="/ml_docs/." class="md-tabs__link">
+    <a href="../../.." class="md-tabs__link">
       Home
     </a>
   </li>
@@ -215,7 +226,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/ml_docs/python/functions/" class="md-tabs__link">
+      <a href="../../../python/functions/" class="md-tabs__link">
         Python
       </a>
     </li>
@@ -224,6 +235,8 @@
       
         
   
+  
+    
   
 
 
@@ -236,7 +249,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/ml_docs/machine_learning/basics/data/" class="md-tabs__link">
+      <a href="../data/" class="md-tabs__link md-tabs__link--active">
         Machine Learning
       </a>
     </li>
@@ -266,7 +279,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/ml_docs/." title="ML Docs" class="md-nav__button md-logo" aria-label="ML Docs" data-md-component="logo">
+    <a href="../../.." title="ML Docs" class="md-nav__button md-logo" aria-label="ML Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -297,7 +310,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         Home
       </a>
     </li>
@@ -339,7 +352,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/python/functions/" class="md-nav__link">
+      <a href="../../../python/functions/" class="md-nav__link">
         Functions
       </a>
     </li>
@@ -353,7 +366,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/python/classes/" class="md-nav__link">
+      <a href="../../../python/classes/" class="md-nav__link">
         Classes
       </a>
     </li>
@@ -367,7 +380,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/python/exceptions/" class="md-nav__link">
+      <a href="../../../python/exceptions/" class="md-nav__link">
         Exceptions
       </a>
     </li>
@@ -387,14 +400,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
       
       
       
@@ -403,7 +418,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
           Machine Learning
@@ -414,14 +429,16 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
       
       
       
@@ -430,7 +447,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_3_1">
           <span class="md-nav__icon md-icon"></span>
           Basics
@@ -443,7 +460,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/basics/data/" class="md-nav__link">
+      <a href="../data/" class="md-nav__link">
         Data and Sampling
       </a>
     </li>
@@ -457,7 +474,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/basics/eda/" class="md-nav__link">
+      <a href="../eda/" class="md-nav__link">
         Exploratory Data Analysis
       </a>
     </li>
@@ -471,7 +488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/basics/statistical_tests/" class="md-nav__link">
+      <a href="../statistical_tests/" class="md-nav__link">
         Statistical Tests
       </a>
     </li>
@@ -485,7 +502,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/basics/regression/" class="md-nav__link">
+      <a href="../regression/" class="md-nav__link">
         Regression
       </a>
     </li>
@@ -497,11 +514,52 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/basics/classification/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Classification
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Classification
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#binary-classification" class="md-nav__link">
+    Binary classification
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -513,7 +571,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/basics/ensemble/" class="md-nav__link">
+      <a href="../ensemble/" class="md-nav__link">
         Ensemble
       </a>
     </li>
@@ -561,7 +619,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/linear_models/linear_regression/" class="md-nav__link">
+      <a href="../../linear_models/linear_regression/" class="md-nav__link">
         Linear Regression
       </a>
     </li>
@@ -575,7 +633,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/linear_models/linear_classification/" class="md-nav__link">
+      <a href="../../linear_models/linear_classification/" class="md-nav__link">
         Linear Classification
       </a>
     </li>
@@ -589,7 +647,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/linear_models/regularization/" class="md-nav__link">
+      <a href="../../linear_models/regularization/" class="md-nav__link">
         Regularization
       </a>
     </li>
@@ -603,7 +661,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/linear_models/lda/" class="md-nav__link">
+      <a href="../../linear_models/lda/" class="md-nav__link">
         Linear Discriminant Analysis
       </a>
     </li>
@@ -651,7 +709,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/trees/decision_trees/" class="md-nav__link">
+      <a href="../../trees/decision_trees/" class="md-nav__link">
         Decision Trees
       </a>
     </li>
@@ -665,7 +723,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/trees/random_forest/" class="md-nav__link">
+      <a href="../../trees/random_forest/" class="md-nav__link">
         Random Forest
       </a>
     </li>
@@ -679,7 +737,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/trees/gradient_boosted_trees/" class="md-nav__link">
+      <a href="../../trees/gradient_boosted_trees/" class="md-nav__link">
         Gradient Boosted Trees
       </a>
     </li>
@@ -727,7 +785,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/other_models/naive_bayes/" class="md-nav__link">
+      <a href="../../other_models/naive_bayes/" class="md-nav__link">
         Naive Bayes
       </a>
     </li>
@@ -741,7 +799,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/other_models/svm/" class="md-nav__link">
+      <a href="../../other_models/svm/" class="md-nav__link">
         Support Vector Machines
       </a>
     </li>
@@ -755,7 +813,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/other_models/pca/" class="md-nav__link">
+      <a href="../../other_models/pca/" class="md-nav__link">
         Principal Component Analysis
       </a>
     </li>
@@ -769,7 +827,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/other_models/knn/" class="md-nav__link">
+      <a href="../../other_models/knn/" class="md-nav__link">
         K-Nearest Neighbors
       </a>
     </li>
@@ -783,7 +841,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/other_models/hierarchical_clustering/" class="md-nav__link">
+      <a href="../../other_models/hierarchical_clustering/" class="md-nav__link">
         Hierarchical Clustering
       </a>
     </li>
@@ -797,7 +855,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/other_models/k_means/" class="md-nav__link">
+      <a href="../../other_models/k_means/" class="md-nav__link">
         K-Means Clustering
       </a>
     </li>
@@ -835,6 +893,23 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#binary-classification" class="md-nav__link">
+    Binary classification
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -846,8 +921,167 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+<h1 id="classification">Classification</h1>
+<h3 id="binary-classification">Binary classification</h3>
+<h1 id="empty">empty</h1>
+<h3 id="multiclass-classification">Multiclass classification</h3>
+<p>[[Naive Bayes|Naive Bayes]], [[Linear Models#Gradient Descent|SGD]], and [[Random Forest|Random Forest]] classifiers have native support for multiclass classification tasks.</p>
+<p>On the contrary, [[Linear Models#Logistic Regression|Logistic Regression]] and [[Support Vector Machines#Classification|SVC]] do not support it. However, these models can  be scaled to handle multiclass classification tasks as well using either <em>one-versus-the-rest</em> (<em>OvR</em>) or <em>one-versus-one</em> (<em>OvO</em>) approach.</p>
+<blockquote>
+<p>💡This is exactly what sklearn implicitly does for such models.</p>
+</blockquote>
+<h4 id="one-versus-the-rest-ovr">One-Versus-the-Rest (OvR)</h4>
+<p>Train class detectors for each class (e.g. class A, not class A). For inference choose the highest probability among all models. Requires $N$ models to be fitted with the eintire dataset.</p>
+<h1 id="code-sklearnmulticlassonevsrestclassifier">code  <code>sklearn.multiclass.OneVsRestClassifier</code>.</h1>
+<h4 id="one-versus-one-ovo">One-Versus-One (OvO)</h4>
+<p>Train models to distinguish between each pair of classes. For inference choose the class winning maximum number of duels. Requires $N(N-1)/2$ models to be fitted with $2/N$ fraction of the dataset.</p>
+<h1 id="code-sklearnmulticlassonevsoneclassifier">code   <code>sklearn.multiclass.OneVsOneClassifier</code>.</h1>
+<h3 id="multilabel-classification">Multilabel classification</h3>
+<h1 id="empty_1">empty</h1>
+<h3 id="multioutput-classification">Multioutput classification</h3>
+<p><em>Multioutput classification</em> is generalization of multilabel classification to more than one class for each label.</p>
+<h2 id="strategies-for-imbalanced-data">Strategies for Imbalanced Data</h2>
+<p>When one of the classes in the dataset is rare (e.g. fraud, churn, cancer, etc.) there’s a decent probability of observing similar records in the majority class just by chance. This is likely to disrupt the whole training process.</p>
+<p>In this case one should also concern about the correct choice of metrics, since monitoring wrong metrics (e.g. accuracy) can yield satisfying results even if the model only predicts the majority class all the time.</p>
+<blockquote>
+<p>💡 Stratified KFold is handy for multiclass classification problems (especially for those with imbalanced data) hence it makes sure each class is represented like in the original distribution.</p>
+</blockquote>
+<h3 id="undersampling">Undersampling</h3>
+<p><em>Undersampling</em> the majority class is usually applied when there’s a lot of data available.</p>
+<h3 id="oversampling">Oversampling</h3>
+<p><em>Oversampling</em> the minority class is applied when the opposite is true. Underrepresented class’ records can be bootstrapped forming a larger sample.</p>
+<h3 id="weighted-samples">Weighted Samples</h3>
+<p><em>Applying weights</em> is an option in both cases. Weights are selected so that the sum of weights of both classes are equal (e.g. if $p$ is the fraction of the minority class, then either the minority records can be weighted as $1/p$ or the majority records can be weighted as $p$).</p>
+<h2 id="examples">Examples</h2>
+<h3 id="multiclass-classification-example">Multiclass Classification #example</h3>
+<p>![[assets/img/Statistics/Classification/01.png|700]]</p>
+<h1 id="sourcecode-classification-codeiris-multiclass-classification">sourcecode [[Classification Code#Iris Multiclass Classification]].</h1>
+<h3 id="multiloutput-classification-example">Multiloutput Classification #example</h3>
+<p>![[assets/img/Statistics/Classification/02.png|700]]</p>
+<h1 id="sourcecode-classification-codemnist-denoising">sourcecode [[Classification Code#MNIST Denoising]]</h1>
+<h3 id="accuracy">Accuracy</h3>
+<p>Accuracy is simply a fraction of all correct predictions</p>
+<p>$$
+\text{Accuracy}=\frac{\text{TP}+\text{TN}}{n}
+$$</p>
+<p>where $\text{TP}$ is the total number of true positives and $\text{TN}$ is the total number of true negatives.</p>
+<h1 id="code-sklearnmetricsaccuracy_scorey_true-y_pred">code <code>sklearn.metrics.accuracy_score(y_true, y_pred)</code>.</h1>
+<h3 id="confusion-matrix">Confusion Matrix</h3>
+<p>Confusion matrix is a way to present results in a form of table with rows of true values and columns of predicted values, giving all possible true/false rates. For #example:</p>
+<table>
+<thead>
+<tr>
+<th>True\Predicted</th>
+<th>A</th>
+<th>B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>13</td>
+<td>2</td>
+</tr>
+<tr>
+<td>B</td>
+<td>3</td>
+<td>12</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 #warning Confusion matrix is not necessarily symmetrical and thus cannot be cut along diagonal like the correlation matrix.</p>
+</blockquote>
+<h1 id="code-sklearnmetricsconfusion_matrixy_true-y_pred">code <code>sklearn.metrics.confusion_matrix(y_true, y_pred)</code>.</h1>
+<h3 id="precision">Precision</h3>
+<p>Precision is the accuracy of the positive predictions (i.e. the ratio of correctly predicted positives to all predicted positives):</p>
+<p>$$
+\text{Precision}=\frac{\text{TP}}{\text{TP}+\text{FP}}
+$$</p>
+<p>A trivial perfect-precision-model is that one predicting a single positive making sure it’s correct (i.e. the one of the highest confidence score).</p>
+<p>Can be drawn from confusion matrix: true positives in the column divided by the sum of the column. For #example from the [[#Confusion Matrix|above Confusion Matrix]] </p>
+<p>$$
+\text{Precision}=12/(12+2)=0.86
+$$</p>
+<p>(i.e. when model predicts class B it is correct 86% of the time).</p>
+<h1 id="code-sklearnmetricsprecision_scorey_true-y_pred">code <code>sklearn.metrics.precision_score(y_true, y_pred)</code>.</h1>
+<h3 id="recall">Recall</h3>
+<p>Recall (or <em>true positive rate</em>) is the ratio of correctly predicted positives to actual positives:</p>
+<p>$$
+\text{Recall}=\frac{\text{TP}}{\text{TP}+\text{FN}}
+$$</p>
+<p>A trivial perfect-recall-model is that one always predicting positives.</p>
+<p>Can be drawn from confusion matrix: true positives in the row divided by the sum of the row. E.g. from the [[#Confusion Matrix|above Confusion Matrix]]</p>
+<p>$$
+\text{Recall}=12/(12+3)=0.80
+$$</p>
+<p>(i.e. model detected 80% of class B instances).</p>
+<h1 id="code-sklearnmetricsrecall_scorey_true-y_pred">code <code>sklearn.metrics.recall_score(y_true, y_pred)</code>.</h1>
+<h3 id="specificity">Specificity</h3>
+<p>Similarly to recall, specificity (or <em>true negative rate</em>) is the ratio of correctly predicted negatives to actual negatives:</p>
+<p>$$
+\text{Specificity}=\frac{\text{TN}}{\text{TN}+\text{FP}}
+$$</p>
+<p>There’s no direct <code>sklearn</code> implementation for specificity. But the required values can be drawn from the [[#Confusion Matrix]]. </p>
+<h3 id="f1-score">F1-Score</h3>
+<p>F1-score is a way to measure precision-recall trade-off as a <em>harmonic mean</em> between them:</p>
+<p>$$
+F_1=\frac{2}{\text{Precision}^{-1} + \text{Recall}^{-1}} = \frac{\text{TP}}{\text{TP} + 0.5(\text{FP} + \text{FN})}
+$$</p>
+<p>F1-score is computed as the harmonic mean (and not the regular mean) because it gives much more weight to low values. It thus can be high only if both precision and recall are high.</p>
+<p>F1-score, however, does not take into account true negative rate.</p>
+<blockquote>
+<p>💡 A more generic $F_\beta$ score applies additional weights, valuing one of precision or recall more than the other.</p>
+</blockquote>
+<h1 id="code-sklearnmetricsf1_scorey_true-y_pred">code <code>sklearn.metrics.f1_score(y_true, y_pred)</code>.</h1>
+<h2 id="precisionrecall-trade-off">Precision/Recall Trade-Off</h2>
+<p>Precision and recall are mirroring metrics. Think about this:</p>
+<p>![[assets/img/Statistics/Classification Metrics/01.png|600]]</p>
+<ul>
+<li>As we increase the threshold there are fewer positives of higher confidence (those are less likely to be false positives), hence higher precision.</li>
+<li>As we decrease the threshold, more positives are predicted, raising the chance to predict all actual positives (and false positives), hence higher recall.</li>
+</ul>
+<p>In most cases, either high precision or high recall is required most:</p>
+<ul>
+<li>Adult content filter (positive is <em>safe</em>): high precision is required, low recall is acceptable.</li>
+<li>Shoplifter identifier (positive is <em>suspect</em>): high recall is required, low precision is acceptable.</li>
+</ul>
+<p>There are 2 visual representations for precision/recall trade-off: precision-recall (PR) curve and receiver operating curve (ROC). Both can give insights and help to choose a proper threshold based on precision and recall relative importance.</p>
+<blockquote>
+<p>💡 It's generally advisable to choose PR curve when the positive class is rare or when you care more about false positives. Otherwise it is suggested to use ROC.</p>
+</blockquote>
+<h3 id="pr-precision-recall-curve">PR (Precision-Recall) Curve</h3>
+<p>There are two ways to plot the PR curve. One is precision and recall versus the probability (<code>predict_proba</code>) or decision function (<code>decision_function</code>) threshold:</p>
+<p>![[assets/img/Statistics/Classification Metrics/03.png|500]]
+The other way is to plot precision versus recall directly:
+![[assets/img/Statistics/Classification Metrics/02.png|700]]</p>
+<h1 id="code-sklearnmetricsprecision_recall_curve">code <code>sklearn.metrics.precision_recall_curve</code>.</h1>
+<h1 id="sourcecode-classification-metrics-codepr-curve">sourcecode [[Classification Metrics Code#PR Curve]].</h1>
+<h3 id="roc-receiver-operating-characteristics-curve">ROC (Receiver Operating Characteristics) Curve</h3>
+<p>ROC curve shows $1-\text{Specificity}$ (also <em>called false positive rate</em>) versus recall (t<em>rue positive rate</em>):</p>
+<p>![[04.png|500]]</p>
+<p>The analytic way to compute ROC is like this:</p>
+<ol>
+<li>Sort records descending by predicted probability.</li>
+<li>Compute cumulative specificity and recall on sorted records.</li>
+</ol>
+<h1 id="code-sklearnmetricsroc_curve">code <code>sklearn.metrics.roc_curve</code>.</h1>
+<h1 id="sourcecode-classification-metrics-coderoc-curve">sourcecode [[Classification Metrics Code#ROC Curve]].</h1>
+<h3 id="roc-auc-area-underneath-the-curve">ROC AUC (Area Underneath the Curve)</h3>
+<p>A quantitative metric associated with the ROC curve is the <em>area underneath the curve</em> (AUC or ROC AUC). AUC is equal to 1.0 for a perfect classifier and to 0.5 for a random classifier.</p>
+<blockquote>
+<p>💡 Thus ROC is drawn for all possible thresholds, ROC AUC is threshold independent.</p>
+</blockquote>
+<h1 id="code-sklearnmetricsroc_auc_score">code <code>sklearn.metrics.roc_auc_score</code>.</h1>
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -879,13 +1113,13 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "/ml_docs/", "features": ["navigation.tabs", "content.code.copy", "content.code.annotate", "content.code.select", "content.tooltips"], "search": "/ml_docs/assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "content.code.copy", "content.code.annotate", "content.code.select", "content.tooltips"], "search": "../../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="/ml_docs/assets/javascripts/bundle.220ee61c.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.220ee61c.min.js"></script>
       
         
-          <script src="/ml_docs/js/katex.js"></script>
+          <script src="../../../js/katex.js"></script>
         
       
         

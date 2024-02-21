@@ -10,21 +10,27 @@
       
       
       
+        <link rel="canonical" href="https://nickuzmenkov.github.io/ml_docs/machine_learning/other_models/naive_bayes/">
       
       
-      <link rel="icon" href="/ml_docs/assets/images/favicon.png">
+        <link rel="prev" href="../../trees/gradient_boosted_trees/">
+      
+      
+        <link rel="next" href="../svm/">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.21">
     
     
       
-        <title>ML Docs</title>
+        <title>Naive Bayes - ML Docs</title>
       
     
     
-      <link rel="stylesheet" href="/ml_docs/assets/stylesheets/main.eebd395e.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.eebd395e.min.css">
       
         
-        <link rel="stylesheet" href="/ml_docs/assets/stylesheets/palette.ecc896b0.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ecc896b0.min.css">
       
       
 
@@ -42,7 +48,7 @@
     
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
     
-    <script>__md_scope=new URL("/ml_docs/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -70,6 +76,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#naive-bayes" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -80,7 +91,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/ml_docs/." title="ML Docs" class="md-header__button md-logo" aria-label="ML Docs" data-md-component="logo">
+    <a href="../../.." title="ML Docs" class="md-header__button md-logo" aria-label="ML Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -99,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Naive Bayes
             
           </span>
         </div>
@@ -200,7 +211,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="/ml_docs/." class="md-tabs__link">
+    <a href="../../.." class="md-tabs__link">
       Home
     </a>
   </li>
@@ -215,7 +226,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/ml_docs/python/functions/" class="md-tabs__link">
+      <a href="../../../python/functions/" class="md-tabs__link">
         Python
       </a>
     </li>
@@ -224,6 +235,8 @@
       
         
   
+  
+    
   
 
 
@@ -236,7 +249,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/ml_docs/machine_learning/basics/data/" class="md-tabs__link">
+      <a href="../../basics/data/" class="md-tabs__link md-tabs__link--active">
         Machine Learning
       </a>
     </li>
@@ -266,7 +279,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/ml_docs/." title="ML Docs" class="md-nav__button md-logo" aria-label="ML Docs" data-md-component="logo">
+    <a href="../../.." title="ML Docs" class="md-nav__button md-logo" aria-label="ML Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -297,7 +310,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         Home
       </a>
     </li>
@@ -339,7 +352,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/python/functions/" class="md-nav__link">
+      <a href="../../../python/functions/" class="md-nav__link">
         Functions
       </a>
     </li>
@@ -353,7 +366,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/python/classes/" class="md-nav__link">
+      <a href="../../../python/classes/" class="md-nav__link">
         Classes
       </a>
     </li>
@@ -367,7 +380,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/python/exceptions/" class="md-nav__link">
+      <a href="../../../python/exceptions/" class="md-nav__link">
         Exceptions
       </a>
     </li>
@@ -387,14 +400,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
       
       
       
@@ -403,7 +418,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
           Machine Learning
@@ -443,7 +458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/basics/data/" class="md-nav__link">
+      <a href="../../basics/data/" class="md-nav__link">
         Data and Sampling
       </a>
     </li>
@@ -457,7 +472,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/basics/eda/" class="md-nav__link">
+      <a href="../../basics/eda/" class="md-nav__link">
         Exploratory Data Analysis
       </a>
     </li>
@@ -471,7 +486,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/basics/statistical_tests/" class="md-nav__link">
+      <a href="../../basics/statistical_tests/" class="md-nav__link">
         Statistical Tests
       </a>
     </li>
@@ -485,7 +500,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/basics/regression/" class="md-nav__link">
+      <a href="../../basics/regression/" class="md-nav__link">
         Regression
       </a>
     </li>
@@ -499,7 +514,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/basics/classification/" class="md-nav__link">
+      <a href="../../basics/classification/" class="md-nav__link">
         Classification
       </a>
     </li>
@@ -513,7 +528,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/basics/ensemble/" class="md-nav__link">
+      <a href="../../basics/ensemble/" class="md-nav__link">
         Ensemble
       </a>
     </li>
@@ -561,7 +576,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/linear_models/linear_regression/" class="md-nav__link">
+      <a href="../../linear_models/linear_regression/" class="md-nav__link">
         Linear Regression
       </a>
     </li>
@@ -575,7 +590,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/linear_models/linear_classification/" class="md-nav__link">
+      <a href="../../linear_models/linear_classification/" class="md-nav__link">
         Linear Classification
       </a>
     </li>
@@ -589,7 +604,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/linear_models/regularization/" class="md-nav__link">
+      <a href="../../linear_models/regularization/" class="md-nav__link">
         Regularization
       </a>
     </li>
@@ -603,7 +618,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/linear_models/lda/" class="md-nav__link">
+      <a href="../../linear_models/lda/" class="md-nav__link">
         Linear Discriminant Analysis
       </a>
     </li>
@@ -651,7 +666,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/trees/decision_trees/" class="md-nav__link">
+      <a href="../../trees/decision_trees/" class="md-nav__link">
         Decision Trees
       </a>
     </li>
@@ -665,7 +680,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/trees/random_forest/" class="md-nav__link">
+      <a href="../../trees/random_forest/" class="md-nav__link">
         Random Forest
       </a>
     </li>
@@ -679,7 +694,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/trees/gradient_boosted_trees/" class="md-nav__link">
+      <a href="../../trees/gradient_boosted_trees/" class="md-nav__link">
         Gradient Boosted Trees
       </a>
     </li>
@@ -698,14 +713,16 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" checked>
       
       
       
@@ -714,7 +731,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_3_4">
           <span class="md-nav__icon md-icon"></span>
           Other Models
@@ -725,11 +742,21 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/other_models/naive_bayes/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Naive Bayes
       </a>
+      
     </li>
   
 
@@ -741,7 +768,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/other_models/svm/" class="md-nav__link">
+      <a href="../svm/" class="md-nav__link">
         Support Vector Machines
       </a>
     </li>
@@ -755,7 +782,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/other_models/pca/" class="md-nav__link">
+      <a href="../pca/" class="md-nav__link">
         Principal Component Analysis
       </a>
     </li>
@@ -769,7 +796,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/other_models/knn/" class="md-nav__link">
+      <a href="../knn/" class="md-nav__link">
         K-Nearest Neighbors
       </a>
     </li>
@@ -783,7 +810,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/other_models/hierarchical_clustering/" class="md-nav__link">
+      <a href="../hierarchical_clustering/" class="md-nav__link">
         Hierarchical Clustering
       </a>
     </li>
@@ -797,7 +824,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/other_models/k_means/" class="md-nav__link">
+      <a href="../k_means/" class="md-nav__link">
         K-Means Clustering
       </a>
     </li>
@@ -835,6 +862,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -846,8 +875,53 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+<h1 id="naive-bayes">Naive Bayes</h1>
+<h1 id="code-sklearnnaive_bayesmultinomialnb">code <code>sklearn.naive_bayes.MultinomialNB</code>.</h1>
+<h2 id="bayes-theorem">Bayes’ Theorem</h2>
+<p>The theorem is stated mathematically as follows</p>
+<p>$$ P(A|B)=\frac{P(A)P(B|A)}{P(B)} $$</p>
+<p>where $P(A|B)$ is a <em>conditional probability</em>, i.e. probability of event $A$ given that event $B$ happened.</p>
+<h2 id="naive-bayes-algorithm">Naive Bayes Algorithm</h2>
+<p>Applying the Bayes’ theorem to a dataset, the value of interest is $P(Y=i|X_1...X_p)$, i.e. the probability of $Y$ being either 0 or 1 ($i$) given the set of predictor variables, can be calculated as follows:</p>
+<p>$$ P(Y=i|X_1...X_p)=\frac{P(Y=i)P(X_1...X_p|Y=i)}{P(Y=0)P(X_1...X_p|Y=0) + P(Y=1)P(X_1...X_p|Y=1)} $$</p>
+<blockquote>
+<p>💡 Given even a relatively small number of predictors—say, five—it would require an overwhelmingly large dataset to find at least a couple of records with the same state of predictors $X_1...X_p$ to get conditional probabilities $P(X_1...X_p|Y=i)$.</p>
+</blockquote>
+<p>Under the assumption of conditional independence among predictor variables (<em>naive assumption</em>) all the mutual probabilities can be factorized:</p>
+<p>$$ P(X_1...X_p|Y=i)=\prod_{j=1}^p{P(X_j|Y=i)} $$</p>
+<p>Changing the above equation into:</p>
+<p>$$ P(Y=i|X_1...X_p)=\frac{P(Y=i)\prod_{j=1}^p{P(X_j|Y=i)}}{P(Y=0)\prod_{j=1}^p{P(X_j|Y=0)} + P(Y=1)\prod_{j=1}^p{P(X_j|Y=1)}} $$</p>
+<h3 id="supported-predictors">Supported Predictors</h3>
+<p>The Bayesian classifier works only with categorical predictors. To apply naive Bayes to numerical predictors, one of two approaches must be taken:</p>
+<ul>
+<li>Bin and convert the numerical predictors to categorical predictors</li>
+<li>Use a probability model (e.g. normal distribution) for estimating the conditional probabilities $P(X_j|Y=i)$</li>
+</ul>
+<blockquote>
+<p>💡 #warning Categorical variables for naive Bayes must be one-hot encoded without omitting.</p>
+</blockquote>
+<h2 id="examples">Examples</h2>
+<h3 id="bayes-theorem-example">Bayes Theorem #example</h3>
+<p>There’s a rare subspecies of a beetle, 0.1% of the total population. 98% of rare subspecies have a special pattern on the back, compared to only 5% members of the common subspecies. How likely is the beetle having the pattern to be rare?</p>
+<h4 id="solution">Solution</h4>
+<p>Given that:</p>
+<p>$$ P(\text{Rare})=0.001 \ P(\text{Common})=0.999 \ P(\text{Pattern|Rare})=0.98 \ P(\text{Pattern|Common })=0.05 $$</p>
+<p>According to the Bayes’ theorem:</p>
+<p>$$ P(\text{Rare|Pattern}) = \frac{P(\text{Rare})P(\text{Pattern|Rare})}{P(\text{Pattern})} $$</p>
+<p>Expanding the $P(\text{Pattern})$:</p>
+<p>$$ P(\text{Rare|Pattern}) = \frac{P(\text{Rare})P(\text{Pattern|Rare})}{P(\text{Common})P(\text{Common|Pattern}) + P(\text{Rare})P(\text{Rare|Pattern})} $$</p>
+<p>Substitute the values:</p>
+<p>$$ P(\text{Rare|Pattern}) = \frac{0.001 \cdot 0.98}{0.999\cdot 0.05 + 0.001\cdot 0.98} = 0.019 $$</p>
+<p>That is, 1.9%.</p>
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -879,13 +953,13 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "/ml_docs/", "features": ["navigation.tabs", "content.code.copy", "content.code.annotate", "content.code.select", "content.tooltips"], "search": "/ml_docs/assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "content.code.copy", "content.code.annotate", "content.code.select", "content.tooltips"], "search": "../../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="/ml_docs/assets/javascripts/bundle.220ee61c.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.220ee61c.min.js"></script>
       
         
-          <script src="/ml_docs/js/katex.js"></script>
+          <script src="../../../js/katex.js"></script>
         
       
         

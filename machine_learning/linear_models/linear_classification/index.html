@@ -10,21 +10,27 @@
       
       
       
+        <link rel="canonical" href="https://nickuzmenkov.github.io/ml_docs/machine_learning/linear_models/linear_classification/">
       
       
-      <link rel="icon" href="/ml_docs/assets/images/favicon.png">
+        <link rel="prev" href="../linear_regression/">
+      
+      
+        <link rel="next" href="../regularization/">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.21">
     
     
       
-        <title>ML Docs</title>
+        <title>Linear Classification - ML Docs</title>
       
     
     
-      <link rel="stylesheet" href="/ml_docs/assets/stylesheets/main.eebd395e.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.eebd395e.min.css">
       
         
-        <link rel="stylesheet" href="/ml_docs/assets/stylesheets/palette.ecc896b0.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ecc896b0.min.css">
       
       
 
@@ -42,7 +48,7 @@
     
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
     
-    <script>__md_scope=new URL("/ml_docs/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -70,6 +76,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#linear-classification" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -80,7 +91,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/ml_docs/." title="ML Docs" class="md-header__button md-logo" aria-label="ML Docs" data-md-component="logo">
+    <a href="../../.." title="ML Docs" class="md-header__button md-logo" aria-label="ML Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -99,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Linear Classification
             
           </span>
         </div>
@@ -200,7 +211,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="/ml_docs/." class="md-tabs__link">
+    <a href="../../.." class="md-tabs__link">
       Home
     </a>
   </li>
@@ -215,7 +226,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/ml_docs/python/functions/" class="md-tabs__link">
+      <a href="../../../python/functions/" class="md-tabs__link">
         Python
       </a>
     </li>
@@ -224,6 +235,8 @@
       
         
   
+  
+    
   
 
 
@@ -236,7 +249,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/ml_docs/machine_learning/basics/data/" class="md-tabs__link">
+      <a href="../../basics/data/" class="md-tabs__link md-tabs__link--active">
         Machine Learning
       </a>
     </li>
@@ -266,7 +279,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/ml_docs/." title="ML Docs" class="md-nav__button md-logo" aria-label="ML Docs" data-md-component="logo">
+    <a href="../../.." title="ML Docs" class="md-nav__button md-logo" aria-label="ML Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -297,7 +310,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         Home
       </a>
     </li>
@@ -339,7 +352,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/python/functions/" class="md-nav__link">
+      <a href="../../../python/functions/" class="md-nav__link">
         Functions
       </a>
     </li>
@@ -353,7 +366,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/python/classes/" class="md-nav__link">
+      <a href="../../../python/classes/" class="md-nav__link">
         Classes
       </a>
     </li>
@@ -367,7 +380,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/python/exceptions/" class="md-nav__link">
+      <a href="../../../python/exceptions/" class="md-nav__link">
         Exceptions
       </a>
     </li>
@@ -387,14 +400,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
       
       
       
@@ -403,7 +418,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
           Machine Learning
@@ -443,7 +458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/basics/data/" class="md-nav__link">
+      <a href="../../basics/data/" class="md-nav__link">
         Data and Sampling
       </a>
     </li>
@@ -457,7 +472,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/basics/eda/" class="md-nav__link">
+      <a href="../../basics/eda/" class="md-nav__link">
         Exploratory Data Analysis
       </a>
     </li>
@@ -471,7 +486,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/basics/statistical_tests/" class="md-nav__link">
+      <a href="../../basics/statistical_tests/" class="md-nav__link">
         Statistical Tests
       </a>
     </li>
@@ -485,7 +500,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/basics/regression/" class="md-nav__link">
+      <a href="../../basics/regression/" class="md-nav__link">
         Regression
       </a>
     </li>
@@ -499,7 +514,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/basics/classification/" class="md-nav__link">
+      <a href="../../basics/classification/" class="md-nav__link">
         Classification
       </a>
     </li>
@@ -513,7 +528,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/basics/ensemble/" class="md-nav__link">
+      <a href="../../basics/ensemble/" class="md-nav__link">
         Ensemble
       </a>
     </li>
@@ -532,14 +547,16 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
       
       
       
@@ -548,7 +565,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_3_2">
           <span class="md-nav__icon md-icon"></span>
           Linear Models
@@ -561,7 +578,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/linear_models/linear_regression/" class="md-nav__link">
+      <a href="../linear_regression/" class="md-nav__link">
         Linear Regression
       </a>
     </li>
@@ -573,11 +590,59 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/linear_models/linear_classification/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Linear Classification
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Linear Classification
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#logistic-regression" class="md-nav__link">
+    Logistic Regression
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#softmax-regression" class="md-nav__link">
+    Softmax Regression
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -589,7 +654,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/linear_models/regularization/" class="md-nav__link">
+      <a href="../regularization/" class="md-nav__link">
         Regularization
       </a>
     </li>
@@ -603,7 +668,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/linear_models/lda/" class="md-nav__link">
+      <a href="../lda/" class="md-nav__link">
         Linear Discriminant Analysis
       </a>
     </li>
@@ -651,7 +716,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/trees/decision_trees/" class="md-nav__link">
+      <a href="../../trees/decision_trees/" class="md-nav__link">
         Decision Trees
       </a>
     </li>
@@ -665,7 +730,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/trees/random_forest/" class="md-nav__link">
+      <a href="../../trees/random_forest/" class="md-nav__link">
         Random Forest
       </a>
     </li>
@@ -679,7 +744,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/trees/gradient_boosted_trees/" class="md-nav__link">
+      <a href="../../trees/gradient_boosted_trees/" class="md-nav__link">
         Gradient Boosted Trees
       </a>
     </li>
@@ -727,7 +792,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/other_models/naive_bayes/" class="md-nav__link">
+      <a href="../../other_models/naive_bayes/" class="md-nav__link">
         Naive Bayes
       </a>
     </li>
@@ -741,7 +806,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/other_models/svm/" class="md-nav__link">
+      <a href="../../other_models/svm/" class="md-nav__link">
         Support Vector Machines
       </a>
     </li>
@@ -755,7 +820,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/other_models/pca/" class="md-nav__link">
+      <a href="../../other_models/pca/" class="md-nav__link">
         Principal Component Analysis
       </a>
     </li>
@@ -769,7 +834,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/other_models/knn/" class="md-nav__link">
+      <a href="../../other_models/knn/" class="md-nav__link">
         K-Nearest Neighbors
       </a>
     </li>
@@ -783,7 +848,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/other_models/hierarchical_clustering/" class="md-nav__link">
+      <a href="../../other_models/hierarchical_clustering/" class="md-nav__link">
         Hierarchical Clustering
       </a>
     </li>
@@ -797,7 +862,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/other_models/k_means/" class="md-nav__link">
+      <a href="../../other_models/k_means/" class="md-nav__link">
         K-Means Clustering
       </a>
     </li>
@@ -835,6 +900,30 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#logistic-regression" class="md-nav__link">
+    Logistic Regression
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#softmax-regression" class="md-nav__link">
+    Softmax Regression
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -846,8 +935,74 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+<h1 id="linear-classification">Linear Classification</h1>
+<h2 id="logistic-regression">Logistic Regression</h2>
+<p><strong>Logistic Regression</strong> is a direct extension of the <a href="../linear_regression/">Linear Regression</a> with its simplicity and high speed for classification tasks. Logistic Regression returns the logistic of the result</p>
+<p>$$
+\hat{p}=\sigma(\boldsymbol{\theta}^T\boldsymbol{x}),
+$$</p>
+<p>where $\sigma$ is a <strong>standard logistic function</strong> (or sigmoid)</p>
+<p>$$
+\sigma(t)=\frac{1}{1 + \exp{(-t)}}.
+$$</p>
+<p>Thus, the output is scaled to the $[0;1]$ range of the probability that a particular instance is positive ($y=1$).</p>
+<p>Output of the original regression equation can be expressed as a <strong>logit function</strong> (or logarithm of the odds, which is the inverse of the logistic function)</p>
+<p>$$
+\boldsymbol{\theta}^T\boldsymbol{x}=\sigma^{-1}(p)=\ln{(\text{odds}(\hat{p}))}=\ln{\left(\frac{p}{1-p}\right)}
+$$</p>
+<p>The cost function for classification tasks is known as <strong>cross entropy loss</strong> (or log loss). In the case of binary classification, it's called <strong>binary cross entropy</strong> and is given by</p>
+<p>$$
+J(\boldsymbol{\theta})=-\frac{1}{m}\sum_{i=1}^m{\left(y^{(i)}\log{\hat{p}^{(i)}}+\left(1-y^{(i)}\right)\log{\left(1-\hat{p}^{(i)}\right)}\right)}.
+$$</p>
+<div class="admonition example annotate">
+<p class="admonition-title">Extreme Values Example</p>
+<p>Imagine that the ground truth $y=1$, while the predicted value $\hat{p} \approx 0$. The penalty for this sample is then close to $-\log{0}$, which is $\infty$. The same is true for the opposite case, where the ground truth is equal to 0 and the predicted value is close to 1.</p>
+</div>
+<p>There is no known closed-form solution for computing the value of $\boldsymbol{\theta}$ that minimizes binary cross entropy. However, just like MSE, cross entropy is a convex function. Thus, Batch Gradient Descent is guaranteed to find the optimal solution within the specified tolerance.</p>
+<p>The cross entropy gradient $\nabla_{\boldsymbol{\theta}}{J(\boldsymbol{\theta})}$ is calculated in the same way as for <a href="../linear_regression/#closed-form-solution">MSE</a> and is given by:</p>
+<p>$$
+\nabla_{\boldsymbol{\theta}}{J(\boldsymbol{\theta})}= \frac{2}{m}\boldsymbol{X}^T\left(\sigma\left({\boldsymbol{X}\boldsymbol{\theta}}\right)-\boldsymbol{y}\right).
+$$</p>
+<div class="admonition note annotate">
+<p class="admonition-title">Scikit-Learn Implementation</p>
+<p>The <a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html"><code>LogisticRegression</code> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span></a>, the <code>scikit-learn</code> implementation of logistic regression, comes with the $\ell_2$ penalty turned on by default, allowing you to adjust the strength of the regularization. Read more about regularization in the <a href="../regularization/">Regularization</a> manual.</p>
+</div>
+<div class="admonition note annotate">
+<p class="admonition-title">Categorical Features</p>
+<p>As with <a href="../linear_regression/">Linear Regression</a>, all categorical variables must first be one-hot encoded, omitting one of the classes.</p>
+</div>
+<h2 id="softmax-regression">Softmax Regression</h2>
+<p>The logistic regression model can be generalized to support multiple classes directly, without the need to train one-versus-one (OvO) or one-versus-rest (OvR) classifiers. The resulting probability that an instance belongs to class $k$ is given by</p>
+<p>$$
+\hat{p}_k=\text{softmax}(\boldsymbol{s})_k=\frac{\exp{(\boldsymbol{s}_k)}}{\sum_i exp{(\boldsymbol{s}_i)}}
+$$</p>
+<p>where $\boldsymbol{s}$ is a vector containing the values of each class $k$ for the instance $\boldsymbol{x}$</p>
+<p>$$
+\boldsymbol{s}=\boldsymbol{\Theta}\boldsymbol{x}.
+$$</p>
+<p>All class-wise parameter vectors $\boldsymbol{\theta}^{(k)}$ together form a parameter matrix $\boldsymbol{\Theta}$.</p>
+<p>Similar to binary classification, the cost function used is cross-entropy, but in a generalized version known as <strong>categorical cross-entropy</strong></p>
+<p>$$
+J(\boldsymbol{\Theta})=-\frac{1}{m}\sum_{i=1}^m{\sum_{k=1}^l{y_k^{(i)}\log{\left(\hat{p}_k^{(i)}\right)}}}
+$$</p>
+<p>where $l$ is the number of classes.</p>
+<p>The gradient vector with respect to the $\boldsymbol{\theta}^{(k)}$ parameter vector $\nabla_{\boldsymbol{\theta}^{(k)}}{J(\boldsymbol{\theta})}$ is calculated similarly to the gradient of the <a href="../linear_regression/#closed-form-solution">MSE</a> and is given by</p>
+<p>$$
+\nabla_{\boldsymbol{\theta}^{(k)}}{J(\boldsymbol{\Theta})}= \frac{2}{m}\boldsymbol{X}^T\left(\text{softmax}\left({\boldsymbol{X}\boldsymbol{\theta}}\right)-\boldsymbol{y}\right).
+$$</p>
+<div class="admonition note annotate">
+<p class="admonition-title">Scikit-Learn Implementation</p>
+<p>The <a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html"><code>LogisticRegression</code> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span></a> implementation in <code>scikit-learn</code> uses One-versus-Rest wrapper for multiclass tasks instead.</p>
+</div>
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -879,13 +1034,13 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "/ml_docs/", "features": ["navigation.tabs", "content.code.copy", "content.code.annotate", "content.code.select", "content.tooltips"], "search": "/ml_docs/assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "content.code.copy", "content.code.annotate", "content.code.select", "content.tooltips"], "search": "../../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="/ml_docs/assets/javascripts/bundle.220ee61c.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.220ee61c.min.js"></script>
       
         
-          <script src="/ml_docs/js/katex.js"></script>
+          <script src="../../../js/katex.js"></script>
         
       
         

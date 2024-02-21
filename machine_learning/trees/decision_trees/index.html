@@ -10,21 +10,27 @@
       
       
       
+        <link rel="canonical" href="https://nickuzmenkov.github.io/ml_docs/machine_learning/trees/decision_trees/">
       
       
-      <link rel="icon" href="/ml_docs/assets/images/favicon.png">
+        <link rel="prev" href="../../linear_models/lda/">
+      
+      
+        <link rel="next" href="../random_forest/">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.21">
     
     
       
-        <title>ML Docs</title>
+        <title>Decision Trees - ML Docs</title>
       
     
     
-      <link rel="stylesheet" href="/ml_docs/assets/stylesheets/main.eebd395e.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.eebd395e.min.css">
       
         
-        <link rel="stylesheet" href="/ml_docs/assets/stylesheets/palette.ecc896b0.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ecc896b0.min.css">
       
       
 
@@ -42,7 +48,7 @@
     
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
     
-    <script>__md_scope=new URL("/ml_docs/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -70,6 +76,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#decision-trees" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -80,7 +91,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/ml_docs/." title="ML Docs" class="md-header__button md-logo" aria-label="ML Docs" data-md-component="logo">
+    <a href="../../.." title="ML Docs" class="md-header__button md-logo" aria-label="ML Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -99,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Decision Trees
             
           </span>
         </div>
@@ -200,7 +211,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="/ml_docs/." class="md-tabs__link">
+    <a href="../../.." class="md-tabs__link">
       Home
     </a>
   </li>
@@ -215,7 +226,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/ml_docs/python/functions/" class="md-tabs__link">
+      <a href="../../../python/functions/" class="md-tabs__link">
         Python
       </a>
     </li>
@@ -224,6 +235,8 @@
       
         
   
+  
+    
   
 
 
@@ -236,7 +249,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/ml_docs/machine_learning/basics/data/" class="md-tabs__link">
+      <a href="../../basics/data/" class="md-tabs__link md-tabs__link--active">
         Machine Learning
       </a>
     </li>
@@ -266,7 +279,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/ml_docs/." title="ML Docs" class="md-nav__button md-logo" aria-label="ML Docs" data-md-component="logo">
+    <a href="../../.." title="ML Docs" class="md-nav__button md-logo" aria-label="ML Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -297,7 +310,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         Home
       </a>
     </li>
@@ -339,7 +352,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/python/functions/" class="md-nav__link">
+      <a href="../../../python/functions/" class="md-nav__link">
         Functions
       </a>
     </li>
@@ -353,7 +366,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/python/classes/" class="md-nav__link">
+      <a href="../../../python/classes/" class="md-nav__link">
         Classes
       </a>
     </li>
@@ -367,7 +380,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/python/exceptions/" class="md-nav__link">
+      <a href="../../../python/exceptions/" class="md-nav__link">
         Exceptions
       </a>
     </li>
@@ -387,14 +400,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
       
       
       
@@ -403,7 +418,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
           Machine Learning
@@ -443,7 +458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/basics/data/" class="md-nav__link">
+      <a href="../../basics/data/" class="md-nav__link">
         Data and Sampling
       </a>
     </li>
@@ -457,7 +472,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/basics/eda/" class="md-nav__link">
+      <a href="../../basics/eda/" class="md-nav__link">
         Exploratory Data Analysis
       </a>
     </li>
@@ -471,7 +486,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/basics/statistical_tests/" class="md-nav__link">
+      <a href="../../basics/statistical_tests/" class="md-nav__link">
         Statistical Tests
       </a>
     </li>
@@ -485,7 +500,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/basics/regression/" class="md-nav__link">
+      <a href="../../basics/regression/" class="md-nav__link">
         Regression
       </a>
     </li>
@@ -499,7 +514,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/basics/classification/" class="md-nav__link">
+      <a href="../../basics/classification/" class="md-nav__link">
         Classification
       </a>
     </li>
@@ -513,7 +528,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/basics/ensemble/" class="md-nav__link">
+      <a href="../../basics/ensemble/" class="md-nav__link">
         Ensemble
       </a>
     </li>
@@ -561,7 +576,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/linear_models/linear_regression/" class="md-nav__link">
+      <a href="../../linear_models/linear_regression/" class="md-nav__link">
         Linear Regression
       </a>
     </li>
@@ -575,7 +590,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/linear_models/linear_classification/" class="md-nav__link">
+      <a href="../../linear_models/linear_classification/" class="md-nav__link">
         Linear Classification
       </a>
     </li>
@@ -589,7 +604,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/linear_models/regularization/" class="md-nav__link">
+      <a href="../../linear_models/regularization/" class="md-nav__link">
         Regularization
       </a>
     </li>
@@ -603,7 +618,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/linear_models/lda/" class="md-nav__link">
+      <a href="../../linear_models/lda/" class="md-nav__link">
         Linear Discriminant Analysis
       </a>
     </li>
@@ -622,14 +637,16 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
       
       
       
@@ -638,7 +655,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_3_3">
           <span class="md-nav__icon md-icon"></span>
           Trees
@@ -649,11 +666,87 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/trees/decision_trees/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Decision Trees
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Decision Trees
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#algorithm" class="md-nav__link">
+    Algorithm
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#impurity-measures" class="md-nav__link">
+    Impurity Measures
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regularization-hyperparameters" class="md-nav__link">
+    Regularization Hyperparameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#computational-complexity" class="md-nav__link">
+    Computational Complexity
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -665,7 +758,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/trees/random_forest/" class="md-nav__link">
+      <a href="../random_forest/" class="md-nav__link">
         Random Forest
       </a>
     </li>
@@ -679,7 +772,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/trees/gradient_boosted_trees/" class="md-nav__link">
+      <a href="../gradient_boosted_trees/" class="md-nav__link">
         Gradient Boosted Trees
       </a>
     </li>
@@ -727,7 +820,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/other_models/naive_bayes/" class="md-nav__link">
+      <a href="../../other_models/naive_bayes/" class="md-nav__link">
         Naive Bayes
       </a>
     </li>
@@ -741,7 +834,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/other_models/svm/" class="md-nav__link">
+      <a href="../../other_models/svm/" class="md-nav__link">
         Support Vector Machines
       </a>
     </li>
@@ -755,7 +848,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/other_models/pca/" class="md-nav__link">
+      <a href="../../other_models/pca/" class="md-nav__link">
         Principal Component Analysis
       </a>
     </li>
@@ -769,7 +862,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/other_models/knn/" class="md-nav__link">
+      <a href="../../other_models/knn/" class="md-nav__link">
         K-Nearest Neighbors
       </a>
     </li>
@@ -783,7 +876,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/other_models/hierarchical_clustering/" class="md-nav__link">
+      <a href="../../other_models/hierarchical_clustering/" class="md-nav__link">
         Hierarchical Clustering
       </a>
     </li>
@@ -797,7 +890,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_docs/machine_learning/other_models/k_means/" class="md-nav__link">
+      <a href="../../other_models/k_means/" class="md-nav__link">
         K-Means Clustering
       </a>
     </li>
@@ -835,6 +928,58 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#algorithm" class="md-nav__link">
+    Algorithm
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#impurity-measures" class="md-nav__link">
+    Impurity Measures
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regularization-hyperparameters" class="md-nav__link">
+    Regularization Hyperparameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#computational-complexity" class="md-nav__link">
+    Computational Complexity
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -846,8 +991,105 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+<h1 id="decision-trees">Decision Trees</h1>
+<p>Tree models, trees, decision trees, or classification and regression trees (CART) were initially developed by Leo Breiman et al. in 1984.</p>
+<h2 id="introduction">Introduction</h2>
+<p>Trees are most commonly used in more powerful ensemble models: bagging ensembles <a href="../random_forest/">Random Forest</a> and boosted ensembles (<a href="../gradient_boosted_trees/">Gradient Boosted Trees</a>), and almost never standalone.</p>
+<p>Tree is basically a set of if-else rules (or branches) splitting data per one feature at a time to minimize data impurity in both splits (or leaves). Trees can thus discover nonlinear patterns in data and spot important variables and interactions.</p>
+<p>Like regression models, a single decision tree is a white box model compared to tree-based ensembles which are black box models.</p>
+<h2 id="algorithm">Algorithm</h2>
+<p>Decision trees available in <code>scikit-learn</code> are CART trees. The training algorithm used in CART is called <strong>recursive partitioning</strong> and goes as follows</p>
+<ol>
+<li>For each predictor variable $X_j$:<ol>
+<li>Split the dataset into two partitions for each value of $X_{i,j}$.</li>
+<li>Measure cost function for each pair of possible partitions.</li>
+<li>Record the value of $X_{i,j}$ of the best split (i.e. the lowest loss).</li>
+</ol>
+</li>
+<li>Select the best split among all best splits of each variable.</li>
+<li>Repeat steps 1-2 for each of the resulting splits.</li>
+</ol>
+<p>The cost function is based on one of impurity measures and given by</p>
+<p>$$ J(k, t_k) = \frac{m_1}{m}I_1 + \frac{m_2}{m}I_2. $$</p>
+<p>For a selected threshold $t_k$ of a particular predictor variable $k$. Here $m_i/m$ are sample fractions and $I_i$ are impurity scores.</p>
+<div class="admonition note annotate">
+<p class="admonition-title">Only one split at a time</p>
+<p>Recursive partitioning is produces only binary trees. Other algorithms (e.g. ID3, C4.5; Quinlan, 1993) can make more than 2 splits at a time.</p>
+</div>
+<p>For a trained classification tree, the predicted class is simply the mode class of the leaf node. Class probability is calculated as the ratio of the number predicted class instances to all instances of the leaf node. For a regression tree, the predicted value is simply the average value of all the instances of the leaf node.</p>
+<h2 id="impurity-measures">Impurity Measures</h2>
+<p>Here are the most common impurity measures</p>
+<ul>
+<li>
+<p>Gini</p>
+<p>$$ G_i=1 - \sum_{k=1}^n{p_{i,k}^2}. $$</p>
+<p>where $n$ is the number of classes, $p_{i,k}$ is the proportion of items labeled with class $k$.</p>
+</li>
+<li>
+<p>Entropy</p>
+<p>$$ H_i=-\sum_{k=1}^n{p_{i,k}\log_2{p_{i,k}}}. $$</p>
+</li>
+<li>
+<p>MSE (for regression trees)</p>
+</li>
+</ul>
+<h2 id="regularization-hyperparameters">Regularization Hyperparameters</h2>
+<p>The recursive partitioning algorithm goes on until it meets one of the stop conditions listed below. These stop conditions act like regularization hyperparameters preventing the tree from overfitting (names of the corresponding parameters in <code>scikit-learn</code> are given in the brackets)</p>
+<ul>
+<li>Number of samples at leaf is less than (<code>min_samples_leaf</code>).</li>
+<li>The fraction of sum of weights at leaf is less than (<code>min_weight_fraction_leaf</code>) - for weighted samples - otherwise just fraction of number of samples.</li>
+<li>Number of samples at branch is less than (<code>min_samples_split</code>).</li>
+<li>Depth of the tree (i.e. the number of steps between the root and the farthest leaf) is more than (<code>max_depth</code>).</li>
+<li>Number of leaves is more than (<code>max_leaf_nodes</code>).</li>
+<li>Decrease of impurity of the split is less than (<code>min_impurity_decrease</code>).</li>
+</ul>
+<h2 id="computational-complexity">Computational Complexity</h2>
+<ul>
+<li>Making a prediction with a balanced tree (which is usually true) that has $m$ branches, is $O(\log_2{m})$ and independent of the number of features.</li>
+<li>Training requires comparison among all $n$ features and all $m$ samples at each node $O(n \times m\log_2{m})$.</li>
+</ul>
+<h2 id="example">Example</h2>
+<p>Iris classification: based on a set of 150 records with four variables (petal length, petal width, sepal length, and sepal width), predict one of three types of iris - Setosa, Virginica, or Versicolour.</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="p">(</span>
+    <span class="n">DecisionTreeClassifier</span><span class="p">,</span>
+    <span class="n">plot_tree</span><span class="p">,</span>
+    <span class="n">export_text</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">load_iris</span>
+
+<span class="n">iris</span> <span class="o">=</span> <span class="n">load_iris</span><span class="p">()</span>
+<span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">iris</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">iris</span><span class="o">.</span><span class="n">target</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="n">model</span> <span class="o">=</span> <span class="n">DecisionTreeClassifier</span><span class="p">(</span><span class="n">max_leaf_nodes</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+<span class="n">feature_names</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Sepal Length&quot;</span><span class="p">,</span> <span class="s2">&quot;Sepal Width&quot;</span><span class="p">,</span> <span class="s2">&quot;Petal Length&quot;</span><span class="p">,</span> <span class="s2">&quot;Petal Width&quot;</span><span class="p">]</span>
+<span class="n">class_names</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Setosa&quot;</span><span class="p">,</span> <span class="s2">&quot;Versicolour&quot;</span><span class="p">,</span> <span class="s2">&quot;Virginica&quot;</span><span class="p">]</span>
+
+<span class="n">export_text</span><span class="p">(</span>  <span class="c1"># text representation</span>
+    <span class="n">model</span><span class="p">,</span>
+    <span class="n">feature_names</span><span class="o">=</span><span class="n">feature_names</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">plot_tree</span><span class="p">(</span>  <span class="c1"># graph representation</span>
+    <span class="n">model</span><span class="p">,</span>
+    <span class="n">feature_names</span><span class="o">=</span><span class="n">feature_names</span><span class="p">,</span>
+    <span class="n">class_names</span><span class="o">=</span><span class="n">class_names</span><span class="p">,</span>
+    <span class="n">node_ids</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -879,13 +1121,13 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "/ml_docs/", "features": ["navigation.tabs", "content.code.copy", "content.code.annotate", "content.code.select", "content.tooltips"], "search": "/ml_docs/assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "content.code.copy", "content.code.annotate", "content.code.select", "content.tooltips"], "search": "../../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="/ml_docs/assets/javascripts/bundle.220ee61c.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.220ee61c.min.js"></script>
       
         
-          <script src="/ml_docs/js/katex.js"></script>
+          <script src="../../../js/katex.js"></script>
         
       
         
